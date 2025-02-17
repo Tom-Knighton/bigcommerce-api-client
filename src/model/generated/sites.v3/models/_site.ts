@@ -1,9 +1,8 @@
+/* generated using openapi-typescript-codegen -- do not edit */
 /* istanbul ignore file */
 /* tslint:disable */
 /* eslint-disable */
-
 import type { Url } from './Url';
-
 export type _site = {
     id?: number;
     /**
@@ -24,6 +23,7 @@ export type _site = {
     updated_at?: string;
     /**
      * Indicates whether a site is using a private/dedicated SSL or a shared SSL.
+     * @deprecated
      */
     ssl_status?: _site.ssl_status;
     /**
@@ -35,9 +35,7 @@ export type _site = {
      */
     is_checkout_url_customized?: boolean;
 };
-
 export namespace _site {
-
     /**
      * Indicates whether a site is using a private/dedicated SSL or a shared SSL.
      */
@@ -45,7 +43,5 @@ export namespace _site {
         DEDICATED = 'dedicated',
         SHARED = 'shared',
     }
-
-
 }
 

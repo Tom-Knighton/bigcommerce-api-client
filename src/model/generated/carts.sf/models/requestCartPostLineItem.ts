@@ -1,16 +1,28 @@
+/* generated using openapi-typescript-codegen -- do not edit */
 /* istanbul ignore file */
 /* tslint:disable */
 /* eslint-disable */
-
+import type { requestPostOrPutGiftWrapping } from './requestPostOrPutGiftWrapping';
 export type requestCartPostLineItem = ({
     /**
      * ID of the product.
      */
     productId: number;
+    optionSelections?: Array<{
+        /**
+         * Modifier option ID.
+         */
+        optionId?: number;
+        /**
+         * Modifier option value.
+         */
+        optionValue?: (string | number);
+    }>;
     /**
      * Quantity of this item.
      */
     quantity: number;
+    giftWrapping?: requestPostOrPutGiftWrapping;
 } | {
     /**
      * ID of the product.
@@ -23,34 +35,17 @@ export type requestCartPostLineItem = ({
     /**
      * ID of the variant.
      */
-    variantId: number;
-} | {
-    /**
-     * ID of the product.
-     */
-    productId: number;
-    /**
-     * Quantity of this item.
-     */
-    quantity: number;
-    variantId: number;
-    /**
-     * Array of `OptionSelection` objects.
-     */
-    optionSelections: Array<({
+    variantId?: number;
+    optionSelections?: Array<{
         /**
-         * ID of the option, same as the `nameId`.
+         * Modifier option ID.
          */
         optionId?: number;
-    } | {
         /**
-         * Value of the option, same as the `valueId`.
+         * Modifier option value.
          */
-        optionValue?: (string | number | {
-            month?: string;
-            day?: string;
-            year?: string;
-        });
-    })>;
+        optionValue?: (string | number);
+    }>;
+    giftWrapping?: requestPostOrPutGiftWrapping;
 });
 

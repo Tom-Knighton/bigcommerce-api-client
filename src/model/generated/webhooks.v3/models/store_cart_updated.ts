@@ -1,11 +1,10 @@
+/* generated using openapi-typescript-codegen -- do not edit */
 /* istanbul ignore file */
 /* tslint:disable */
 /* eslint-disable */
-
 import type { webhook_callback_base } from './webhook_callback_base';
-
 /**
- * This webhook fires when one of the following occurs:
+ * Fires when one of the following occurs:
  * * A cartʼs line items are modified by adding a new item to a cart, updating an existing itemʼs quantity, or deleting an item.
  * * A shopper enters or changes their email address during guest checkout. This includes signing in to a customer account after creating a guest cart, which associates the accountʼs email address with the cart.
  *
@@ -15,7 +14,7 @@ import type { webhook_callback_base } from './webhook_callback_base';
  * * Quantity
  * * Item Price
  *
- * ```json title="Example callback object" lineNumbers
+ * ```json filename="Example callback object" showLineNumbers
  * {
      * "created_at": 1561482670,
      * "store_id": "1025646",
@@ -29,5 +28,19 @@ import type { webhook_callback_base } from './webhook_callback_base';
          * }
          * ```
          */
-        export type store_cart_updated = webhook_callback_base;
+        export type store_cart_updated = (webhook_callback_base & {
+            /**
+             * A lightweight description of the event that triggered the webhook.
+             */
+            data?: {
+                /**
+                 * can be `cart` or `cart_line_item`
+                 */
+                type?: string;
+                /**
+                 * ID of the cart
+                 */
+                id?: string;
+            };
+        });
 

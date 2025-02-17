@@ -1,15 +1,13 @@
+/* generated using openapi-typescript-codegen -- do not edit */
 /* istanbul ignore file */
 /* tslint:disable */
 /* eslint-disable */
-
 export type RedirectTo = {
     type?: RedirectTo.type;
     entity_id?: number;
     url?: string;
 };
-
 export namespace RedirectTo {
-
     export enum type {
         PRODUCT = 'product',
         BRAND = 'brand',
@@ -18,7 +16,5 @@ export namespace RedirectTo {
         POST = 'post',
         URL = 'url',
     }
-
-
 }
 

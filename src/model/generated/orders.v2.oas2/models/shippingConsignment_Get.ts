@@ -1,11 +1,10 @@
+/* generated using openapi-typescript-codegen -- do not edit */
 /* istanbul ignore file */
 /* tslint:disable */
 /* eslint-disable */
-
 import type { products_Resource } from './products_Resource';
 import type { shippingConsignment_Base } from './shippingConsignment_Base';
 import type { shippingQuotesConsignment_Resource } from './shippingQuotesConsignment_Resource';
-
 export type shippingConsignment_Get = ({
     /**
      * ID of the shipping consignment.
@@ -46,15 +45,15 @@ export type shippingConsignment_Get = ({
      */
     cost_tax_class_id?: number;
     /**
-     * The base handling charge.
+     * The base handling charge. The value can't be negative.
      */
     base_handling_cost?: number;
     /**
-     * The handling charge, excluding tax.
+     * The handling charge, excluding tax. The value can't be negative.
      */
     handling_cost_ex_tax?: number;
     /**
-     * The handling charge, including tax.
+     * The handling charge, including tax. The value can't be negative.
      */
     handling_cost_inc_tax?: number;
     handling_cost_tax?: number;

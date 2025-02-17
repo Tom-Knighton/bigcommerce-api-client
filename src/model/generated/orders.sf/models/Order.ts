@@ -1,14 +1,13 @@
+/* generated using openapi-typescript-codegen -- do not edit */
 /* istanbul ignore file */
 /* tslint:disable */
 /* eslint-disable */
-
 import type { AddressProperties } from './AddressProperties';
 import type { AppliedCoupon } from './AppliedCoupon';
 import type { Consignments } from './Consignments';
 import type { Currency } from './Currency';
 import type { OrderLineItem } from './OrderLineItem';
 import type { Status } from './Status';
-
 export type Order = {
     orderId?: number;
     /**

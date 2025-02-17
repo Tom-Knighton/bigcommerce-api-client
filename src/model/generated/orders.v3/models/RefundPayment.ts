@@ -1,9 +1,8 @@
+/* generated using openapi-typescript-codegen -- do not edit */
 /* istanbul ignore file */
 /* tslint:disable */
 /* eslint-disable */
-
 import type { Amount } from './Amount';
-
 export type RefundPayment = {
     /**
      * Reference to refund payment ID.
@@ -26,5 +25,9 @@ export type RefundPayment = {
      * Message indicate why payment was declined.
      */
     declined_message?: string;
+    /**
+     * The BigCommerce `transaction_id`.
+     */
+    transaction_id?: string;
 };
 

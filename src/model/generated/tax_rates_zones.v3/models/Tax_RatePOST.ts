@@ -1,7 +1,7 @@
+/* generated using openapi-typescript-codegen -- do not edit */
 /* istanbul ignore file */
 /* tslint:disable */
 /* eslint-disable */
-
 export type Tax_RatePOST = {
     /**
      * Tax rates for tax classes. You must assign at least one tax rate for each tax class defined on a store.
@@ -21,7 +21,7 @@ export type Tax_RatePOST = {
      */
     enabled?: boolean;
     /**
-     * The human-readable name for this tax zone. The name displays on the merchant control panel and to shoppers, depending on store tax settings.
+     * The human-readable name for this tax zone. The name appears in the store control panel and may be visible to shoppers, depending on store tax settings.
      */
     name: string;
     /**

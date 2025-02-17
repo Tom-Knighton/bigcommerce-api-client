@@ -1,9 +1,8 @@
+/* generated using openapi-typescript-codegen -- do not edit */
 /* istanbul ignore file */
 /* tslint:disable */
 /* eslint-disable */
-
 import type { formFields } from './formFields';
-
 export type shippingConsignment_Base = {
     first_name?: string;
     last_name?: string;

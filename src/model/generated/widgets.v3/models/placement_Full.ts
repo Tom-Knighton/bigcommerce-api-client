@@ -1,10 +1,9 @@
+/* generated using openapi-typescript-codegen -- do not edit */
 /* istanbul ignore file */
 /* tslint:disable */
 /* eslint-disable */
-
 import type { placement_Base } from './placement_Base';
 import type { widget_Full } from './widget_Full';
-
 export type placement_Full = ({
     /**
      * The primary identifier.

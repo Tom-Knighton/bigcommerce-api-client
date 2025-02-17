@@ -1,7 +1,7 @@
+/* generated using openapi-typescript-codegen -- do not edit */
 /* istanbul ignore file */
 /* tslint:disable */
 /* eslint-disable */
-
 export type pickupConsignment_Base = {
     /**
      * A name for the pickup method that can be displayed to shoppers.

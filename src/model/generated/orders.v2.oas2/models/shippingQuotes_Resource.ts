@@ -1,7 +1,7 @@
+/* generated using openapi-typescript-codegen -- do not edit */
 /* istanbul ignore file */
 /* tslint:disable */
 /* eslint-disable */
-
 export type shippingQuotes_Resource = {
     /**
      * This URL will return a 204 for shipping quotes. To return shipping quotes:

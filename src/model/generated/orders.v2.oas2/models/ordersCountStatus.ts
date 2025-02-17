@@ -1,9 +1,8 @@
+/* generated using openapi-typescript-codegen -- do not edit */
 /* istanbul ignore file */
 /* tslint:disable */
 /* eslint-disable */
-
 import type { orderStatus_Base } from './orderStatus_Base';
-
 export type ordersCountStatus = (orderStatus_Base & {
     /**
      * Number of orders that exist with this status.

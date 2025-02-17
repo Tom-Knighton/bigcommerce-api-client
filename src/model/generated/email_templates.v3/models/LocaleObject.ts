@@ -1,7 +1,7 @@
+/* generated using openapi-typescript-codegen -- do not edit */
 /* istanbul ignore file */
 /* tslint:disable */
 /* eslint-disable */
-
 /**
  * A particular localeʼs translations.
  */
@@ -13,6 +13,6 @@ export type LocaleObject = {
     /**
      * Language keys for the template. User-defined. Should match any lang keys used in the template.
      */
-    keys?: any;
+    keys?: Record<string, any>;
 };
 

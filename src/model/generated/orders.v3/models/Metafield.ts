@@ -1,9 +1,8 @@
+/* generated using openapi-typescript-codegen -- do not edit */
 /* istanbul ignore file */
 /* tslint:disable */
 /* eslint-disable */
-
 import type { MetafieldBase } from './MetafieldBase';
-
 /**
  * Allows app partners to write custom data to various resources in the API.
  *
@@ -15,7 +14,7 @@ export type Metafield = (MetafieldBase & {
      */
     id?: number;
     /**
-     * Date and time of the metafield's creation.
+     * Date and time of the metafieldʼs creation.
      *
      */
     date_created?: Date;
@@ -24,5 +23,9 @@ export type Metafield = (MetafieldBase & {
      *
      */
     date_modified?: Date;
+    /**
+     * Client ID for the metafieldʼs creator.
+     */
+    readonly owner_client_id?: string;
 });
 

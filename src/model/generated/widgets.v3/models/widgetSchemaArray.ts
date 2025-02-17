@@ -1,10 +1,9 @@
+/* generated using openapi-typescript-codegen -- do not edit */
 /* istanbul ignore file */
 /* tslint:disable */
 /* eslint-disable */
-
 import type { widgetSchemaHidden } from './widgetSchemaHidden';
 import type { widgetSchemaTab } from './widgetSchemaTab';
-
 /**
  * **Array.** Use the **array** settings type to build collections of elements within the widget. Each element in the array can contain tabs, sections, and an entire schema.
  */
@@ -32,13 +31,9 @@ export type widgetSchemaArray = {
      */
     schema?: Array<(widgetSchemaHidden | widgetSchemaTab)>;
 };
-
 export namespace widgetSchemaArray {
-
     export enum type {
         ARRAY = 'array',
     }
-
-
 }
 

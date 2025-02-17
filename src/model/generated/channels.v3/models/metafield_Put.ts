@@ -1,9 +1,9 @@
+/* generated using openapi-typescript-codegen -- do not edit */
 /* istanbul ignore file */
 /* tslint:disable */
 /* eslint-disable */
-
 /**
- * Metafield for products, categories, variants, and brands. The max number of metafields allowed on each product, category, variant, or brand is fifty. For more information, see [Platform Limits](https://support.bigcommerce.com/s/article/Platform-Limits) in the Help Center.
+ * Metafield for products, categories, variants, and brands. The max number of metafields allowed on each product, category, variant, or brand 250. For more information, see [Platform Limits](https://support.bigcommerce.com/s/article/Platform-Limits) in the Help Center.
  */
 export type metafield_Put = {
     /**
@@ -38,9 +38,7 @@ export type metafield_Put = {
      */
     description?: string;
 };
-
 export namespace metafield_Put {
-
     /**
      * Determines the visibility and writeability of the field by other API consumers.
      *
@@ -59,7 +57,5 @@ export namespace metafield_Put {
         READ_AND_SF_ACCESS = 'read_and_sf_access',
         WRITE_AND_SF_ACCESS = 'write_and_sf_access',
     }
-
-
 }
 

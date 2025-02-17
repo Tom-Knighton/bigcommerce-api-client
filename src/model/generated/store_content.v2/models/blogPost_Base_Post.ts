@@ -1,7 +1,7 @@
+/* generated using openapi-typescript-codegen -- do not edit */
 /* istanbul ignore file */
 /* tslint:disable */
 /* eslint-disable */
-
 /**
  * blogPost base for POST requests
  */
@@ -23,7 +23,7 @@ export type blogPost_Base_Post = {
      */
     tags?: Array<string>;
     /**
-     * Whether the blog post is published.
+     * Whether the blog post is published. If you want the post to be or remain published following the request, you must set the field explicitly to true, even if the blog post was already published prior to the request.
      */
     is_published?: boolean;
     /**
@@ -39,7 +39,7 @@ export type blogPost_Base_Post = {
      */
     author?: string;
     /**
-     * Local path to a thumbnail uploaded to `/product_images/` via [WebDav](https://support.bigcommerce.com/s/article/File-Access-WebDAV).
+     * Local path to a thumbnail uploaded to `/product_images/` using [WebDAV](https://support.bigcommerce.com/s/article/File-Access-WebDAV).
      */
     thumbnail_path?: string;
     published_date?: Date;

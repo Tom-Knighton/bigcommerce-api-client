@@ -1,12 +1,16 @@
+/* generated using openapi-typescript-codegen -- do not edit */
 /* istanbul ignore file */
 /* tslint:disable */
 /* eslint-disable */
-
-export type ItemPhysicalGet = ({
+export type ItemPhysicalGet = {
     /**
      * The line-item ID.
      */
     id?: string;
+    /**
+     * Bundled items will have the ID of their parent item.
+     */
+    parent_id?: string;
     /**
      * The ID of the variant. Required in the /PUT or /POST request if the product has variants.
      */
@@ -24,24 +28,6 @@ export type ItemPhysicalGet = ({
      */
     name?: string;
     /**
-     * The weight is displayed here if the item has a custom dimension.
-     */
-    weight?: number;
-    dimensions?: {
-        /**
-         * The height is displayed here if the item has a custom dimension.
-         */
-        height?: number;
-        /**
-         * The width is displayed here if the item has a custom dimension.
-         */
-        width?: number;
-        /**
-         * The depth is displayed here if the item has a custom dimension.
-         */
-        depth?: number;
-    };
-    /**
      * The product URL.
      */
     url?: string;
@@ -52,7 +38,7 @@ export type ItemPhysicalGet = ({
     /**
      * Boolean value that specifies whether the item is taxable.
      */
-    is_taxable?: boolean;
+    taxable?: boolean;
     /**
      * Image of the product or variant.
      */
@@ -78,7 +64,7 @@ export type ItemPhysicalGet = ({
      */
     original_price?: number;
     /**
-     * The net item price before discounts and coupons are applied. BigCommerce derives an item’s list price from the product default price or, if applicable, the sale price configured in the admin panel.
+     * The net item price before discounts and coupons are applied. BigCommerce derives an item’s list price from the product default price or, if applicable, the sale price configured in the admin panel. To enable v3 promotions at the product level, you must update the [promotion](https://support.bigcommerce.com/s/article/Store-Settings?language=en_US#promotion) settings in the control panel.
      */
     list_price?: number;
     /**
@@ -94,32 +80,24 @@ export type ItemPhysicalGet = ({
      */
     extended_sale_price?: number;
     /**
-     * The list of selected options for this product.
+     * Whether or not a physical product requires shipping.
      */
-    options?: Array<{
-        /**
-         * The product option name; for example, Color or Size.
-         */
-        name?: string;
-        /**
-         * The product option identifier.
-         */
-        nameId?: number;
-        /**
-         * The product option value; for example, Red or Medium.
-         */
-        value?: string;
-        /**
-         * The product option value identifier in number format.
-         */
-        valueId?: number;
-    }>;
-} & {
     is_require_shipping?: boolean;
+    /**
+     * Whether or not you can change or remove the item from the cart. Items that are immutable include those added automatically by promotions.
+     */
+    is_mutable?: boolean;
+    /**
+     * Whether or not a promotion added an additional item.
+     */
+    added_by_promotion?: boolean;
+    /**
+     * The gift wrapping details for this item.
+     */
     gift_wrapping?: {
         name?: string;
         message?: string;
         amount?: number;
     };
-});
+};
 

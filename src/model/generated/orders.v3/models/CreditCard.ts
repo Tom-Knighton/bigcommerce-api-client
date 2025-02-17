@@ -1,9 +1,9 @@
+/* generated using openapi-typescript-codegen -- do not edit */
 /* istanbul ignore file */
 /* tslint:disable */
 /* eslint-disable */
-
 /**
- * A credit-card model.
+ * A credit card model.
  */
 export type CreditCard = {
     /**
@@ -11,29 +11,27 @@ export type CreditCard = {
      */
     card_type?: CreditCard.card_type;
     /**
-     * The IIN of a credit-card number.
+     * The IIN of a credit card number.
      *
      */
     card_iin?: string;
     /**
-     * The last 4 digits of a credit-card number.
+     * The last 4 digits of a credit card number.
      *
      */
     card_last4?: string;
     /**
-     * The expiry month of a credit-card.
+     * The expiry month of a credit card.
      *
      */
     card_expiry_month?: number;
     /**
-     * The expiry year of a credit-card.
+     * The expiry year of a credit card.
      *
      */
     card_expiry_year?: number;
 };
-
 export namespace CreditCard {
-
     /**
      * **Allowed values**: alelo, alia, american_express, cabal, carnet, dankort, diners_club, discover, elo, forbrugsforeningen, jcb, maestro, master, naranja, sodexo, unionpay, visa, vr
      */
@@ -57,7 +55,5 @@ export namespace CreditCard {
         VISA = 'visa',
         VR = 'vr',
     }
-
-
 }
 

@@ -1,10 +1,9 @@
+/* generated using openapi-typescript-codegen -- do not edit */
 /* istanbul ignore file */
 /* tslint:disable */
 /* eslint-disable */
-
 import type { ConnectionOptionsInstance } from './ConnectionOptionsInstance';
 import type { ZoneOptionsInstance } from './ZoneOptionsInstance';
-
 /**
  * Payload sent to a Shipping Provider in to get quotes.
  */
@@ -160,9 +159,7 @@ export type BaseOptionsSchema = {
     zone_options?: ZoneOptionsInstance;
     connection_options?: ConnectionOptionsInstance;
 };
-
 export namespace BaseOptionsSchema {
-
     /**
      * Optional. Defaults to `RESIDENTIAL`.
      */
@@ -170,7 +167,5 @@ export namespace BaseOptionsSchema {
         RESIDENTIAL = 'RESIDENTIAL',
         COMMERCIAL = 'COMMERCIAL',
     }
-
-
 }
 

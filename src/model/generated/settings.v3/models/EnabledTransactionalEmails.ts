@@ -1,7 +1,7 @@
+/* generated using openapi-typescript-codegen -- do not edit */
 /* istanbul ignore file */
 /* tslint:disable */
 /* eslint-disable */
-
 export type EnabledTransactionalEmails = {
     abandoned_cart_email?: boolean;
     account_details_changed_email?: boolean;

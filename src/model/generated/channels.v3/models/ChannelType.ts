@@ -1,7 +1,7 @@
+/* generated using openapi-typescript-codegen -- do not edit */
 /* istanbul ignore file */
 /* tslint:disable */
 /* eslint-disable */
-
 /**
  * The type of channel; channel `platform` and `type` must be a [valid combination](/docs/rest-management/channels#status).
  */

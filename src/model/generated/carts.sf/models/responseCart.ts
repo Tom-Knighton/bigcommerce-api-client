@@ -1,14 +1,13 @@
+/* generated using openapi-typescript-codegen -- do not edit */
 /* istanbul ignore file */
 /* tslint:disable */
 /* eslint-disable */
-
 import type { responseCartCoupons } from './responseCartCoupons';
 import type { responseCartCurrency } from './responseCartCurrency';
 import type { responseCartDiscounts } from './responseCartDiscounts';
 import type { responseCartLineItems } from './responseCartLineItems';
-
 /**
- * Cart object used in storefront cart responses.
+ * Cart object used in REST Storefront API cart responses.
  */
 export type responseCart = {
     /**
@@ -55,5 +54,9 @@ export type responseCart = {
      * Locale of the cart.
      */
     locale?: string;
+    /**
+     * The current version of the cart increments with each successful update. You can use it to enable optimistic concurrency control for subsequent updates.
+     */
+    version?: number;
 };
 

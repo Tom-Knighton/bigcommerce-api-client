@@ -1,9 +1,8 @@
+/* generated using openapi-typescript-codegen -- do not edit */
 /* istanbul ignore file */
 /* tslint:disable */
 /* eslint-disable */
-
 import type { AddressTypeEnumValues } from './AddressTypeEnumValues';
-
 /**
  * The basic profile settings for a store, used to give the shopper information about the business from which they are purchasing.
  */

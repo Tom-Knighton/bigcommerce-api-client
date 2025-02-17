@@ -1,10 +1,11 @@
+/* generated using openapi-typescript-codegen -- do not edit */
 /* istanbul ignore file */
 /* tslint:disable */
 /* eslint-disable */
-
 import type { billingAddress_Base } from './billingAddress_Base';
+import type { shipping_provider_custom } from './shipping_provider_custom';
+import type { shipping_provider_standard } from './shipping_provider_standard';
 import type { shippingAddress_Base } from './shippingAddress_Base';
-
 export type orderShipment = {
     /**
      * Shipment ID.
@@ -31,21 +32,22 @@ export type orderShipment = {
      */
     tracking_number?: string;
     /**
+     * Shipping cost for the merchant.
+     */
+    merchant_shipping_cost?: string;
+    /**
      * Additional information to describe the method of shipment (ex. Standard, Ship by Weight, Custom Shipment). Can be used for live quotes from certain shipping providers.
      * If different from `shipping_provider`, `shipping_method` should correspond to `tracking_carrier`.
      */
     shipping_method?: string;
-    /**
-     * Enum of the BigCommerce shipping-carrier integration/module.
-     */
-    shipping_provider?: orderShipment.shipping_provider;
+    shipping_provider?: (shipping_provider_standard | shipping_provider_custom);
     /**
      * Tracking carrier for the shipment.
-     * Acceptable values for `tracking_carrier` include an empty string (`""`) or one of the valid [tracking-carrier values](https://github.com/bigcommerce/dev-docs/blob/master/assets/csv/tracking_carrier_values.csv).
+     * Acceptable values for `tracking_carrier` include an empty string (`""`) or one of the valid [tracking-carrier values](https://www.aftership.com/docs/tracking/others/supported-couriers).
      */
     tracking_carrier?: string;
     /**
-     * Returns a tracking link from the shipping service.
+     * The custom tracking link supplied on POST or PUT shipments. For the link to one of our integrated providers or Aftership tracking link, see the `generated_tracking_link` property.
      */
     tracking_link?: string;
     /**
@@ -62,26 +64,13 @@ export type orderShipment = {
         product_id?: number;
         quantity?: number;
     }>;
-};
-
-export namespace orderShipment {
-
     /**
-     * Enum of the BigCommerce shipping-carrier integration/module.
+     * The human-readable name for the `shipping_provider`.
      */
-    export enum shipping_provider {
-        AUSPOST = 'auspost',
-        CANADAPOST = 'canadapost',
-        ENDICIA = 'endicia',
-        USPS = 'usps',
-        FEDEX = 'fedex',
-        UPS = 'ups',
-        UPSREADY = 'upsready',
-        UPSONLINE = 'upsonline',
-        SHIPPERHQ = 'shipperhq',
-        _ = ' ',
-    }
-
-
-}
+    readonly shipping_provider_display_name?: string;
+    /**
+     * The link to one of our integrated providers or Aftership tracking link that is generated using the combination of either the `tracking_number` and `shipping_provider` or `tracking_number` and `tracking_carrier`. This will be empty if the custom `tracking_link` value is provided.
+     */
+    generated_tracking_link?: string;
+};
 

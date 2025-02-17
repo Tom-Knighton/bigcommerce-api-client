@@ -1,7 +1,7 @@
+/* generated using openapi-typescript-codegen -- do not edit */
 /* istanbul ignore file */
 /* tslint:disable */
 /* eslint-disable */
-
 export type ItemReferenceId = {
     /**
      * The reference type.
@@ -12,16 +12,12 @@ export type ItemReferenceId = {
      */
     value: string;
 };
-
 export namespace ItemReferenceId {
-
     /**
      * The reference type.
      */
     export enum type {
         ORDER_PRODUCT = 'ORDER_PRODUCT',
     }
-
-
 }
 

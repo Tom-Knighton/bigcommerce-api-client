@@ -1,7 +1,7 @@
+/* generated using openapi-typescript-codegen -- do not edit */
 /* istanbul ignore file */
 /* tslint:disable */
 /* eslint-disable */
-
 /**
  * The response object containing details of an error
  */
@@ -10,6 +10,6 @@ export type ErrorResponse = {
     title?: string;
     type?: string;
     instance?: string;
-    errors?: any;
+    errors?: Record<string, any>;
 };
 

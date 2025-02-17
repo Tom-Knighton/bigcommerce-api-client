@@ -1,10 +1,9 @@
+/* generated using openapi-typescript-codegen -- do not edit */
 /* istanbul ignore file */
 /* tslint:disable */
 /* eslint-disable */
-
 import type { ChannelAbandonedCartSettings } from './ChannelAbandonedCartSettings';
 import type { metaEmpty_Full } from './metaEmpty_Full';
-
 /**
  * The response object of abandoned cart settings overrides for a channel
  */

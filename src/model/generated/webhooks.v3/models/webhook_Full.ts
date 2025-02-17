@@ -1,10 +1,9 @@
+/* generated using openapi-typescript-codegen -- do not edit */
 /* istanbul ignore file */
 /* tslint:disable */
 /* eslint-disable */
-
 import type { webhook_Base } from './webhook_Base';
-
-export type webhook_Full = (webhook_Base & {
+export type webhook_Full = ({
     /**
      * ID of the webhook.
      */
@@ -18,12 +17,12 @@ export type webhook_Full = (webhook_Base & {
      */
     store_hash?: string;
     /**
-     * Time when the webhook was created.
+     * The time the webhook was created, represented in UNIX epoch time.
      */
     created_at?: number;
     /**
-     * Time when the webhook was updated.
+     * The time the webhook was most recently updated, represented in UNIX epoch time.
      */
     updated_at?: number;
-});
+} & webhook_Base);
 

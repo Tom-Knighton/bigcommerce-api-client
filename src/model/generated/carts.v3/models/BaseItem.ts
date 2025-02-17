@@ -1,7 +1,7 @@
+/* generated using openapi-typescript-codegen -- do not edit */
 /* istanbul ignore file */
 /* tslint:disable */
 /* eslint-disable */
-
 export type BaseItem = {
     /**
      * The line-item ID.
@@ -20,7 +20,7 @@ export type BaseItem = {
      */
     sku?: string;
     /**
-     * The item’s product name.
+     * The itemʼs product name.
      */
     name?: string;
     /**

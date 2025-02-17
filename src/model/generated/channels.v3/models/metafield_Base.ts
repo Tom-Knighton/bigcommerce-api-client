@@ -1,7 +1,7 @@
+/* generated using openapi-typescript-codegen -- do not edit */
 /* istanbul ignore file */
 /* tslint:disable */
 /* eslint-disable */
-
 export type metafield_Base = {
     /**
      * Unique ID of the *Metafield*.
@@ -49,7 +49,7 @@ export type metafield_Base = {
      */
     resource_id?: number;
     /**
-     * Date and time of the metafield's creation. Read-Only.
+     * Date and time of the metafieldʼs creation. Read-Only.
      *
      */
     date_created?: Date;
@@ -59,9 +59,7 @@ export type metafield_Base = {
      */
     date_modified?: Date;
 };
-
 export namespace metafield_Base {
-
     /**
      * Determines the visibility and writeability of the field by other API consumers.
      *
@@ -80,7 +78,6 @@ export namespace metafield_Base {
         READ_AND_SF_ACCESS = 'read_and_sf_access',
         WRITE_AND_SF_ACCESS = 'write_and_sf_access',
     }
-
     /**
      * The type of resource with which the metafield is associated.
      *
@@ -91,7 +88,5 @@ export namespace metafield_Base {
         PRODUCT = 'product',
         VARIANT = 'variant',
     }
-
-
 }
 

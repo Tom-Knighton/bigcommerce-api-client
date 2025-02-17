@@ -1,9 +1,8 @@
+/* generated using openapi-typescript-codegen -- do not edit */
 /* istanbul ignore file */
 /* tslint:disable */
 /* eslint-disable */
-
 import type { HSTSMaxAgeEnumValues } from './HSTSMaxAgeEnumValues';
-
 export type StorefrontSecuritySettings = {
     csp_header?: {
         enabled?: boolean;
@@ -22,15 +21,11 @@ export type StorefrontSecuritySettings = {
         setting?: StorefrontSecuritySettings.setting;
     };
 };
-
 export namespace StorefrontSecuritySettings {
-
     export enum setting {
         DENY = 'deny',
         SAME_ORIGIN = 'same_origin',
         ALLOW_FROM_URL = 'allow_from_url',
     }
-
-
 }
 

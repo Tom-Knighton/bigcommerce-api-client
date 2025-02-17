@@ -1,7 +1,7 @@
+/* generated using openapi-typescript-codegen -- do not edit */
 /* istanbul ignore file */
 /* tslint:disable */
 /* eslint-disable */
-
 /**
  * Form Field
  */
@@ -15,7 +15,7 @@ export type FormField = {
      */
     name?: string;
     /**
-     * Wether is a custom field or system built-in field.
+     * Whether this is a custom field or system built-in field.
      */
     custom?: boolean;
     /**
@@ -23,7 +23,7 @@ export type FormField = {
      */
     label?: string;
     /**
-     * Wether this field is required or not
+     * Whether this field is required or not
      */
     required?: boolean;
     /**
@@ -39,21 +39,42 @@ export type FormField = {
      */
     fieldType?: FormField.fieldType;
     /**
-     * The minimun valid value for the field (integer and date type only)
+     * The minimum valid value for the field (integer and date type only).
      */
     min?: string;
     /**
-     * The minimun valid value for the field (integer and date type only)
+     * The minimum valid value for the field (integer and date type only).
      */
     max?: string;
     /**
-     * The maximum length for the value (string type only)
+     * The maximum length for the value (string type only).
      */
     maxLength?: number;
     /**
-     * Whether the field represents a password field
+     * Whether the field represents a password field (password field type only).
      */
     secret?: boolean;
+    /**
+     * Password requirements (password field type only).
+     */
+    requirements?: {
+        /**
+         * Regex expression for the required alpha characters.
+         */
+        alpha?: string;
+        /**
+         * Description for the password requirements.
+         */
+        description?: string;
+        /**
+         * Minimum password length.
+         */
+        minlength?: number;
+        /**
+         * Regex expression for the required numeric characters.
+         */
+        numeric?: string;
+    };
     /**
      * Extra data for radio, dropdown and checkbox field types.
      */
@@ -71,9 +92,7 @@ export type FormField = {
         }>;
     };
 };
-
 export namespace FormField {
-
     /**
      * Type of the value hold by the field
      */
@@ -83,7 +102,6 @@ export namespace FormField {
         ARRAY = 'array',
         DATE = 'date',
     }
-
     /**
      * Type of the field
      */
@@ -95,7 +113,5 @@ export namespace FormField {
         RADIO = 'radio',
         DROPDOWN = 'dropdown',
     }
-
-
 }
 

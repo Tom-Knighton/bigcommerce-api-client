@@ -1,12 +1,11 @@
+/* generated using openapi-typescript-codegen -- do not edit */
 /* istanbul ignore file */
 /* tslint:disable */
 /* eslint-disable */
-
 import type { ItemCustom } from './ItemCustom';
 import type { ItemDigital } from './ItemDigital';
 import type { ItemGiftCertificate } from './ItemGiftCertificate';
 import type { ItemPhysical } from './ItemPhysical';
-
 /**
  * Request body for `PUT` or `POST` requests.
  */

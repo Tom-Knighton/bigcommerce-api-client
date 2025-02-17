@@ -1,7 +1,7 @@
+/* generated using openapi-typescript-codegen -- do not edit */
 /* istanbul ignore file */
 /* tslint:disable */
 /* eslint-disable */
-
 /**
  * Object representing a destination or origin address for items.
  */
@@ -23,9 +23,7 @@ export type ShippingAddress = {
      */
     address_type?: ShippingAddress.address_type;
 };
-
 export namespace ShippingAddress {
-
     /**
      * Optional. Defaults to `RESIDENTIAL`.
      */
@@ -33,7 +31,5 @@ export namespace ShippingAddress {
         RESIDENTIAL = 'RESIDENTIAL',
         COMMERCIAL = 'COMMERCIAL',
     }
-
-
 }
 

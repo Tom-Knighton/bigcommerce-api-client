@@ -1,7 +1,7 @@
+/* generated using openapi-typescript-codegen -- do not edit */
 /* istanbul ignore file */
 /* tslint:disable */
 /* eslint-disable */
-
 export type orderTaxes_Base = {
     /**
      * The unique numeric identifier of the taxes object.
@@ -20,15 +20,15 @@ export type orderTaxes_Base = {
      */
     tax_rate_id?: number;
     /**
-     * The unique numeric identifier of the tax class object. NOTE: Will be 0 if automatic tax was enabled, or if the default tax class was used.
+     * A unique numeric identifier for the tax class. If not provided or null, the default fee tax class from the control panel is used.
      */
-    tax_class_id?: number;
+    tax_class_id?: number | null;
     /**
      * The name of the tax class object.
      */
     name?: string;
     /**
-     * The name of the type of tax that was applied. NOTE: will be "Automatic Tax" if automatic tax was enabled. Will be "API Tax Override" if the order was created with V2 Orders API.
+     * The name of the type of tax that was applied. NOTE: It will be "Automatic Tax" if automatic tax was enabled. It will be "API Tax Override" if the order was created with V2 Orders API.
      */
     class?: string;
     /**
@@ -48,6 +48,10 @@ export type orderTaxes_Base = {
      */
     line_amount?: string;
     /**
+     * The ID of the order pickup method object (which contains pickup location details) associated with the order.
+     */
+    order_pickup_method_id?: number;
+    /**
      * If the `line_item_type` is `item` or `handling` then this field will be the order product id. Otherwise the field will return as null.
      */
     order_product_id?: string;
@@ -56,9 +60,7 @@ export type orderTaxes_Base = {
      */
     line_item_type?: orderTaxes_Base.line_item_type;
 };
-
 export namespace orderTaxes_Base {
-
     /**
      * Type of tax on item.
      */
@@ -68,7 +70,5 @@ export namespace orderTaxes_Base {
         HANDLING = 'handling',
         GIFT_WRAPPING = 'gift-wrapping',
     }
-
-
 }
 

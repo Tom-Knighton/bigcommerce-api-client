@@ -1,7 +1,7 @@
+/* generated using openapi-typescript-codegen -- do not edit */
 /* istanbul ignore file */
 /* tslint:disable */
 /* eslint-disable */
-
 export type ShippingZone = {
     /**
      * Zone ID. Read-only.
@@ -65,16 +65,12 @@ export type ShippingZone = {
      */
     enabled?: boolean;
 };
-
 export namespace ShippingZone {
-
     export enum type {
         ZIP = 'zip',
         COUNTRY = 'country',
         STATE = 'state',
         GLOBAL = 'global',
     }
-
-
 }
 

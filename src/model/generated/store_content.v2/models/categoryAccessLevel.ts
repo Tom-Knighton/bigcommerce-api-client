@@ -1,7 +1,7 @@
+/* generated using openapi-typescript-codegen -- do not edit */
 /* istanbul ignore file */
 /* tslint:disable */
 /* eslint-disable */
-
 export type categoryAccessLevel = {
     /**
      * + `all` - Customers can access all categories
@@ -10,13 +10,11 @@ export type categoryAccessLevel = {
      */
     type?: categoryAccessLevel.type;
     /**
-     * Is an array of category IDs and should be supplied only if `type` is specific.
+     * A comma-separated list of category IDs. Should be supplied only if `type` is `specific`.
      */
-    categories?: Array<string>;
+    categories?: Array<number>;
 };
-
 export namespace categoryAccessLevel {
-
     /**
      * + `all` - Customers can access all categories
      * + `specific`  - Customers can access a specific list of categories
@@ -27,7 +25,5 @@ export namespace categoryAccessLevel {
         SPECIFIC = 'specific',
         NONE = 'none',
     }
-
-
 }
 

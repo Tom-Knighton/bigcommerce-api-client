@@ -1,9 +1,8 @@
+/* generated using openapi-typescript-codegen -- do not edit */
 /* istanbul ignore file */
 /* tslint:disable */
 /* eslint-disable */
-
 import type { request_document } from './request_document';
-
 /**
  * Each **QuoteRequest** represents an order. In addition to transaction details, it contains a `documents` array of one or more **DocumentRequest** objects, which represent distinct combinations of origin and fulfillment addresses and the tax-relevant contents of those consignments. This is similar to an "order" in other BigCommerce APIs.
  */

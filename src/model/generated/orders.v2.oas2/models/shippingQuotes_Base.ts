@@ -1,7 +1,7 @@
+/* generated using openapi-typescript-codegen -- do not edit */
 /* istanbul ignore file */
 /* tslint:disable */
 /* eslint-disable */
-
 export type shippingQuotes_Base = {
     /**
      * ID of the shipping quote.
@@ -22,7 +22,7 @@ export type shippingQuotes_Base = {
     /**
      * This can vary based on the shipping provider. Manual shipping methods such as fixed will return an empty array. Shipping providers such as UPS will return an object with the shipping information. Since the shipping quote is tied to a shipping address only one quote will return in the response.
      */
-    shipping_provider_quote?: Array<any>;
+    shipping_provider_quote?: Array<Record<string, any>>;
     /**
      * Code of the shipping provider.
      */

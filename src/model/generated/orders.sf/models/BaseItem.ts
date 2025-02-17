@@ -1,9 +1,8 @@
+/* generated using openapi-typescript-codegen -- do not edit */
 /* istanbul ignore file */
 /* tslint:disable */
 /* eslint-disable */
-
 import type { AppliedDiscount } from './AppliedDiscount';
-
 export type BaseItem = {
     /**
      * The line-item ID.
@@ -58,7 +57,7 @@ export type BaseItem = {
      */
     couponAmount?: number;
     /**
-     * The itemʼs list price, as quoted by the manufacturer/distributor.
+     * The net item price before discounts and coupons. BigCommerce derives an item's list price from the product default price or, if applicable, the sale price configured in the admin panel.
      */
     listPrice?: number;
     /**

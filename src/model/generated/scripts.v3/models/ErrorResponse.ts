@@ -1,7 +1,7 @@
+/* generated using openapi-typescript-codegen -- do not edit */
 /* istanbul ignore file */
 /* tslint:disable */
 /* eslint-disable */
-
 export type ErrorResponse = ({
     /**
      * The HTTP status code.
@@ -16,6 +16,6 @@ export type ErrorResponse = ({
     type?: string;
     instance?: string;
 } & {
-    errors?: any;
+    errors?: Record<string, any>;
 });
 

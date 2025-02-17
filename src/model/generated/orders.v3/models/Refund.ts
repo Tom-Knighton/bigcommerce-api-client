@@ -1,11 +1,10 @@
+/* generated using openapi-typescript-codegen -- do not edit */
 /* istanbul ignore file */
 /* tslint:disable */
 /* eslint-disable */
-
 import type { Amount } from './Amount';
 import type { RefundItem } from './RefundItem';
 import type { RefundPayment } from './RefundPayment';
-
 export type Refund = {
     /**
      * Refund resource ID.
@@ -16,7 +15,7 @@ export type Refund = {
      */
     order_id?: number;
     /**
-     * Reference to the user's ID who create this refund. This is automatically populated by BigCommerce.
+     * Reference to the userʼs ID who create this refund. This is automatically populated by BigCommerce.
      */
     readonly user_id?: number;
     /**

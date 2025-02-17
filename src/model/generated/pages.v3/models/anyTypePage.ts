@@ -1,7 +1,7 @@
+/* generated using openapi-typescript-codegen -- do not edit */
 /* istanbul ignore file */
 /* tslint:disable */
 /* eslint-disable */
-
 /**
  * Properties of all Pages V3 pages.
  *
@@ -26,7 +26,7 @@ export type anyTypePage = {
      */
     sort_order?: number;
     /**
-     * Determines the type of page. See [Pages v3 page types](/docs/rest-content/pages#page-types) for more about the differences.
+     * Determines the type of page. See [Pages V3 page types](/docs/rest-content/pages#page-types) for more about the differences.
      */
     type: anyTypePage.type;
     /**
@@ -34,7 +34,7 @@ export type anyTypePage = {
      */
     is_homepage?: boolean;
     /**
-     * When `true`, this page is not visible to merchant users who are signed in to the store control panel.
+     * When `true`, this page is visible only to logged-in customers.
      */
     is_customers_only?: boolean;
     /**
@@ -43,11 +43,9 @@ export type anyTypePage = {
      */
     url?: string;
 };
-
 export namespace anyTypePage {
-
     /**
-     * Determines the type of page. See [Pages v3 page types](/docs/rest-content/pages#page-types) for more about the differences.
+     * Determines the type of page. See [Pages V3 page types](/docs/rest-content/pages#page-types) for more about the differences.
      */
     export enum type {
         PAGE = 'page',
@@ -57,7 +55,5 @@ export namespace anyTypePage {
         LINK = 'link',
         BLOG = 'blog',
     }
-
-
 }
 

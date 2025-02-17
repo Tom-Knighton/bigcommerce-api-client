@@ -1,7 +1,7 @@
+/* generated using openapi-typescript-codegen -- do not edit */
 /* istanbul ignore file */
 /* tslint:disable */
 /* eslint-disable */
-
 /**
  * A PayPal account stored instrument.
  */
@@ -23,16 +23,12 @@ export type PayPalAccountInstrument = {
      */
     email?: string;
 };
-
 export namespace PayPalAccountInstrument {
-
     /**
      * Instrument type.
      */
     export enum type {
         STORED_PAYPAL_ACCOUNT = 'stored_paypal_account',
     }
-
-
 }
 

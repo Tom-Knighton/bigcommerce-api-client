@@ -1,7 +1,7 @@
+/* generated using openapi-typescript-codegen -- do not edit */
 /* istanbul ignore file */
 /* tslint:disable */
 /* eslint-disable */
-
 export type PropertyPOST = {
     /**
      * The unique string programmatically references this unique tax property by the tax provider. Merchants should liaise with their tax provider to explore supported values and functions.

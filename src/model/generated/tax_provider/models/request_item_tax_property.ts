@@ -1,7 +1,7 @@
+/* generated using openapi-typescript-codegen -- do not edit */
 /* istanbul ignore file */
 /* tslint:disable */
 /* eslint-disable */
-
 /**
  * A simple key value pairing allowing merchants to provide an additional input into a tax providerʼs tax calculation.
  */

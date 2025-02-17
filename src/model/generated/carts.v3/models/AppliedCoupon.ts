@@ -1,7 +1,7 @@
+/* generated using openapi-typescript-codegen -- do not edit */
 /* istanbul ignore file */
 /* tslint:disable */
 /* eslint-disable */
-
 /**
  * |Type `int`|Type Name|
  * |-|-|
@@ -36,10 +36,12 @@ export type AppliedCoupon = {
      * The discounted amount applied within a given context.
      */
     readonly discounted_amount?: number;
+    /**
+     * Display name of the coupon.
+     */
+    display_name?: string;
 };
-
 export namespace AppliedCoupon {
-
     /**
      * Key name to identify the type of coupon.
      *
@@ -58,7 +60,5 @@ export namespace AppliedCoupon {
         _4 = '4',
         _5 = '5',
     }
-
-
 }
 

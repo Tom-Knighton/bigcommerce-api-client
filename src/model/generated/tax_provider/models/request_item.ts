@@ -1,10 +1,9 @@
+/* generated using openapi-typescript-codegen -- do not edit */
 /* istanbul ignore file */
 /* tslint:disable */
 /* eslint-disable */
-
 import type { request_item_tax_property } from './request_item_tax_property';
 import type { TaxClass } from './TaxClass';
-
 /**
  * An **ItemRequest** represents required information relating to completing tax calculations for a specific line item.
  */
@@ -30,7 +29,7 @@ export type request_item = {
      */
     price: {
         /**
-         * Note: This amount will be **negative** for order-level refunds and may be **zero** for line-item refunds.
+         * Note: This amount will be **negative** for order-level refunds and may be **zero** for line item refunds.
          */
         amount: number;
         /**
@@ -41,36 +40,12 @@ export type request_item = {
     quantity: number;
     tax_class?: TaxClass;
     /**
-     * Flag whether or not this item is always tax-exempt. For example, gift certificate purchases and order-level refunds are tax-exempt. Tax-exempt items are included in the request for auditing purposes.
+     * Flag whether or not this item is always tax-exempt. For example, gift certificate purchases and order-level refunds are tax-exempt. Tax-exempt items are included in the request for auditing purposes. Tax-exempt items must have a tax amount of zero within the tax quote response.
      */
     tax_exempt?: boolean;
     /**
      * Merchants may opt to include additional properties that a tax provider can choose to support, factoring these values into tax calculation.
      */
     tax_properties?: Array<request_item_tax_property>;
-    /**
-     * The type of line item this request represents. This will depend on the item’s position in the request hierarchy. For example, the document request contains a collection of items (which may or may not also have wrapping attached). In addition, each document request also has a shipping line item and handling line item.
-     *
-     * The type refund is used when the tax estimate request is for an order-level refund.
-     */
-    type: request_item.type;
 };
-
-export namespace request_item {
-
-    /**
-     * The type of line item this request represents. This will depend on the item’s position in the request hierarchy. For example, the document request contains a collection of items (which may or may not also have wrapping attached). In addition, each document request also has a shipping line item and handling line item.
-     *
-     * The type refund is used when the tax estimate request is for an order-level refund.
-     */
-    export enum type {
-        ITEM = 'item',
-        WRAPPING = 'wrapping',
-        HANDLING = 'handling',
-        SHIPPING = 'shipping',
-        REFUND = 'refund',
-    }
-
-
-}
 

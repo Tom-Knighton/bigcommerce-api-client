@@ -1,7 +1,7 @@
+/* generated using openapi-typescript-codegen -- do not edit */
 /* istanbul ignore file */
 /* tslint:disable */
 /* eslint-disable */
-
 /**
  * A stored bank account instrument.
  */
@@ -27,16 +27,12 @@ export type BankAccountInstrument = {
      */
     issuer?: string;
 };
-
 export namespace BankAccountInstrument {
-
     /**
      * Instrument type.
      */
     export enum type {
         STORED_BANK_ACCOUNT = 'stored_bank_account',
     }
-
-
 }
 

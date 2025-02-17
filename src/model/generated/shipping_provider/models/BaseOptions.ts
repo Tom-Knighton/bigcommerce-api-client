@@ -1,9 +1,8 @@
+/* generated using openapi-typescript-codegen -- do not edit */
 /* istanbul ignore file */
 /* tslint:disable */
 /* eslint-disable */
-
 import type { FormFieldValue } from './FormFieldValue';
-
 /**
  * The minimum required payload that is sent to retrieve rates.
  */
@@ -161,9 +160,7 @@ export type BaseOptions = {
         }>;
     };
 };
-
 export namespace BaseOptions {
-
     /**
      * Optional. Defaults to `RESIDENTIAL`.
      */
@@ -171,7 +168,5 @@ export namespace BaseOptions {
         RESIDENTIAL = 'RESIDENTIAL',
         COMMERCIAL = 'COMMERCIAL',
     }
-
-
 }
 

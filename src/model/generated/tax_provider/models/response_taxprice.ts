@@ -1,9 +1,8 @@
+/* generated using openapi-typescript-codegen -- do not edit */
 /* istanbul ignore file */
 /* tslint:disable */
 /* eslint-disable */
-
 import type { SalesTax } from './SalesTax';
-
 export type response_taxprice = {
     /**
      * The price of this line item inclusive of tax. Must be equal to **amount_exclusive** + **total_tax**.

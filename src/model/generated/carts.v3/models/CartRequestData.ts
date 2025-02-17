@@ -1,7 +1,7 @@
+/* generated using openapi-typescript-codegen -- do not edit */
 /* istanbul ignore file */
 /* tslint:disable */
 /* eslint-disable */
-
 export type CartRequestData = {
     line_items?: Array<{
         quantity: number;
@@ -24,7 +24,7 @@ export type CartRequestData = {
         /**
          * The theme of the gift certificate.
          */
-        theme: 'Birthday' | 'Boy' | 'Celebration' | 'Christmas' | 'General' | 'Girl';
+        theme: 'birthday.html' | 'boy.html' | 'celebration.html' | 'christmas.html' | 'general.html' | 'girl.html';
         amount: number;
         quantity: number;
         sender: {

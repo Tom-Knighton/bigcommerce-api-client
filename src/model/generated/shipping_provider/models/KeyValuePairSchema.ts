@@ -1,7 +1,7 @@
+/* generated using openapi-typescript-codegen -- do not edit */
 /* istanbul ignore file */
 /* tslint:disable */
 /* eslint-disable */
-
 /**
  * Options, ranges, defaults, and validation for a carrier-defined field that displays at checkout.
  */
@@ -54,9 +54,7 @@ export type KeyValuePairSchema = {
         };
     }>;
 };
-
 export namespace KeyValuePairSchema {
-
     /**
      * How this input will be displayed.
      */
@@ -66,7 +64,5 @@ export namespace KeyValuePairSchema {
         SELECT = 'select',
         CODE = 'code',
     }
-
-
 }
 

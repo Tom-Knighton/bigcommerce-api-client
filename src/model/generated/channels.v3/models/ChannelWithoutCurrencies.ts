@@ -1,7 +1,7 @@
+/* generated using openapi-typescript-codegen -- do not edit */
 /* istanbul ignore file */
 /* tslint:disable */
 /* eslint-disable */
-
 import type { ChannelConfigMeta } from './ChannelConfigMeta';
 import type { ChannelDateCreated } from './ChannelDateCreated';
 import type { ChannelDateModified } from './ChannelDateModified';
@@ -14,15 +14,14 @@ import type { ExternalId } from './ExternalId';
 import type { IconUrl } from './IconUrl';
 import type { IsListableFromUI } from './IsListableFromUI';
 import type { IsVisible } from './IsVisible';
-
 export type ChannelWithoutCurrencies = {
     config_meta?: ChannelConfigMeta;
-    id?: ChannelId;
+    id: ChannelId;
     external_id?: ExternalId;
     is_listable_from_ui?: IsListableFromUI;
     is_visible?: IsVisible;
     status?: ChannelStatus;
-    name?: ChannelName;
+    name: ChannelName;
     type?: ChannelType;
     platform?: ChannelPlatform;
     date_created?: ChannelDateCreated;

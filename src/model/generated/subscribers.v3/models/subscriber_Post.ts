@@ -1,9 +1,8 @@
+/* generated using openapi-typescript-codegen -- do not edit */
 /* istanbul ignore file */
 /* tslint:disable */
 /* eslint-disable */
-
 import type { subscriber_Base } from './subscriber_Base';
-
 /**
  * The model for a POST to create a subscriber.
  *

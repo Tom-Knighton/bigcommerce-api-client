@@ -1,7 +1,7 @@
+/* generated using openapi-typescript-codegen -- do not edit */
 /* istanbul ignore file */
 /* tslint:disable */
 /* eslint-disable */
-
 export type taxClass_Full = {
     /**
      * The unique numerical ID of the tax class. A read-only value which is automatically assigned and increments sequentially.

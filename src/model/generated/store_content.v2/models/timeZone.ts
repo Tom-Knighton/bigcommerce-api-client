@@ -1,12 +1,12 @@
+/* generated using openapi-typescript-codegen -- do not edit */
 /* istanbul ignore file */
 /* tslint:disable */
 /* eslint-disable */
-
 import type { dateFormat } from './dateFormat';
-
 export type timeZone = {
     /**
-     * A string identifying the time zone, in the format: <Continent-name>/<City-name>.
+     * A string identifying the time zone, in the format: `<Continent-name>/<City-name>`.
+     *
      */
     name?: string;
     /**

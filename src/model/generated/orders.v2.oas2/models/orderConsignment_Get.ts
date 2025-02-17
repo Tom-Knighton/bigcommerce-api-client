@@ -1,12 +1,11 @@
+/* generated using openapi-typescript-codegen -- do not edit */
 /* istanbul ignore file */
 /* tslint:disable */
 /* eslint-disable */
-
 import type { digitalConsignment_Get } from './digitalConsignment_Get';
 import type { giftCertificateConsignment_Get } from './giftCertificateConsignment_Get';
 import type { pickupConsignment_Get } from './pickupConsignment_Get';
 import type { shippingConsignment_Get } from './shippingConsignment_Get';
-
 export type orderConsignment_Get = {
     /**
      * Pickup consignments.

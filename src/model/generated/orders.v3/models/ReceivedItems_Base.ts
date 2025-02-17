@@ -1,7 +1,7 @@
+/* generated using openapi-typescript-codegen -- do not edit */
 /* istanbul ignore file */
 /* tslint:disable */
 /* eslint-disable */
-
 export type ReceivedItems_Base = Array<{
     /**
      * The ID of the item for which received item status was updated.

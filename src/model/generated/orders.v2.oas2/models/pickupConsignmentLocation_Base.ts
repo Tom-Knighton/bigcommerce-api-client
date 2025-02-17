@@ -1,7 +1,7 @@
+/* generated using openapi-typescript-codegen -- do not edit */
 /* istanbul ignore file */
 /* tslint:disable */
 /* eslint-disable */
-
 export type pickupConsignmentLocation_Base = {
     /**
      * The name of the pickup location.
@@ -27,11 +27,11 @@ export type pickupConsignmentLocation_Base = {
      */
     country_alpha2?: string;
     /**
-     * Pickup location's email address.
+     * Pickup locationʼs email address.
      */
     email?: string;
     /**
-     * Pickup location's phone number.
+     * Pickup locationʼs phone number.
      */
     phone?: string;
 };

@@ -1,7 +1,7 @@
+/* generated using openapi-typescript-codegen -- do not edit */
 /* istanbul ignore file */
 /* tslint:disable */
 /* eslint-disable */
-
 /**
  * A theme.
  */
@@ -39,5 +39,13 @@ export type Theme = {
      * Flag to identify private themes.
      */
     is_private?: boolean;
+    /**
+     * Indicates whether this theme is active on the storefront.
+     */
+    is_active?: boolean;
+    /**
+     * The date-time of the last theme update.
+     */
+    updated_at?: string;
 };
 

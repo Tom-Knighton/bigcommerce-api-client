@@ -1,10 +1,9 @@
+/* generated using openapi-typescript-codegen -- do not edit */
 /* istanbul ignore file */
 /* tslint:disable */
 /* eslint-disable */
-
 import type { Custom } from './Custom';
 import type { Offline } from './Offline';
-
 export type Transaction_Post = {
     /**
      * Store event that created the transaction.
@@ -12,7 +11,7 @@ export type Transaction_Post = {
      */
     event: Transaction_Post.event;
     /**
-     * The payment method: `credit_card` - a credit-card transaction; `electronic_wallet` - an online wallet; `store_credit` - a transaction using store credit; `gift_certificate` - a transaction using a gift certificate; `custom` - manual payment methods; `token` - payment token; `nonce` - temporary payment token; `offsite` - online payment off the site (e.g., PayPal); `offline` - payment method that takes place offline.
+     * The payment method: `credit_card` - a credit card transaction; `electronic_wallet` - an online wallet; `store_credit` - a transaction using store credit; `gift_certificate` - a transaction using a gift certificate; `custom` - manual payment methods; `token` - payment token; `nonce` - temporary payment token; `offsite` - online payment off the site (e.g., PayPal); `offline` - payment method that takes place offline.
      *
      */
     method: Transaction_Post.method;
@@ -64,9 +63,7 @@ export type Transaction_Post = {
     offline?: Offline;
     custom?: Custom;
 };
-
 export namespace Transaction_Post {
-
     /**
      * Store event that created the transaction.
      *
@@ -80,9 +77,8 @@ export namespace Transaction_Post {
         PENDING = 'pending',
         SETTLED = 'settled',
     }
-
     /**
-     * The payment method: `credit_card` - a credit-card transaction; `electronic_wallet` - an online wallet; `store_credit` - a transaction using store credit; `gift_certificate` - a transaction using a gift certificate; `custom` - manual payment methods; `token` - payment token; `nonce` - temporary payment token; `offsite` - online payment off the site (e.g., PayPal); `offline` - payment method that takes place offline.
+     * The payment method: `credit_card` - a credit card transaction; `electronic_wallet` - an online wallet; `store_credit` - a transaction using store credit; `gift_certificate` - a transaction using a gift certificate; `custom` - manual payment methods; `token` - payment token; `nonce` - temporary payment token; `offsite` - online payment off the site (e.g., PayPal); `offline` - payment method that takes place offline.
      *
      */
     export enum method {
@@ -99,7 +95,6 @@ export namespace Transaction_Post {
         OFFLINE = 'offline',
         NONCE = 'nonce',
     }
-
     /**
      * The payment gateway, where applicable.
      *
@@ -134,7 +129,6 @@ export namespace Transaction_Post {
         TESTGATEWAY = 'testgateway',
         USAEPAY = 'usaepay',
     }
-
     /**
      * Status of the transaction.
      *
@@ -143,7 +137,5 @@ export namespace Transaction_Post {
         OK = 'ok',
         ERROR = 'error',
     }
-
-
 }
 

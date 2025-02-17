@@ -1,9 +1,9 @@
+/* generated using openapi-typescript-codegen -- do not edit */
 /* istanbul ignore file */
 /* tslint:disable */
 /* eslint-disable */
-
 /**
- * Details about the Channel's relationship to Themes.
+ * Details about the Channelʼs relationship to Themes.
  */
 export type ActiveTheme = {
     /**

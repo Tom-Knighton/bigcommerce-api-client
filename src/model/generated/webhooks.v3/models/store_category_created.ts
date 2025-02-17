@@ -1,14 +1,13 @@
+/* generated using openapi-typescript-codegen -- do not edit */
 /* istanbul ignore file */
 /* tslint:disable */
 /* eslint-disable */
-
 import type { callback_category_data } from './callback_category_data';
 import type { webhook_callback_base } from './webhook_callback_base';
-
 /**
- * This webhook fires when a category is created.
+ * Fires when a category is created.
  *
- * ```json title="Example callback object" lineNumbers
+ * ```json filename="Example callback object" showLineNumbers
  * {
      * "created_at": 1561482670,
      * "store_id": "1025646",

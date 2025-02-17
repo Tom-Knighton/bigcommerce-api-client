@@ -1,9 +1,8 @@
+/* generated using openapi-typescript-codegen -- do not edit */
 /* istanbul ignore file */
 /* tslint:disable */
 /* eslint-disable */
-
 import type { widget_Base } from './widget_Base';
-
 export type widget_Put = (widget_Base & {
     /**
      * The widget template UUID.

@@ -1,7 +1,7 @@
+/* generated using openapi-typescript-codegen -- do not edit */
 /* istanbul ignore file */
 /* tslint:disable */
 /* eslint-disable */
-
 export type orderProductOptions = {
     /**
      * The unique numerical ID of the option; increments sequentially.
@@ -25,7 +25,7 @@ export type orderProductOptions = {
      */
     display_value?: string;
     /**
-     * For file-upload type, it's a unique string describing the properties of the file upload. For other types, it's the value of the property.
+     * For file-upload type, itʼs a unique string describing the properties of the file upload. For other types, itʼs the value of the property.
      */
     value?: string;
     /**
@@ -57,9 +57,7 @@ export type orderProductOptions = {
      */
     display_value_merchant?: string;
 };
-
 export namespace orderProductOptions {
-
     /**
      * Option Type
      */
@@ -73,7 +71,5 @@ export namespace orderProductOptions {
         SWATCH = 'Swatch',
         TEXT_FIELD = 'Text field',
     }
-
-
 }
 

@@ -1,9 +1,8 @@
+/* generated using openapi-typescript-codegen -- do not edit */
 /* istanbul ignore file */
 /* tslint:disable */
 /* eslint-disable */
-
 import type { BillingAddress } from './BillingAddress';
-
 /**
  * Details about a stored card instrument which includes details around billing, last 4 digits, issuer, etc.
  */
@@ -42,16 +41,12 @@ export type CardInstrument = {
     last_4?: string;
     billing_address?: BillingAddress;
 };
-
 export namespace CardInstrument {
-
     /**
      * Type of instrument.
      */
     export enum type {
         STORED_CARD = 'stored_card',
     }
-
-
 }
 

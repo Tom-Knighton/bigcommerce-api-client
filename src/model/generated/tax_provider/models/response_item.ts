@@ -1,9 +1,8 @@
+/* generated using openapi-typescript-codegen -- do not edit */
 /* istanbul ignore file */
 /* tslint:disable */
 /* eslint-disable */
-
 import type { response_taxprice } from './response_taxprice';
-
 /**
  * The tax liabilities calculated for a specific item.
  *
@@ -15,19 +14,5 @@ export type response_item = {
      */
     id: string;
     price: response_taxprice;
-    type: response_item.type;
 };
-
-export namespace response_item {
-
-    export enum type {
-        ITEM = 'item',
-        WRAPPING = 'wrapping',
-        SHIPPING = 'shipping',
-        HANDLING = 'handling',
-        REFUND = 'refund',
-    }
-
-
-}
 

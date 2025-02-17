@@ -1,12 +1,11 @@
+/* generated using openapi-typescript-codegen -- do not edit */
 /* istanbul ignore file */
 /* tslint:disable */
 /* eslint-disable */
-
 import type { giftCertificate_Base } from './giftCertificate_Base';
-
 export type giftCertificate_Put = (giftCertificate_Base & {
     /**
-     * Remaining value of the gift certificate. If not set, will default to the amount.
+     * The remaining value of the gift certificate. If not set, will default to the amount.
      */
     balance?: string;
     /**
@@ -35,29 +34,30 @@ export type giftCertificate_Put = (giftCertificate_Base & {
      */
     code?: string;
     status?: giftCertificate_Put.status;
+    /**
+     * A currency code, following the ISO 4217 standard. The currency has to exist in the store first.
+     *
+     * Gift Certificates can only be used if the transactional currency of the cart is the same as the one defined in the gift certificate. If this value is not provided, the gift certificate is created using the store's default transactional currency.
+     */
+    currency_code?: string;
 });
-
 export namespace giftCertificate_Put {
-
     /**
      * The email theme to use in the message sent to the recipient.
      */
     export enum template {
-        BIRTHDAY = 'Birthday',
-        BOY = 'Boy',
-        GIRL = 'Girl',
-        CELEBRATION = 'Celebration',
-        CHRISTMAS = 'Christmas',
-        GENERAL = 'General',
+        BIRTHDAY_HTML = 'birthday.html',
+        BOY_HTML = 'boy.html',
+        GIRL_HTML = 'girl.html',
+        CELEBRATION_HTML = 'celebration.html',
+        CHRISTMAS_HTML = 'christmas.html',
+        GENERAL_HTML = 'general.html',
     }
-
     export enum status {
         ACTIVE = 'active',
         PENDING = 'pending',
         EXPIRED = 'expired',
         DISABLED = 'disabled',
     }
-
-
 }
 

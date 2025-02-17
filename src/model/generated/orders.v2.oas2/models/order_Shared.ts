@@ -1,28 +1,25 @@
+/* generated using openapi-typescript-codegen -- do not edit */
 /* istanbul ignore file */
 /* tslint:disable */
 /* eslint-disable */
-
-import type { billingAddress_Base } from './billingAddress_Base';
-
 /**
  * Order properties used in `PUT` and `POST` requests and responses.
  */
 export type order_Shared = {
     /**
-     * The value of the base handling cost. (Float, Float-As-String, Integer)
+     * The value of the base handling cost. The value can't be negative. (Float, Float-As-String, Integer)
      */
     base_handling_cost?: string;
     /**
-     * The value of the base shipping cost. (Float, Float-As-String, Integer)
+     * The value of the base shipping cost. The value can't be negative. (Float, Float-As-String, Integer)
      */
     base_shipping_cost?: string;
     /**
-     * The value of the base wrapping cost expressed as a floating point number to four decimal places in string format.
+     * The value of the base wrapping cost expressed as a floating point number to four decimal places in string format. The value can't be negative.
      */
     base_wrapping_cost?: string;
-    billing_address?: billingAddress_Base;
     /**
-     * Shows where the order originated. The channel_id will default to 1.
+     * Shows where the order originated. The channel_id defaults to 1. The value must match the ID of a valid and enabled channel. If the ID refers to a non-existing or disconnected channel, the POST and PUT `/v2/orders` endpoints return a validation error.
      */
     channel_id?: number;
     customer_id?: number;
@@ -35,21 +32,27 @@ export type order_Shared = {
      */
     date_created?: Date;
     /**
-     * The currency code of the transactional currency the shopper pays in; writeable when multi-currency is enabled.
-     */
-    default_currency_code?: string;
-    /**
-     * Amount of discount for this transaction. (Float, Float-As-String, Integer)
+     * Amount of discount for this transaction. The value can't be negative. (Float, Float-As-String, Integer)
      */
     discount_amount?: string;
+    /**
+     * The `order_source` reflects the origin of the order. It will indicate whether the order was created by one of the following:
+     * * storefront
+     * * control panel
+     * * manual order
+     * * /v2/orders API
+     * * Checkout API
+     * * or by an integration with an external platform such as Facebook by Meta or Amazon.
+     */
+    order_source?: string;
     /**
      * If the order was placed through eBay, the eBay order number will be included. Otherwise, the value will be `0`.
      */
     ebay_order_id?: string;
     /**
-     * The order ID in another system, such as the Amazon Order ID if this is an Amazon order. After setting it, you cannot write to or update the `external_id`. You can update this field using a POST request, but a PUT request to update the order will return a 400 error.  Please remove it from your request before trying again.
+     * (Read-only) The order ID in another system, such as the Amazon order ID if this is an Amazon order.
      */
-    external_id?: string | null;
+    readonly external_id?: string | null;
     /**
      * The merchant ID represents an upstream order from an external system. It is the source of truth for orders. After setting it, you cannot write to or update the `external_merchant_id`. For example, you can update the Facebook by Meta page ID in a POST request, but a PUT request to update the order will return a 400 error. Please remove it from your request before trying again.
      */
@@ -70,11 +73,11 @@ export type order_Shared = {
      */
     geoip_country_iso2?: string;
     /**
-     * The value of the handling cost, excluding tax. (Float, Float-As-String, Integer)
+     * The value of the handling cost, excluding tax. The value can't be negative. (Float, Float-As-String, Integer)
      */
     handling_cost_ex_tax?: string;
     /**
-     * The value of the handling cost, including tax. (Float, Float-As-String, Integer)
+     * The value of the handling cost, including tax. The value can't be negative. (Float, Float-As-String, Integer)
      */
     handling_cost_inc_tax?: string;
     /**
@@ -90,10 +93,6 @@ export type order_Shared = {
      */
     ip_address_v6?: string;
     /**
-     * Indicates whether the order was deleted (archived). Set to to true, to archive an order.
-     */
-    is_deleted?: boolean;
-    /**
      * The number of items that have been shipped.
      */
     items_shipped?: number;
@@ -106,23 +105,25 @@ export type order_Shared = {
      */
     order_is_digital?: boolean;
     /**
-     * The payment method for this order. Can be one of the following: `Manual`, `Credit Card`, `cash`, `Test Payment Gateway`, etc.
+     * The payment method for this order. For example, `Manual`, `Credit Card`, `cash`, `Test Payment Gateway`, etc.
      */
-    payment_method?: order_Shared.payment_method;
+    payment_method?: string;
     /**
      * The external Transaction ID/Payment ID within this order’s payment provider (if a payment provider was used).
      */
     payment_provider_id?: (string | number);
     /**
-     * The amount refunded from this transaction; always returns `0`. (Float, Float-As-String, Integer)
+     * The amount refunded from this transaction; always returns `0`. The value can't be negative. (Float, Float-As-String, Integer)
      */
     refunded_amount?: string;
     /**
-     * The value of shipping cost, excluding tax. (Float, Float-As-String, Integer)
+     * The value of shipping cost, excluding tax. When specified in a POST or PUT request, the field `shipping_cost_inc_tax` is also required. The value can't be negative (Float, Float-As-String, Integer)
+     *
      */
     shipping_cost_ex_tax?: string;
     /**
-     * The value of shipping cost, including tax. (Float, Float-As-String, Integer)
+     * The value of shipping cost, including tax. When specified in a POST or PUT request, the field `shipping_cost_ex_tax` is also required. The value can't be negative. (Float, Float-As-String, Integer)
+     *
      */
     shipping_cost_inc_tax?: string;
     /**
@@ -134,14 +135,15 @@ export type order_Shared = {
      */
     status_id?: number;
     /**
-     * Override value for subtotal excluding tax. If specified, the field `subtotal_inc_tax` is also required. (Float, Float-As-String, Integer)
+     * Override value for subtotal excluding tax. The value can't be negative. If specified, the field `subtotal_inc_tax` is also required. (Float, Float-As-String, Integer)
      */
     subtotal_ex_tax?: string;
     /**
-     * Override value for subtotal including tax. If specified, the field `subtotal_ex_tax` is also required. (Float, Float-As-String, Integer)
+     * Override value for subtotal including tax. The value can't be negative. If specified, the field `subtotal_ex_tax` is also required. (Float, Float-As-String, Integer)
      */
     subtotal_inc_tax?: string;
     /**
+     * Read-only.
      * BasicTaxProvider - Tax is set to manual and order is created in the store.
      *
      * AvaTaxProvider - Tax is set to automatic and order is created in the store. Used for Avalara.
@@ -149,59 +151,30 @@ export type order_Shared = {
      * "" (empty string) - The order is created with the API, or the tax provider is unknown.
      *
      */
-    tax_provider_id?: order_Shared.tax_provider_id;
+    tax_provider_id?: string;
     /**
      * The customer’s locale.
      */
     customer_locale?: string;
     /**
-     * The external id of the order.
+     * The order ID in another system, such as the Amazon Order ID if this is an Amazon order. After setting it, you can update this field using a POST or PUT request.
      */
     external_order_id?: string;
     /**
-     * Override value for the total, excluding tax. If specified, the field `total_inc_tax` is also required. (Float, Float-As-String, Integer)
+     * Override value for the total, excluding tax. If specified, the field `total_inc_tax` is also required. The value can't be negative. (Float, Float-As-String, Integer)
      */
     total_ex_tax?: string;
     /**
-     * Override value for the total, including tax. If specified, the field `total_ex_tax` is also required. (Float, Float-As-String, Integer)
+     * Override value for the total, including tax. If specified, the field `total_ex_tax` is also required. The value can't be negative. (Float, Float-As-String, Integer)
      */
     total_inc_tax?: string;
     /**
-     * The value of the wrapping cost, excluding tax. (Float, Float-As-String, Integer)
+     * The value of the wrapping cost, excluding tax. The value can't be negative. (Float, Float-As-String, Integer)
      */
     wrapping_cost_ex_tax?: string;
     /**
-     * The value of the wrapping cost, including tax. (Float, Float-As-String, Integer)
+     * The value of the wrapping cost, including tax. The value can't be negative. (Float, Float-As-String, Integer)
      */
     wrapping_cost_inc_tax?: string;
 };
-
-export namespace order_Shared {
-
-    /**
-     * The payment method for this order. Can be one of the following: `Manual`, `Credit Card`, `cash`, `Test Payment Gateway`, etc.
-     */
-    export enum payment_method {
-        CREDIT_CARD = 'Credit Card',
-        CASH = 'Cash',
-        TEST_PAYMENT_GATEWAY = 'Test Payment Gateway',
-        MANUAL = 'Manual',
-    }
-
-    /**
-     * BasicTaxProvider - Tax is set to manual and order is created in the store.
-     *
-     * AvaTaxProvider - Tax is set to automatic and order is created in the store. Used for Avalara.
-     *
-     * "" (empty string) - The order is created with the API, or the tax provider is unknown.
-     *
-     */
-    export enum tax_provider_id {
-        BASIC_TAX_PROVIDER = 'BasicTaxProvider',
-        AVA_TAX_PROVIDER = 'AvaTaxProvider',
-        BLANK = '',
-    }
-
-
-}
 

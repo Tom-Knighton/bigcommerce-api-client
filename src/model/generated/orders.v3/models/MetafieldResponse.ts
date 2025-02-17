@@ -1,15 +1,15 @@
+/* generated using openapi-typescript-codegen -- do not edit */
 /* istanbul ignore file */
 /* tslint:disable */
 /* eslint-disable */
-
-import type { Meta } from './Meta';
+import type { metaEmpty_Full } from './metaEmpty_Full';
 import type { Metafield } from './Metafield';
-
 /**
  * Response payload for the BigCommerce API.
  *
  */
-export type MetafieldResponse = ({
+export type MetafieldResponse = {
     data?: Metafield;
-} & Meta);
+    meta?: metaEmpty_Full;
+};
 

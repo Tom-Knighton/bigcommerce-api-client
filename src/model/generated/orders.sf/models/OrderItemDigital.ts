@@ -1,9 +1,8 @@
+/* generated using openapi-typescript-codegen -- do not edit */
 /* istanbul ignore file */
 /* tslint:disable */
 /* eslint-disable */
-
 import type { AppliedDiscount } from './AppliedDiscount';
-
 export type OrderItemDigital = {
     /**
      * The line-item ID.
@@ -38,6 +37,10 @@ export type OrderItemDigital = {
      */
     quantity: number;
     /**
+     * The item's brand.
+     */
+    brand?: string;
+    /**
      * Whether the item is taxable.
      */
     isTaxable?: boolean;
@@ -58,7 +61,7 @@ export type OrderItemDigital = {
      */
     couponAmount?: number;
     /**
-     * The itemʼs list price, as quoted by the manufacturer/distributor.
+     * The net item price before discounts and coupons. BigCommerce derives an item's list price from the product default price or, if applicable, the sale price configured in the admin panel.
      */
     listPrice?: number;
     /**

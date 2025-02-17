@@ -1,10 +1,9 @@
+/* generated using openapi-typescript-codegen -- do not edit */
 /* istanbul ignore file */
 /* tslint:disable */
 /* eslint-disable */
-
 import type { responseCartLineItemsGiftCertificatesRecipient } from './responseCartLineItemsGiftCertificatesRecipient';
 import type { responseCartLineItemsGiftCertificatesSender } from './responseCartLineItemsGiftCertificatesSender';
-
 export type responseCartLineItemsGiftCertificates = {
     /**
      * Value must be between 1.00 and 1,000.00 in the storeʼs default currency.
@@ -17,7 +16,7 @@ export type responseCartLineItemsGiftCertificates = {
     /**
      * Whether or not the gift certificate is taxable.
      */
-    isTaxable?: boolean;
+    taxable?: boolean;
     /**
      * Message that will be sent to the gift certificate's recipient. Limited to 200 characters.
      */
@@ -32,5 +31,17 @@ export type responseCartLineItemsGiftCertificates = {
      * Currently supports `Birthday`, `Boy`, `Celebration`, `Christmas`, `General`, and `Girl`.
      */
     theme: string;
+    /**
+     * The type of line item.
+     */
+    type?: responseCartLineItemsGiftCertificates.type;
 };
+export namespace responseCartLineItemsGiftCertificates {
+    /**
+     * The type of line item.
+     */
+    export enum type {
+        GIFT_CERTIFICATE = 'giftCertificate',
+    }
+}
 

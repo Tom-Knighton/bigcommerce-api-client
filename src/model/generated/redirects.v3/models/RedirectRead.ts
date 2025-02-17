@@ -1,9 +1,8 @@
+/* generated using openapi-typescript-codegen -- do not edit */
 /* istanbul ignore file */
 /* tslint:disable */
 /* eslint-disable */
-
 import type { RedirectTo } from './RedirectTo';
-
 /**
  * Full detail of a Redirect, optionally including the full destination URL.
  */

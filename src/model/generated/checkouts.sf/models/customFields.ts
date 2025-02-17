@@ -1,7 +1,7 @@
+/* generated using openapi-typescript-codegen -- do not edit */
 /* istanbul ignore file */
 /* tslint:disable */
 /* eslint-disable */
-
 /**
  * When doing a PUT or POST to the `fieldValue` with a pick list, the input must be a number. The response will be a string.
  */

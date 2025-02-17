@@ -1,8 +1,8 @@
+/* generated using openapi-typescript-codegen -- do not edit */
 /* istanbul ignore file */
 /* tslint:disable */
 /* eslint-disable */
-
-export type ItemPhysical = ({
+export type ItemPhysical = {
     /**
      * The line-item ID.
      */
@@ -141,12 +141,5 @@ export type ItemPhysical = ({
          */
         valueId?: number;
     }>;
-} & {
-    is_require_shipping?: boolean;
-    gift_wrapping?: {
-        name?: string;
-        message?: string;
-        amount?: number;
-    };
-});
+};
 

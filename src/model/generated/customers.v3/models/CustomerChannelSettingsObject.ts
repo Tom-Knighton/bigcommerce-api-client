@@ -1,7 +1,7 @@
+/* generated using openapi-typescript-codegen -- do not edit */
 /* istanbul ignore file */
 /* tslint:disable */
 /* eslint-disable */
-
 export type CustomerChannelSettingsObject = {
     /**
      * Controls the privacy settings.
@@ -12,7 +12,7 @@ export type CustomerChannelSettingsObject = {
          */
         ask_shopper_for_tracking_consent?: boolean;
         /**
-         * The URL for a website's privacy policy.
+         * The URL for a websiteʼs privacy policy.
          */
         policy_url?: string;
     };

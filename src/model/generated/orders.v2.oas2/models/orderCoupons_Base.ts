@@ -1,7 +1,7 @@
+/* generated using openapi-typescript-codegen -- do not edit */
 /* istanbul ignore file */
 /* tslint:disable */
 /* eslint-disable */
-
 export type orderCoupons_Base = {
     /**
      * Numeric ID of the coupon code.
@@ -20,7 +20,7 @@ export type orderCoupons_Base = {
      */
     code?: string | null;
     /**
-     * Amount of the discount. This information is returned as in integer. Dollar and percentage discounts will return the same. For example, $3 returns as '3' while 5% will return as 5. Check the discount type to see what type of discount is available.
+     * Amount of the discount. This information is returned as in integer. Dollar and percentage discounts will return the same. For example, $3 returns as `3` while 5% will return as `5`. Check the discount type to see what type of discount is available.
      */
     amount?: (string | number);
     /**
@@ -38,9 +38,7 @@ export type orderCoupons_Base = {
      */
     discount?: number;
 };
-
 export namespace orderCoupons_Base {
-
     /**
      * 0: per_item_discount
      * 1: percentage_discount
@@ -57,7 +55,5 @@ export namespace orderCoupons_Base {
         '_4' = 4,
         '_5' = 5,
     }
-
-
 }
 

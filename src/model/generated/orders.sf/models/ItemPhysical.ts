@@ -1,9 +1,8 @@
+/* generated using openapi-typescript-codegen -- do not edit */
 /* istanbul ignore file */
 /* tslint:disable */
 /* eslint-disable */
-
 import type { GiftWrapping } from './GiftWrapping';
-
 export type ItemPhysical = {
     /**
      * The line-item ID.
@@ -38,6 +37,10 @@ export type ItemPhysical = {
      */
     quantity: number;
     /**
+     * The product's brand.
+     */
+    brand?: string;
+    /**
      * Whether the item is taxable.
      */
     isTaxable?: boolean;
@@ -58,7 +61,7 @@ export type ItemPhysical = {
      */
     couponAmount?: number;
     /**
-     * The itemʼs list price, as quoted by the manufacturer/distributor.
+     * The net item price before discounts and coupons. BigCommerce derives an item's list price from the product default price or, if applicable, the sale price configured in the admin panel.
      */
     listPrice?: number;
     /**
@@ -74,7 +77,7 @@ export type ItemPhysical = {
      */
     extendedSalePrice?: number;
     /**
-     * the product type - physical or digital
+     * the product type - physical or digital.
      */
     type?: string;
     /**

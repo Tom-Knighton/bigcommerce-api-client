@@ -1,7 +1,7 @@
+/* generated using openapi-typescript-codegen -- do not edit */
 /* istanbul ignore file */
 /* tslint:disable */
 /* eslint-disable */
-
 /**
  * Common Subscriber properties.
  */
@@ -35,5 +35,9 @@ export type subscriber_Base = {
      * The channel ID where the subscriber was created.
      */
     channel_id?: number;
+    /**
+     * Shows the active subscriptions a shopper may have. If the consents array is empty, the user has unsubscribed or didn’t enable the newsletter subscription checkbox during checkout. The array will contain consent types like 'marketing_newsletter' and 'abandoned_cart'.
+     */
+    consents?: Array<'marketing_newsletter' | 'abandoned_cart'>;
 };
 

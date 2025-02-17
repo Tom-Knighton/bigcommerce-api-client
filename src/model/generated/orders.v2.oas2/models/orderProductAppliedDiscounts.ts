@@ -1,7 +1,7 @@
+/* generated using openapi-typescript-codegen -- do not edit */
 /* istanbul ignore file */
 /* tslint:disable */
 /* eslint-disable */
-
 /**
  * When applying a manual discount to an order (not a product level discount), the discount is distributed across products in proportion to the products price.
  * `(total_manual_discount*price_ex_tax)/subtotal_ex_tax`
@@ -30,9 +30,7 @@ export type orderProductAppliedDiscounts = {
      */
     target?: orderProductAppliedDiscounts.target;
 };
-
 export namespace orderProductAppliedDiscounts {
-
     /**
      * Determines if the discount if discount was applied at the Order or Product level. Read Only.
      */
@@ -40,7 +38,5 @@ export namespace orderProductAppliedDiscounts {
         ORDER = 'order',
         PRODUCT = 'product',
     }
-
-
 }
 

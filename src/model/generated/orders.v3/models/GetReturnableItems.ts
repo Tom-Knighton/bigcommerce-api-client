@@ -1,9 +1,8 @@
+/* generated using openapi-typescript-codegen -- do not edit */
 /* istanbul ignore file */
 /* tslint:disable */
 /* eslint-disable */
-
 import type { ItemReferenceId } from './ItemReferenceId';
-
 export type GetReturnableItems = Array<{
     reference_id?: ItemReferenceId;
     /**

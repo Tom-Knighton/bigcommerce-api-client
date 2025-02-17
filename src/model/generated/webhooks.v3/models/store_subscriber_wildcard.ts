@@ -1,9 +1,9 @@
+/* generated using openapi-typescript-codegen -- do not edit */
 /* istanbul ignore file */
 /* tslint:disable */
 /* eslint-disable */
-
 /**
- * Subscribe to all `store/subscriber` events
+ * Fires for all `store/subscriber` events.
  */
 export type store_subscriber_wildcard = {
 };

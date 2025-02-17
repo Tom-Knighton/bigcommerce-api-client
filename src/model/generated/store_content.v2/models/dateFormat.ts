@@ -1,7 +1,7 @@
+/* generated using openapi-typescript-codegen -- do not edit */
 /* istanbul ignore file */
 /* tslint:disable */
 /* eslint-disable */
-
 export type dateFormat = {
     /**
      * A string that defines dates’ display formats, in the pattern: M jS Y

@@ -1,7 +1,7 @@
+/* generated using openapi-typescript-codegen -- do not edit */
 /* istanbul ignore file */
 /* tslint:disable */
 /* eslint-disable */
-
 /**
  * Common Metafield properties.
  *
@@ -9,16 +9,17 @@
 export type MetafieldBase = {
     /**
      * Determines the visibility and writeability of the field by other API consumers.
+     *
      * | Value | Description |
      * | :--- | :--- |
      * | `app_only` | Private to the app that owns the field. |
      * | `read` | Visible to other API consumers. |
      * | `write` | Open for reading and writing by other API consumers. |
-     * | `read_and_sf_access` | Visible to other API consumers, including on storefront. |
-     * | `write_and_sf_access` | Open for reading and writing by other API consumers, including on storefront. |
+     * | `read_and_sf_access` | Visible to other API consumers, including on the storefront. |
+     * | `write_and_sf_access` | Open for reading and writing by other API consumers, including on the storefront. |
      *
      */
-    permission_set: MetafieldBase.permission_set;
+    permission_set?: MetafieldBase.permission_set;
     /**
      * Namespace for the metafield, for organizational purposes.
      *
@@ -50,18 +51,17 @@ export type MetafieldBase = {
      */
     readonly resource_id?: string;
 };
-
 export namespace MetafieldBase {
-
     /**
      * Determines the visibility and writeability of the field by other API consumers.
+     *
      * | Value | Description |
      * | :--- | :--- |
      * | `app_only` | Private to the app that owns the field. |
      * | `read` | Visible to other API consumers. |
      * | `write` | Open for reading and writing by other API consumers. |
-     * | `read_and_sf_access` | Visible to other API consumers, including on storefront. |
-     * | `write_and_sf_access` | Open for reading and writing by other API consumers, including on storefront. |
+     * | `read_and_sf_access` | Visible to other API consumers, including on the storefront. |
+     * | `write_and_sf_access` | Open for reading and writing by other API consumers, including on the storefront. |
      *
      */
     export enum permission_set {
@@ -71,7 +71,6 @@ export namespace MetafieldBase {
         READ_AND_SF_ACCESS = 'read_and_sf_access',
         WRITE_AND_SF_ACCESS = 'write_and_sf_access',
     }
-
     /**
      * The type of resource with which the metafield is associated.
      *
@@ -83,7 +82,5 @@ export namespace MetafieldBase {
         CATEGORY = 'category',
         CART = 'cart',
     }
-
-
 }
 

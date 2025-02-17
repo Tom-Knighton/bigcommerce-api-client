@@ -1,7 +1,7 @@
+/* generated using openapi-typescript-codegen -- do not edit */
 /* istanbul ignore file */
 /* tslint:disable */
 /* eslint-disable */
-
 export type StorefrontProductSettings = {
     /**
      * Determines the visibility of the product price.
@@ -14,22 +14,22 @@ export type StorefrontProductSettings = {
      */
     show_product_sku?: boolean;
     /**
-     * Determines the visibility of the product's weight.
+     * Determines the visibility of the productʼs weight.
      *
      */
     show_product_weight?: boolean;
     /**
-     * Determines the visibility of the product's brand.
+     * Determines the visibility of the productʼs brand.
      *
      */
     show_product_brand?: boolean;
     /**
-     * Determines the visibility of the product's shipping option.
+     * Determines the visibility of the productʼs shipping option.
      *
      */
     show_product_shipping?: boolean;
     /**
-     * Determines the visibility of the product's rating.
+     * Determines the visibility of the productʼs rating.
      *
      */
     show_product_rating?: boolean;
@@ -39,7 +39,7 @@ export type StorefrontProductSettings = {
      */
     show_add_to_cart_link?: boolean;
     /**
-     * The product's pre-order message. If undefined, the message defaults to the storewide setting.
+     * The productʼs pre-order message. If undefined, the message defaults to the storewide setting.
      *
      */
     default_preorder_message?: string;
@@ -50,7 +50,7 @@ export type StorefrontProductSettings = {
      */
     show_add_to_cart_qty_box?: boolean;
     /**
-     * Determines the visibilty of the Add to Wishlist setting.
+     * Determines the visibility of the Add to Wishlist setting.
      *
      */
     show_add_to_wishlist?: boolean;
@@ -60,14 +60,10 @@ export type StorefrontProductSettings = {
      */
     hide_price_from_guests?: boolean;
 };
-
 export namespace StorefrontProductSettings {
-
     export enum show_breadcrumbs_product_pages {
         SHOW_ONE = 'show_one',
         SHOW_NONE = 'show_none',
     }
-
-
 }
 

@@ -1,7 +1,7 @@
+/* generated using openapi-typescript-codegen -- do not edit */
 /* istanbul ignore file */
 /* tslint:disable */
 /* eslint-disable */
-
 /**
  * A gift-certificate model.
  */
@@ -32,9 +32,7 @@ export type GiftCertificate = {
      */
     status?: GiftCertificate.status;
 };
-
 export namespace GiftCertificate {
-
     /**
      * The status of a gift certificate: `active` - gift certificate is active; `pending` - gift certificate purchase is pending; `disabled` - gift certificate is disabled; `expired` - gift certificate is expired.
      *
@@ -45,7 +43,5 @@ export namespace GiftCertificate {
         DISABLED = 'disabled',
         EXPIRED = 'expired',
     }
-
-
 }
 

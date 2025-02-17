@@ -1,9 +1,8 @@
+/* generated using openapi-typescript-codegen -- do not edit */
 /* istanbul ignore file */
 /* tslint:disable */
 /* eslint-disable */
-
 import type { widgetTemplate_Base } from './widgetTemplate_Base';
-
 export type widgetTemplate_Put = (widgetTemplate_Base & {
     /**
      * Can be added to create a new widget template version instead of updating the current one.

@@ -1,7 +1,7 @@
+/* generated using openapi-typescript-codegen -- do not edit */
 /* istanbul ignore file */
 /* tslint:disable */
 /* eslint-disable */
-
 export type placement_Base = {
     /**
      * The identifier of a page you would like to target. For product pages, choose product ID. For category pages, choose category ID. Home page does not support `entity_id`.
@@ -20,9 +20,7 @@ export type placement_Base = {
      */
     status?: placement_Base.status;
 };
-
 export namespace placement_Base {
-
     /**
      * Sets the placement as either inactive or active.
      */
@@ -30,7 +28,5 @@ export namespace placement_Base {
         INACTIVE = 'inactive',
         ACTIVE = 'active',
     }
-
-
 }
 

@@ -1,9 +1,8 @@
+/* generated using openapi-typescript-codegen -- do not edit */
 /* istanbul ignore file */
 /* tslint:disable */
 /* eslint-disable */
-
 import type { formFieldValue } from './formFieldValue';
-
 export type address_Post = {
     /**
      * The first name of the customer address.
@@ -32,11 +31,11 @@ export type address_Post = {
     /**
      * The state or province name spelled out in full. It is required for countries that need a state/province to complete an address. State or province codes not accepted.
      */
-    state_or_province?: string;
+    state_or_province: string;
     /**
      * The postal code of the customer address. It is required for countries that need postal codes to complete an address.
      */
-    postal_code?: string;
+    postal_code: string;
     /**
      * The country code of the customer address.
      */
@@ -59,9 +58,7 @@ export type address_Post = {
      */
     form_fields?: Array<formFieldValue>;
 };
-
 export namespace address_Post {
-
     /**
      * The address type. Residential or Commercial.
      */
@@ -69,7 +66,5 @@ export namespace address_Post {
         RESIDENTIAL = 'residential',
         COMMERCIAL = 'commercial',
     }
-
-
 }
 

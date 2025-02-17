@@ -1,12 +1,11 @@
+/* generated using openapi-typescript-codegen -- do not edit */
 /* istanbul ignore file */
 /* tslint:disable */
 /* eslint-disable */
-
 import type { giftCertificate_Base } from './giftCertificate_Base';
-
 export type giftCertificate_Full = (giftCertificate_Base & {
     /**
-     * The ID of the gift certificate.This is a READ-ONLY field; do not set or modify its value in a POST or PUT request.
+     * The ID of the gift certificate. This is a READ-ONLY field; do not set or modify its value in a POST or PUT request.
      */
     id?: number;
     /**
@@ -22,11 +21,11 @@ export type giftCertificate_Full = (giftCertificate_Base & {
      */
     balance?: string;
     /**
-     * Date the gift certificate was purchased. If not assigned, this will be set to today’s date. Date displays in the [RFC 2822](https://www.rfc-editor.org/rfc/rfc2822#section-3.3) timestamp format.
+     * Date the gift certificate was purchased. If not assigned, this will be set to today’s date. Date displays in the Unix timestamp format.
      */
     purchase_date?: Date;
     /**
-     * Date on which the gift certificate is set to expire. Date displays in the [RFC 2822](https://www.rfc-editor.org/rfc/rfc2822#section-3.3) timestamp format.
+     * Date on which the gift certificate is set to expire. Date displays in the Unix timestamp format.
      */
     expiry_date?: Date;
     /**
@@ -43,29 +42,30 @@ export type giftCertificate_Full = (giftCertificate_Base & {
      */
     code?: string;
     status?: giftCertificate_Full.status;
+    /**
+     * A currency code, following the ISO 4217 standard. The currency has to exist in the store first.
+     *
+     * Gift Certificates can only be used if the transactional currency of the cart is the same as the one defined in the gift certificate. If this value is not provided, the gift certificate is created using the store's default transactional currency.
+     */
+    currency_code?: string;
 });
-
 export namespace giftCertificate_Full {
-
     /**
      * The email theme to use in the message sent to the recipient.
      */
     export enum template {
-        BIRTHDAY = 'Birthday',
-        GIRL = 'Girl',
-        BOY = 'Boy',
-        CELEBRATION = 'Celebration',
-        CHRISTMAS = 'Christmas',
-        GENERAL = 'General',
+        BIRTHDAY_HTML = 'birthday.html',
+        GIRL_HTML = 'girl.html',
+        BOY_HTML = 'boy.html',
+        CELEBRATION_HTML = 'celebration.html',
+        CHRISTMAS_HTML = 'christmas.html',
+        GENERAL_HTML = 'general.html',
     }
-
     export enum status {
         ACTIVE = 'active',
         PENDING = 'pending',
         DISABLED = 'disabled',
         EXPIRED = 'expired',
     }
-
-
 }
 

@@ -1,7 +1,7 @@
+/* generated using openapi-typescript-codegen -- do not edit */
 /* istanbul ignore file */
 /* tslint:disable */
 /* eslint-disable */
-
 export type billingAddress_Full = {
     first_name?: string;
     last_name?: string;
@@ -17,11 +17,11 @@ export type billingAddress_Full = {
     email?: string;
     form_fields?: Array<{
         /**
-         * Name of the form field
+         * Name of the form field.
          */
         name?: string;
         /**
-         * Value of the form field
+         * Value of the form field.
          */
         value?: string;
     }>;

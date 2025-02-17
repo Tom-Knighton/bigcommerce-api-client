@@ -1,7 +1,7 @@
+/* generated using openapi-typescript-codegen -- do not edit */
 /* istanbul ignore file */
 /* tslint:disable */
 /* eslint-disable */
-
 /**
  * The response received back from the Shipping Provider connection check. This allows the store to understand whether the connection was successful.
  */

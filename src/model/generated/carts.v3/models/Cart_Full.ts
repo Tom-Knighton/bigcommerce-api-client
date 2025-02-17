@@ -1,10 +1,9 @@
+/* generated using openapi-typescript-codegen -- do not edit */
 /* istanbul ignore file */
 /* tslint:disable */
 /* eslint-disable */
-
 import type { AppliedCoupon } from './AppliedCoupon';
 import type { LineItemsGet } from './LineItemsGet';
-
 /**
  * A cart contains a collection of items, prices, discounts, etc. It does not contain customer-related data.
  */
@@ -14,13 +13,13 @@ export type Cart_Full = {
      */
     id?: string;
     /**
-     * Bundled items will have the ID of their parent item.
-     */
-    parent_id?: string;
-    /**
      * ID of the customer to which the cart belongs.
      */
     customer_id?: number;
+    /**
+     * The channel ID. If no channel is specified, defaults to 1.
+     */
+    channel_id?: number;
     /**
      * The cart’s email. This is the same email that is used in the billing address.
      */
@@ -43,6 +42,10 @@ export type Cart_Full = {
      * Order-based discounted amount only - Excludes coupon discounts and product-based discounts.
      */
     discount_amount?: number;
+    /**
+     * The entered value represents the order level manual discount.
+     */
+    manual_discount_amount?: number;
     /**
      * Sum of cart line-item amounts minus cart-level discounts and coupons. This amount includes taxes (where applicable).
      */
@@ -67,10 +70,6 @@ export type Cart_Full = {
      * Time when the cart was last updated.
      */
     updated_time?: Date;
-    /**
-     * The channel ID. If no channel is specified, defaults to 1.
-     */
-    channel_id?: number;
     /**
      * Locale of the cart. Accepts strings of format `xx` or `xx-YY`. Uses the [ISO-639 standard](https://www.iso.org/iso-639-language-codes.html) format.
      */
@@ -98,5 +97,9 @@ export type Cart_Full = {
             text?: string;
         };
     };
+    /**
+     * The current version of the cart increments with each successful update. You can use it to enable optimistic concurrency control for subsequent updates.
+     */
+    version?: number;
 };
 

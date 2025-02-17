@@ -1,15 +1,13 @@
+/* generated using openapi-typescript-codegen -- do not edit */
 /* istanbul ignore file */
 /* tslint:disable */
 /* eslint-disable */
-
-export type TokenPostImpersonation = {
+import type { Channel } from './Channel';
+import type { Channels } from './Channels';
+export type TokenPostImpersonation = ({
     /**
-     * Channel ID for requested token
-     */
-    channel_id: number;
-    /**
-     * Unix timestamp (UTC time) defining when the token should expire.
+     * Unix timestamp (UTC time) defining when the token should expire. Supports seconds, but does not support milliseconds, microseconds, or nanoseconds.
      */
     expires_at: number;
-};
+} & (Channels | Channel));
 

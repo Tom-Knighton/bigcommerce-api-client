@@ -1,9 +1,8 @@
+/* generated using openapi-typescript-codegen -- do not edit */
 /* istanbul ignore file */
 /* tslint:disable */
 /* eslint-disable */
-
 import type { address_Base } from './address_Base';
-
 export type address_Full = (address_Base & {
     id?: string;
     /**

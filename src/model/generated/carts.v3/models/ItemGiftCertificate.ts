@@ -1,7 +1,7 @@
+/* generated using openapi-typescript-codegen -- do not edit */
 /* istanbul ignore file */
 /* tslint:disable */
 /* eslint-disable */
-
 export type ItemGiftCertificate = {
     id?: string;
     /**
@@ -30,21 +30,17 @@ export type ItemGiftCertificate = {
      */
     message?: string;
 };
-
 export namespace ItemGiftCertificate {
-
     /**
      * The theme of the gift certificate.
      */
     export enum theme {
-        BIRTHDAY = 'Birthday',
-        BOY = 'Boy',
-        CELEBRATION = 'Celebration',
-        CHRISTMAS = 'Christmas',
-        GENERAL = 'General',
-        GIRL = 'Girl',
+        BIRTHDAY_HTML = 'birthday.html',
+        BOY_HTML = 'boy.html',
+        CELEBRATION_HTML = 'celebration.html',
+        CHRISTMAS_HTML = 'christmas.html',
+        GENERAL_HTML = 'general.html',
+        GIRL_HTML = 'girl.html',
     }
-
-
 }
 

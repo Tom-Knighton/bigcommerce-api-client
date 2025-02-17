@@ -1,11 +1,10 @@
+/* generated using openapi-typescript-codegen -- do not edit */
 /* istanbul ignore file */
 /* tslint:disable */
 /* eslint-disable */
-
 import type { formFields } from './formFields';
 import type { shippingAddress_Base } from './shippingAddress_Base';
 import type { shippingQuotes_Resource } from './shippingQuotes_Resource';
-
 export type orderShippingAddress = ({
     /**
      * ID of this shipping address.
@@ -44,15 +43,15 @@ export type orderShippingAddress = ({
      */
     cost_tax_class_id?: number;
     /**
-     * The base handling charge. (Float, Float-As-String, Integer)
+     * The base handling charge. The value can't be negative. (Float, Float-As-String, Integer)
      */
     base_handling_cost?: string;
     /**
-     * The handling charge, excluding tax. (Float, Float-As-String, Integer)
+     * The handling charge, excluding tax. The value can't be negative. (Float, Float-As-String, Integer)
      */
     handling_cost_ex_tax?: string;
     /**
-     * The handling charge, including tax. (Float, Float-As-String, Integer)
+     * The handling charge, including tax. The value can't be negative. (Float, Float-As-String, Integer)
      */
     handling_cost_inc_tax?: string;
     handling_cost_tax?: string;
@@ -70,5 +69,10 @@ export type orderShippingAddress = ({
     shipping_zone_name?: string;
     form_fields?: Array<formFields>;
     shipping_quotes?: shippingQuotes_Resource;
-} & shippingAddress_Base);
+} & shippingAddress_Base & {
+    /**
+     * Text code identifying the BigCommerce shipping module selected by the customer.
+     */
+    shipping_method?: string;
+});
 

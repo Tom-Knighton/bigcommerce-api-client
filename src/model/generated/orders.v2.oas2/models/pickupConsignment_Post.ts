@@ -1,11 +1,10 @@
+/* generated using openapi-typescript-codegen -- do not edit */
 /* istanbul ignore file */
 /* tslint:disable */
 /* eslint-disable */
-
 import type { orderProduct_Post } from './orderProduct_Post';
 import type { pickupConsignment_Base } from './pickupConsignment_Base';
 import type { pickupConsignmentLocation_Post } from './pickupConsignmentLocation_Post';
-
 export type pickupConsignment_Post = ({
     /**
      * ID of the pickup method.

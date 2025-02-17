@@ -1,7 +1,7 @@
+/* generated using openapi-typescript-codegen -- do not edit */
 /* istanbul ignore file */
 /* tslint:disable */
 /* eslint-disable */
-
 export type CheckoutCoupon = {
     /**
      * The coupon ID.
@@ -12,7 +12,7 @@ export type CheckoutCoupon = {
      */
     code: string;
     /**
-     * The coupon title based on different types provided in control panel section.
+     * The coupon name displayed on the storefront.
      */
     displayName?: string;
     /**

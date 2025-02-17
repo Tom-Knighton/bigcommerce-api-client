@@ -1,9 +1,8 @@
+/* generated using openapi-typescript-codegen -- do not edit */
 /* istanbul ignore file */
 /* tslint:disable */
 /* eslint-disable */
-
 import type { Amount } from './Amount';
-
 /**
  * Merchant explicitly provided override based on their own calculation.
  *

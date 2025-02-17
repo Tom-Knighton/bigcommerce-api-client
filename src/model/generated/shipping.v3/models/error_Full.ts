@@ -1,10 +1,5 @@
+/* generated using openapi-typescript-codegen -- do not edit */
 /* istanbul ignore file */
 /* tslint:disable */
 /* eslint-disable */
-
-/**
- * Meta data relating to pagination
- */
-export type error_Full = {
-};
-
+export type error_Full = Record<string, any>;

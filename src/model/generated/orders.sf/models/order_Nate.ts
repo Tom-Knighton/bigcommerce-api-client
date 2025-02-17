@@ -1,7 +1,7 @@
+/* generated using openapi-typescript-codegen -- do not edit */
 /* istanbul ignore file */
 /* tslint:disable */
 /* eslint-disable */
-
 export type order_Nate = {
     orderId?: number;
     cartId?: string;
@@ -31,6 +31,10 @@ export type order_Nate = {
             imageUrl?: string;
             discounts?: Array<any>;
             discountAmount?: number;
+            /**
+             * The product's brand.
+             */
+            brand?: string;
             listPrice?: number;
             salePrice?: number;
             extendedListPrice?: number;

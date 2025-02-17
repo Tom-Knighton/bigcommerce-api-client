@@ -1,12 +1,16 @@
+/* generated using openapi-typescript-codegen -- do not edit */
 /* istanbul ignore file */
 /* tslint:disable */
 /* eslint-disable */
-
 /**
  * The response from the Shipping Service. Contains zero or more quotes.
  */
 export type RateResponsePayload = {
     quote_id: string;
+    /**
+     * Time-to-live (TTL) in seconds
+     */
+    ttl?: number;
     messages: Array<{
         text: string;
         type: 'INFO' | 'WARNING' | 'ERROR';
@@ -39,12 +43,15 @@ export type RateResponsePayload = {
             description?: string;
             rate_id?: string;
             /**
-             * Value object for a money amount.
+             * Value object for a money amount. Optional field; merchants may request features.
              */
             discounted_cost?: {
                 currency: string;
                 amount: number;
             };
+            /**
+             * Date at which carrier dispatches to the shipping destination. Optional field; merchants may request features.
+             */
             dispatch_date?: Date;
             /**
              * Value object for the length of time in transit.

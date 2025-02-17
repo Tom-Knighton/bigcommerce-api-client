@@ -1,81 +1,146 @@
+/* generated using openapi-typescript-codegen -- do not edit */
 /* istanbul ignore file */
 /* tslint:disable */
 /* eslint-disable */
-
 import type { CartCoupon } from './CartCoupon';
-
+import type { lineItemPhysicalDigital } from './lineItemPhysicalDigital';
 /**
  * A cart contains a collection of items, prices, discounts, etc. It does not contain customer-related data.
  */
 export type checkoutCart = {
     /**
-     * Cart ID, provided after creating a cart with a POST.
+     * Cost of cart’s contents, before applying discounts.
      */
-    id?: string;
+    baseAmount?: number;
     /**
-     * ID of the customer to which the cart belongs.
+     * Sum of line-items amounts, minus cart-level discounts and coupons. This amount includes taxes, where applicable.
      */
-    customer_id?: number;
+    cartAmount?: number;
     /**
-     * The cartʼs email. This is the same email that is used in the billing address.
+     * Time when the cart was created.
      */
-    email?: string;
+    createdTime?: string;
+    coupons?: Array<CartCoupon>;
     /**
      * The currency in which prices are displayed; the store default currency.
      */
     currency?: {
         /**
-         * The currency name.
-         */
-        name?: string;
-        /**
-         * ISO-4217 currency code. (See: http://en.wikipedia.org/wiki/ISO_4217.)
+         * ISO-4217 currency code. (See: https://www.iso.org/iso-4217-currency-codes.html.)
          */
         code?: string;
-        /**
-         * The currency symbol.
-         */
-        symbol?: string;
         /**
          * The number of decimal places for the currency. For example, the USD currency has two decimal places.
          */
         decimalPlaces?: number;
-    };
-    /**
-     * Boolean representing whether tax information is included.
-     */
-    isTaxIncluded?: boolean;
-    /**
-     * Cost of cart’s contents, before applying discounts.
-     */
-    baseAmount?: number;
-    /**
-     * Discounted amount.
-     */
-    discountAmount?: number;
-    /**
-     * Sum of line-items amounts, minus cart-level discounts and coupons. This amount includes taxes, where applicable.
-     */
-    cartAmount?: number;
-    coupons?: Array<CartCoupon>;
-    discounts?: Array<{
         /**
-         * The name provided by the merchant.
+         * The currency name.
          */
         name?: string;
+        /**
+         * The currency symbol.
+         */
+        symbol?: string;
+    };
+    /**
+     * ID of the customer to which the cart belongs.
+     */
+    customerId?: number;
+    /**
+     * Order-based discounted amount only - Excludes coupon discounts and product-based discounts.
+     */
+    discountAmount?: number;
+    discounts?: Array<{
+        /**
+         * Discount ID.
+         */
+        id?: number;
         /**
          * The discounted amount applied within a given context.
          */
         discountedAmount?: number;
     }>;
-    lineItems?: any;
     /**
-     * Time when the cart was created.
+     * The cartʼs email. This is the same email that is used in the billing address.
      */
-    createdTime?: string;
+    email?: string;
+    /**
+     * Cart ID, provided after creating a cart with a POST.
+     */
+    id?: string;
+    /**
+     * Boolean representing whether tax information is included.
+     */
+    isTaxIncluded?: boolean;
+    lineItems?: {
+        customItems?: Array<{
+            /**
+             * ID of the custom item.
+             */
+            id?: string;
+            /**
+             * The net item price before discounts and coupons. BigCommerce derives an item's list price from the product default price or, if applicable, the sale price configured in the admin panel.
+             */
+            listPrice?: string;
+            /**
+             * Item name.
+             */
+            name?: string;
+            quantity?: string;
+            /**
+             * Custom item SKU.
+             */
+            sku?: string;
+        }>;
+        digitalItems: Array<lineItemPhysicalDigital>;
+        giftCertificates?: Array<{
+            /**
+             * Value must be between $1.00 and $1,000.00.
+             */
+            amount: number;
+            /**
+             * Gift certificate identifier
+             */
+            id?: string;
+            /**
+             * Limited to 200 characters.
+             */
+            message?: string;
+            /**
+             * The name of the purchased gift certificate; for example, `$20 Gift Certificate`.
+             */
+            name?: string;
+            recipient: {
+                name?: string;
+                email?: string;
+            };
+            sender: {
+                name?: string;
+                email?: string;
+            };
+            taxable?: boolean;
+            /**
+             * Currently supports `Birthday`, `Boy`, `Celebration`, `Christmas`, `General`, and `Girl`.
+             */
+            theme: string;
+            /**
+             * Explicitly specifying the gift certificate type.
+             */
+            type?: string;
+        }>;
+        physicalItems: Array<lineItemPhysicalDigital>;
+    };
+    /**
+     * Shopper's locale.
+     */
+    locale?: string;
     /**
      * Time when the cart was last updated.
      */
     updatedTime?: string;
+    /**
+     * Cart version.
+     */
+    version?: number;
 };
 

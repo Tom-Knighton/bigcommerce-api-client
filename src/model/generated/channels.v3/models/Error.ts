@@ -1,23 +1,28 @@
+/* generated using openapi-typescript-codegen -- do not edit */
 /* istanbul ignore file */
 /* tslint:disable */
 /* eslint-disable */
-
+import type { ErrorDetail } from './ErrorDetail';
+/**
+ * Error response payload for the BigCommerce API.
+ *
+ */
 export type Error = {
     /**
-     * The HTTP status code.
+     * The HTTP status code for the error.
+     *
      */
     status?: number;
     /**
      * The error title describing the particular error.
+     *
      */
     title?: string;
     /**
-     * Link to a list of BigCommerce API status codes.
+     * The error type.
+     *
      */
     type?: string;
-    /**
-     * Provides more details to errors.
-     */
-    errors?: any;
+    errors?: ErrorDetail;
 };
 

@@ -1,9 +1,8 @@
+/* generated using openapi-typescript-codegen -- do not edit */
 /* istanbul ignore file */
 /* tslint:disable */
 /* eslint-disable */
-
 import type { CreditCard } from './CreditCard';
-
 export type Transaction = ({
     /**
      * Store event that created the transaction.
@@ -11,7 +10,7 @@ export type Transaction = ({
      */
     event: Transaction.event;
     /**
-     * The payment method: `credit_card` - a credit-card transaction; `electronic_wallet` - an online wallet; `store_credit` - a transaction using store credit; `gift_certificate` - a transaction using a gift certificate; `custom` - manual payment methods; `token` - payment token; `nonce` - temporary payment token; `offsite` - online payment off the site; `offline` - payment method that takes place offline.
+     * The payment method: `credit_card` - a credit card transaction; `electronic_wallet` - an online wallet; `store_credit` - a transaction using store credit; `gift_certificate` - a transaction using a gift certificate; `custom` - manual payment methods; `token` - payment token; `nonce` - temporary payment token; `offsite` - online payment off the site; `offline` - payment method that takes place offline.
      *
      */
     method: Transaction.method;
@@ -35,11 +34,6 @@ export type Transaction = ({
      *
      */
     gateway_transaction_id?: string;
-    /**
-     * The date/time of the transaction.
-     *
-     */
-    date_created?: Date;
     /**
      * True if the transaction performed was a test, or if the gateway is in test mode.
      *
@@ -69,7 +63,7 @@ export type Transaction = ({
          *
          */
         display_name?: string;
-    };
+    } | null;
     /**
      * Custom payment from manual order.
      */
@@ -79,7 +73,7 @@ export type Transaction = ({
          *
          */
         payment_method?: string;
-    };
+    } | null;
     /**
      * The payment method ID used for this transaction.
      *
@@ -97,14 +91,14 @@ export type Transaction = ({
      */
     order_id?: string;
     /**
-     * The date/time of the transaction.
+     * The date/time of the transaction in ISO-8601 format.
      *
      */
     date_created?: Date;
     /**
      * This field contains internal BigPay token for stored card that is then mapped to the actual third-party token. We currently do not offer a way to get third party tokens.These tokens are read-only and do not return any information about the payment.
      */
-    payment_instrument_token?: string;
+    payment_instrument_token?: string | null;
     /**
      * Address Verification Service (AVS) result from the payment gateway.
      */
@@ -169,22 +163,45 @@ export type Transaction = ({
          *
          */
         status?: Transaction.status;
-    };
+    } | null;
     /**
      * A store credit model.
      *
      */
     store_credit?: {
         /**
-         * Remaining balance of shopper's store credit.
+         * Remaining balance of shopperʼs store credit.
          *
          */
         remaining_balance?: number;
-    };
+    } | null;
+    /**
+     * Fields for custom payment providers.
+     */
+    custom_provider_field_result?: {
+        /**
+         * The receipt number associated with the transaction.
+         *
+         */
+        receipt_number?: string | null;
+        /**
+         * Authorization code for the transaction.
+         *
+         */
+        authorization_code?: string | null;
+        /**
+         * The fraud response associated with the transaction.
+         *
+         */
+        fraud_response?: string | null;
+        /**
+         * The amount received for the transaction, divided by 100 to convert to the correct currency format.
+         *
+         */
+        amount_received?: number | null;
+    } | null;
 });
-
 export namespace Transaction {
-
     /**
      * Store event that created the transaction.
      *
@@ -198,9 +215,8 @@ export namespace Transaction {
         PENDING = 'pending',
         SETTLED = 'settled',
     }
-
     /**
-     * The payment method: `credit_card` - a credit-card transaction; `electronic_wallet` - an online wallet; `store_credit` - a transaction using store credit; `gift_certificate` - a transaction using a gift certificate; `custom` - manual payment methods; `token` - payment token; `nonce` - temporary payment token; `offsite` - online payment off the site; `offline` - payment method that takes place offline.
+     * The payment method: `credit_card` - a credit card transaction; `electronic_wallet` - an online wallet; `store_credit` - a transaction using store credit; `gift_certificate` - a transaction using a gift certificate; `custom` - manual payment methods; `token` - payment token; `nonce` - temporary payment token; `offsite` - online payment off the site; `offline` - payment method that takes place offline.
      *
      */
     export enum method {
@@ -217,7 +233,6 @@ export namespace Transaction {
         OFFLINE = 'offline',
         NONCE = 'nonce',
     }
-
     /**
      * The payment gateway, where applicable.
      *
@@ -252,7 +267,6 @@ export namespace Transaction {
         TESTGATEWAY = 'testgateway',
         USAEPAY = 'usaepay',
     }
-
     /**
      * Status of the transaction.
      *
@@ -261,7 +275,5 @@ export namespace Transaction {
         OK = 'ok',
         ERROR = 'error',
     }
-
-
 }
 

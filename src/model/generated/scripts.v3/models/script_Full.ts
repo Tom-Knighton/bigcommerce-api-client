@@ -1,10 +1,13 @@
+/* generated using openapi-typescript-codegen -- do not edit */
 /* istanbul ignore file */
 /* tslint:disable */
 /* eslint-disable */
-
 import type { script_Base } from './script_Base';
-
 export type script_Full = ({
+    /**
+     * The user-friendly name.
+     */
+    name?: string;
     /**
      * The primary identifier.
      */

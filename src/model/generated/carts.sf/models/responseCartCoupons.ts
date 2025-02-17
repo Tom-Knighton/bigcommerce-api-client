@@ -1,7 +1,7 @@
+/* generated using openapi-typescript-codegen -- do not edit */
 /* istanbul ignore file */
 /* tslint:disable */
 /* eslint-disable */
-
 export type responseCartCoupons = Array<{
     /**
      * The coupon code.
@@ -22,6 +22,10 @@ export type responseCartCoupons = Array<{
      * The discounted amount applied within a given context.
      */
     discountedAmount?: number;
+    /**
+     * The coupon name displayed on the storefront.
+     */
+    displayName?: string;
     /**
      * The coupon ID.
      */

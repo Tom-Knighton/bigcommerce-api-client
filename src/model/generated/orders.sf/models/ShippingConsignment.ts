@@ -1,10 +1,9 @@
+/* generated using openapi-typescript-codegen -- do not edit */
 /* istanbul ignore file */
 /* tslint:disable */
 /* eslint-disable */
-
 import type { ConsignmentFormField } from './ConsignmentFormField';
 import type { ConsignmentLineItem } from './ConsignmentLineItem';
-
 /**
  * Shipping consignment
  */

@@ -1,9 +1,9 @@
+/* generated using openapi-typescript-codegen -- do not edit */
 /* istanbul ignore file */
 /* tslint:disable */
 /* eslint-disable */
-
 /**
- * Subscribes to the following events:
+ * Fires for each of the following events:
  * * `store/cart/created`
  * * `store/cart/updated`
  * * `store/cart/deleted`

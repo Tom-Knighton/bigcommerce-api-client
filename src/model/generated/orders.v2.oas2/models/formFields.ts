@@ -1,7 +1,7 @@
+/* generated using openapi-typescript-codegen -- do not edit */
 /* istanbul ignore file */
 /* tslint:disable */
 /* eslint-disable */
-
 export type formFields = {
     /**
      * The form field name.
@@ -10,6 +10,6 @@ export type formFields = {
     /**
      * The form field value.
      */
-    value?: number | string | any[];
+    value?: (number | string);
 };
 

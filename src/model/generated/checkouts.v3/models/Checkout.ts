@@ -1,10 +1,10 @@
+/* generated using openapi-typescript-codegen -- do not edit */
 /* istanbul ignore file */
 /* tslint:disable */
 /* eslint-disable */
-
 import type { AppliedCoupon } from './AppliedCoupon';
+import type { CheckoutFee } from './CheckoutFee';
 import type { PickupOption } from './PickupOption';
-
 export type Checkout = {
     id?: string;
     cart?: {
@@ -22,7 +22,7 @@ export type Checkout = {
         email?: string;
         currency?: {
             /**
-             * ISO-4217 currency code. (See: http://en.wikipedia.org/wiki/ISO_4217.)
+             * ISO-4217 currency code. (See: https://www.iso.org/iso-4217-currency-codes.html.)
              */
             code?: string;
         };
@@ -35,7 +35,7 @@ export type Checkout = {
          */
         channel_id?: number;
         /**
-         * Order-based discounted amount only - Excludes coupon discounts and product-based discounts.
+         * The amount includes order-level automatic promotions plus manual discounts and excludes coupon and product-based discounts.
          */
         discount_amount?: number;
         /**
@@ -63,6 +63,10 @@ export type Checkout = {
              * The discounted amount applied within a given context.
              */
             discounted_amount?: number;
+            /**
+             * The display name of the coupon.
+             */
+            display_name?: string;
         }>;
         discounts?: Array<{
             /**
@@ -96,9 +100,9 @@ export type Checkout = {
                 image_url?: string;
                 discounts?: Array<{
                     /**
-                     * ID of the applied discount.
+                     * The string value is always equal to "manual-discount" regardless of the input.
                      */
-                    id?: number;
+                    id?: (string | number);
                     /**
                      * The discounted amount applied within a given context.
                      */
@@ -132,8 +136,20 @@ export type Checkout = {
                  * Sale price of the item multiplied by the quantity.
                  */
                 extended_sale_price?: number;
+                /**
+                 * The price of a single product used for strike-through.
+                 */
+                comparison_price?: number;
+                /**
+                 * The price of a line item (product * quantity) used for strike-through.
+                 */
+                extended_comparison_price?: number;
                 is_require_shipping?: boolean;
                 is_mutable?: boolean;
+                /**
+                 * Whether or not a promotion added an additional item.
+                 */
+                added_by_promotion?: boolean;
                 parent_id?: number | null;
                 gift_wrapping?: {
                     name?: string;
@@ -162,6 +178,10 @@ export type Checkout = {
                 url?: string;
                 is_mutable?: boolean;
                 is_require_shipping?: boolean;
+                /**
+                 * Whether or not a promotion added an additional item.
+                 */
+                added_by_promotion?: boolean;
                 is_taxable?: boolean;
                 image_url?: string;
                 discounts?: Array<{
@@ -202,6 +222,14 @@ export type Checkout = {
                  * Sale price of the item multiplied by the quantity.
                  */
                 extended_sale_price?: number;
+                /**
+                 * The price of a single product used for strike-through.
+                 */
+                comparison_price?: number;
+                /**
+                 * The price of a line item (product * quantity) used for strike-through.
+                 */
+                extended_comparison_price?: number;
             }>;
             gift_certificates: Array<{
                 /**
@@ -278,7 +306,7 @@ export type Checkout = {
     });
     consignments?: Array<{
         id?: string;
-        shippingAddress?: any;
+        shippingAddress?: Record<string, any>;
         address?: ({
             first_name?: string;
             last_name?: string;
@@ -396,6 +424,10 @@ export type Checkout = {
      * Coupons applied at checkout level.
      */
     coupons?: Array<AppliedCoupon>;
+    /**
+     * Fees applied at the checkout level.
+     */
+    fees?: Array<CheckoutFee>;
     order_id?: string | null;
     /**
      * Shipping cost before any discounts are applied including tax.
@@ -458,5 +490,9 @@ export type Checkout = {
             text?: string;
         }>;
     }>;
+    /**
+     * The current version of the checkout increments with each successful update. You can use it to enable optimistic concurrency control for subsequent updates.
+     */
+    version?: number;
 };
 

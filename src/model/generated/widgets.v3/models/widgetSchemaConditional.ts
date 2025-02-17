@@ -1,13 +1,13 @@
+/* generated using openapi-typescript-codegen -- do not edit */
 /* istanbul ignore file */
 /* tslint:disable */
 /* eslint-disable */
-
 /**
  * An optional property that can be added to each setting to control whether it should be displayed to the user while editing in Page Builder. This does not clear the value in the setting, just controls the display of the setting.
  */
 export type widgetSchemaConditional = {
     /**
-     * The ID of the `setting` object the conditional attribute is related to.
+     * The ID of the `settings` object the conditional attribute is related to. You must define the key within the same settings array as the conditional property to scope the conditional logic to the relevant settings group.
      */
     key?: string;
     /**

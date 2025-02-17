@@ -1,7 +1,7 @@
+/* generated using openapi-typescript-codegen -- do not edit */
 /* istanbul ignore file */
 /* tslint:disable */
 /* eslint-disable */
-
 import type { ChannelConfigMeta } from './ChannelConfigMeta';
 import type { ChannelName } from './ChannelName';
 import type { ChannelPlatform } from './ChannelPlatform';
@@ -10,7 +10,6 @@ import type { ChannelType } from './ChannelType';
 import type { ExternalId } from './ExternalId';
 import type { IsListableFromUI } from './IsListableFromUI';
 import type { IsVisible } from './IsVisible';
-
 export type CreateChannelReq = {
     config_meta?: ChannelConfigMeta;
     external_id?: ExternalId;

@@ -1,23 +1,44 @@
+/* generated using openapi-typescript-codegen -- do not edit */
 /* istanbul ignore file */
 /* tslint:disable */
 /* eslint-disable */
-
 import type { address_Full } from './address_Full';
 import type { consignmentAvailableShippingOptions } from './consignmentAvailableShippingOptions';
 import type { PickupOption } from './PickupOption';
-
 /**
  * This allows us to have multiple shipping addresses. Where there is only one shipping address, this array will contain only one value, with all the items.
  */
 export type consignment_Full = {
-    id?: string;
-    shippingAddress?: any;
     address?: address_Full;
-    selectedPickupOption?: PickupOption;
     /**
      * This is available only when "include=consignments.availableShippingOptions" is present in the URL.
      */
     availableShippingOptions?: Array<consignmentAvailableShippingOptions>;
+    /**
+     * List of consignment discounts applied through coupons.
+     */
+    couponDiscounts?: Array<{
+        amount?: number;
+        /**
+         * Coupon code that applied this discount.
+         */
+        code?: string;
+    }>;
+    /**
+     * List of consignment discounts applied through cart level discounts.
+     */
+    discounts?: Array<{
+        /**
+         * Discount rule ID that applied this discount.
+         */
+        id?: string;
+    }>;
+    /**
+     * The handling cost of shipping for this consignment.
+     */
+    handlingCost?: number;
+    id?: string;
+    selectedPickupOption?: PickupOption;
     selectedShippingOption?: {
         /**
          * Read only.
@@ -40,32 +61,14 @@ export type consignment_Full = {
         readonly additionalDescription?: string;
     };
     /**
-     * List of consignment discounts applied through coupons.
+     * Use the `address` field instead.
+     * @deprecated
      */
-    couponDiscounts?: Array<{
-        /**
-         * Coupon code that applied this discount.
-         */
-        code?: string;
-        amount?: number;
-    }>;
-    /**
-     * List of consignment discounts applied through cart level discounts.
-     */
-    discounts?: Array<{
-        /**
-         * Discount rule ID that applied this discount.
-         */
-        id?: string;
-    }>;
+    shippingAddress?: any;
     /**
      * The shipping cost for this consignment.
      */
     shippingCost?: number;
-    /**
-     * The handling cost of shipping for this consignment.
-     */
-    handlingCost?: number;
     lineItemIds?: Array<string>;
 };
 

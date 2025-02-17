@@ -1,13 +1,12 @@
+/* generated using openapi-typescript-codegen -- do not edit */
 /* istanbul ignore file */
 /* tslint:disable */
 /* eslint-disable */
-
 import type { customerAddresses_CustomerPost } from './customerAddresses_CustomerPost';
 import type { customerAttributes_Base } from './customerAttributes_Base';
 import type { customerAuthentication_PostPut } from './customerAuthentication_PostPut';
 import type { CustomerStoredCreditAmounts } from './CustomerStoredCreditAmounts';
 import type { formFieldValue } from './formFieldValue';
-
 export type customer_Post = {
     /**
      * The email of the customer. Must be unique.
@@ -68,5 +67,9 @@ export type customer_Post = {
      *
      */
     form_fields?: Array<formFieldValue>;
+    /**
+     * Indicates whether to send a customer registered welcome email.
+     */
+    trigger_account_created_notification?: boolean;
 };
 

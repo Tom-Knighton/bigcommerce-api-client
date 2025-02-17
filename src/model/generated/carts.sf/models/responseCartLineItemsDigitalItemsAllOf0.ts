@@ -1,10 +1,9 @@
+/* generated using openapi-typescript-codegen -- do not edit */
 /* istanbul ignore file */
 /* tslint:disable */
 /* eslint-disable */
-
 import type { responseCartLineItemsDigitalItemsAllOf0DiscountsItems } from './responseCartLineItemsDigitalItemsAllOf0DiscountsItems';
 import type { responseCartLineItemsDigitalItemsAllOf0OptionsItems } from './responseCartLineItemsDigitalItemsAllOf0OptionsItems';
-
 export type responseCartLineItemsDigitalItemsAllOf0 = {
     /**
      * The list of selected options for this product.
@@ -43,6 +42,10 @@ export type responseCartLineItemsDigitalItemsAllOf0 = {
      */
     imageUrl?: string;
     /**
+     * Whether or not you can change or remove the item from the cart. Items that are immutable include those added automatically by promotions.
+     */
+    isMutable?: boolean;
+    /**
      * Whether the item is taxable.
      */
     isTaxable?: boolean;
@@ -79,6 +82,10 @@ export type responseCartLineItemsDigitalItemsAllOf0 = {
      */
     sku?: string;
     /**
+     * The type of line item.
+     */
+    type?: responseCartLineItemsDigitalItemsAllOf0.type;
+    /**
      * The product URL.
      */
     url?: string;
@@ -87,4 +94,12 @@ export type responseCartLineItemsDigitalItemsAllOf0 = {
      */
     variantId?: number;
 };
+export namespace responseCartLineItemsDigitalItemsAllOf0 {
+    /**
+     * The type of line item.
+     */
+    export enum type {
+        DIGITAL = 'digital',
+    }
+}
 

@@ -1,9 +1,8 @@
+/* generated using openapi-typescript-codegen -- do not edit */
 /* istanbul ignore file */
 /* tslint:disable */
 /* eslint-disable */
-
 import type { CreateReturnRequestItem } from './CreateReturnRequestItem';
-
 export type CreateReturnRequest = {
     /**
      * A collection of items to be returned.

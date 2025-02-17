@@ -1,11 +1,10 @@
+/* generated using openapi-typescript-codegen -- do not edit */
 /* istanbul ignore file */
 /* tslint:disable */
 /* eslint-disable */
-
 import type { orderProduct_Put } from './orderProduct_Put';
 import type { pickupConsignment_Base } from './pickupConsignment_Base';
 import type { pickupConsignmentLocation_Put } from './pickupConsignmentLocation_Put';
-
 export type pickupConsignment_Put = ({
     /**
      * ID of the pickup consignment to update.

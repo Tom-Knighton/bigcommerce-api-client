@@ -1,7 +1,7 @@
+/* generated using openapi-typescript-codegen -- do not edit */
 /* istanbul ignore file */
 /* tslint:disable */
 /* eslint-disable */
-
 /**
  * Key-value pairs that are commonly used in the following form:
  *
@@ -11,6 +11,4 @@
  *
  * You can also use the `ALL` key in place of an ISO2 key to specify that the `hs_code` applies to all countries. The `ALL` key can be combined with other countries in the `hs_code` object.
  */
-export type harmonizedSystemCodes = {
-};
-
+export type harmonizedSystemCodes = Record<string, any>;

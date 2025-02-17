@@ -1,9 +1,8 @@
+/* generated using openapi-typescript-codegen -- do not edit */
 /* istanbul ignore file */
 /* tslint:disable */
 /* eslint-disable */
-
 import type { forward } from './forward';
-
 export type redirect = {
     /**
      * Numeric ID of the redirect.
@@ -15,8 +14,8 @@ export type redirect = {
     path: string;
     forward: forward;
     /**
-     * URL of the redirect. READ-ONLY
+     * URL of the redirect. READ-ONLY.
      */
-    url?: string;
+    readonly url?: string;
 };
 

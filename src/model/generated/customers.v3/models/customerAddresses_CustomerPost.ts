@@ -1,11 +1,10 @@
+/* generated using openapi-typescript-codegen -- do not edit */
 /* istanbul ignore file */
 /* tslint:disable */
 /* eslint-disable */
-
 import type { formFieldValue } from './formFieldValue';
-
 /**
- * The `address` object for the `customer` object's `addresses` array.
+ * The `address` object for the `customer` objectʼs `addresses` array.
  */
 export type customerAddresses_CustomerPost = {
     /**
@@ -57,9 +56,7 @@ export type customerAddresses_CustomerPost = {
      */
     form_fields?: Array<formFieldValue>;
 };
-
 export namespace customerAddresses_CustomerPost {
-
     /**
      * The address type. Residential or Commercial.
      */
@@ -67,7 +64,5 @@ export namespace customerAddresses_CustomerPost {
         RESIDENTIAL = 'residential',
         COMMERCIAL = 'commercial',
     }
-
-
 }
 

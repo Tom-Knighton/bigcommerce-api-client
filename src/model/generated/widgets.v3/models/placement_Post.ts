@@ -1,9 +1,8 @@
+/* generated using openapi-typescript-codegen -- do not edit */
 /* istanbul ignore file */
 /* tslint:disable */
 /* eslint-disable */
-
 import type { placement_Base } from './placement_Base';
-
 export type placement_Post = ({
     /**
      * A widget identifier.

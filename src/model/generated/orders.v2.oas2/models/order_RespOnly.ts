@@ -1,13 +1,13 @@
+/* generated using openapi-typescript-codegen -- do not edit */
 /* istanbul ignore file */
 /* tslint:disable */
 /* eslint-disable */
-
+import type { billingAddress_Resp } from './billingAddress_Resp';
 import type { coupons_Resource } from './coupons_Resource';
-import type { formFields } from './formFields';
 import type { orderConsignments_Resource } from './orderConsignments_Resource';
+import type { orderFees_Resp } from './orderFees_Resp';
 import type { products_Resource } from './products_Resource';
 import type { shippingAddresses_Resource } from './shippingAddresses_Resource';
-
 /**
  * Properties that are only for order response bodies.
  */
@@ -49,7 +49,9 @@ export type order_RespOnly = {
      */
     handling_cost_tax?: string;
     /**
-     * A read-only value. Do not attempt to set or modify this value in a POST or PUT request. (NOTE: Value ignored if automatic tax is enabled on the store.)
+     * A read-only value. Do not attempt to set or modify this value in a POST or PUT request.
+     *
+     * (NOTE: Value ignored if automatic tax is enabled on the store.)
      */
     handling_cost_tax_class_id?: number;
     /**
@@ -57,7 +59,9 @@ export type order_RespOnly = {
      */
     wrapping_cost_tax?: string;
     /**
-     * A read-only value. Do not attempt to set or modify this value in a POST or PUT request. (NOTE: Value ignored if automatic tax is enabled on the store.)
+     * A read-only value. Do not attempt to set or modify this value in a POST or PUT request.
+     *
+     * NOTE: Value ignored if automatic tax is enabled on the store.
      */
     wrapping_cost_tax_class_id?: number;
     /**
@@ -73,7 +77,7 @@ export type order_RespOnly = {
      */
     gift_certificate_amount?: string;
     /**
-     * The display currency ID. Depending on the currency selected, the value can be different from the transactional currency. A read-only value. Do not pass in a POST or PUT request. In v2 display currency is set to the transactional currency, 'default_currency_id'.
+     * The display currency ID. Depending on the currency selected, the value can be different from the transactional currency. A read-only value. Do not pass in a POST or PUT request. In v2 display currency is set to the transactional currency, ''default_currency_id''.
      */
     currency_id?: number;
     /**
@@ -93,11 +97,11 @@ export type order_RespOnly = {
      */
     default_currency_code?: string;
     /**
-     * The currency code of the store's default currency.
+     * The currency code of the storeʼs default currency.
      */
     store_default_currency_code?: string;
     /**
-     * The exchange rate between the store's default currency and the transactional currency used in the order.
+     * The exchange rate between the storeʼs default currency and the transactional currency used in the order.
      */
     store_default_to_transactional_exchange_rate?: string;
     /**
@@ -109,11 +113,24 @@ export type order_RespOnly = {
      */
     shipping_address_count?: number;
     /**
+     * Indicates whether the order is deleted/archived. When set to true in a PUT request, it has the same result as the DELETE an order request.
+     */
+    is_deleted?: boolean;
+    /**
+     * Indicate whether the order's base prices include tax.
+     *
+     * If true, the base prices are inclusive of tax, and the values of `subtotal_inc_tax`, `shipping_cost_inc_tax`, `handling_cost_inc_tax`, `wrapping_cost_inc_tax` and `total_inc_tax` are not estimated but actual values and can be reliable for accounting purposes.
+     *
+     * If false, the base prices are exclusive of tax, and the values of `subtotal_ex_tax`, `shipping_cost_ex_tax`, `handling_cost_ex_tax`, `wrapping_cost_ex_tax` and `total_ex_tax` are not estimated but actual values and can be reliable for accounting purposes.
+     */
+    is_tax_inclusive_pricing?: boolean;
+    /**
      * Indicates whether the shopper has selected an opt-in check box (on the checkout page) to receive emails. A read-only value. Do not pass in a POST or PUT.
      */
     is_email_opt_in?: boolean;
     /**
-     * Orders submitted from the store's website will include a `www` value. Orders submitted with the Checkout API will be set to `checkout_api`.
+     * Reflects the origin of the order. It can affect the order’s icon and source as defined in the control panel listing.
+     * Allowed values: `www` (Desktop) | `iphone` (Iphone) | `ipad` (Ipad) | `android` (Android) | `mobile` (Mobile) | `manual` (manual order) | `external` (Orders API) | `checkout_api` (Checkout API) | `buybutton` (Buy Button) | `amazon` (Amazon) | `ebay` (Ebay) | `facebookshop` (Facebook Shop) | `facebookcheckout` (Facebook Checkout) | `facebookmarketplace` (Facebook Marketplace) | `pinterest` (Pinterest) | `socialshop` (Social Shop)
      */
     order_source?: string;
     consignments?: orderConsignments_Resource;
@@ -124,13 +141,10 @@ export type order_RespOnly = {
      * The status ID of the order.
      */
     status_id?: number;
-    billing_address?: {
-        form_fields?: Array<formFields>;
-    };
+    billing_address?: billingAddress_Resp;
+    fees?: Array<orderFees_Resp>;
 };
-
 export namespace order_RespOnly {
-
     /**
      * A read-only value. Do not attempt to set or modify this value in a POST or PUT request.
      */
@@ -147,7 +161,5 @@ export namespace order_RespOnly {
         VOID = 'void',
         VOID_PENDING = 'void pending',
     }
-
-
 }
 

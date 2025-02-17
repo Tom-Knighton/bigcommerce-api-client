@@ -1,10 +1,9 @@
+/* generated using openapi-typescript-codegen -- do not edit */
 /* istanbul ignore file */
 /* tslint:disable */
 /* eslint-disable */
-
 import type { ReturnItem } from './ReturnItem';
 import type { Status_Full } from './Status_Full';
-
 /**
  * A view of a return.
  */

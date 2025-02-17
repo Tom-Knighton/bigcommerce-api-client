@@ -1,7 +1,7 @@
+/* generated using openapi-typescript-codegen -- do not edit */
 /* istanbul ignore file */
 /* tslint:disable */
 /* eslint-disable */
-
 /**
  * Shipping Address properties common to all requests and responses.
  */
@@ -36,9 +36,5 @@ export type shippingAddress_Base = {
      * Recipient’s email address.
      */
     email?: string;
-    /**
-     * Text code identifying the BigCommerce shipping module selected by the customer.
-     */
-    shipping_method?: string;
 };
 

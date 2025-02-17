@@ -1,7 +1,7 @@
+/* generated using openapi-typescript-codegen -- do not edit */
 /* istanbul ignore file */
 /* tslint:disable */
 /* eslint-disable */
-
 /**
  * One or more of these three fields is mandatory. You can update address and line items in one request. You have to update shipping option ID or pickup option ID in a separate request since changing the address or line items can invalidate the previously available shipping options.
  */
@@ -36,12 +36,22 @@ export type NewUpdateConsignment = {
         shouldSaveAddress?: boolean;
     };
     lineItems?: Array<{
+        /**
+         * The ID of a line item.
+         */
         itemId: string;
+        /**
+         * The quantity of a line item.
+         */
         quantity: number;
     }>;
     shippingOptionId?: string;
     pickupOption?: {
         pickupMethodId?: number;
     };
+    /**
+     * The cart version that you expect to apply the updates. If the provided version doesn't match the current cart version, you will receive a conflict error. This field is optional; if not provided, optimistic concurrency control will not apply.
+     */
+    version?: number;
 };
 

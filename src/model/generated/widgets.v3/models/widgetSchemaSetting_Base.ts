@@ -1,17 +1,16 @@
+/* generated using openapi-typescript-codegen -- do not edit */
 /* istanbul ignore file */
 /* tslint:disable */
 /* eslint-disable */
-
 import type { widgetSchemaConditional } from './widgetSchemaConditional';
-
 /**
- * For examples of each type of setting, see [Page Builder > Schema Settings](/stencil-docs/page-builder/schema-settings/alignment) in Theme Docs.
+ * For examples of each type of setting, see [Page Builder > Schema Settings](/docs/storefront/widgets/input-reference/settings#alignment) in Theme Docs.
  */
 export type widgetSchemaSetting_Base = {
     /**
      * The type of setting component to display. You can view the list of elements below to discover which are available to use.
      *
-     * For examples of each type of setting, see [Page Builder > Schema Settings](/stencil-docs/page-builder/schema-settings/alignment) in Theme Docs.
+     * For examples of each type of setting, see [Page Builder > Schema Settings](/docs/storefront/widgets/input-reference/settings#alignment) in Theme Docs.
      */
     type?: widgetSchemaSetting_Base.type;
     /**
@@ -37,13 +36,11 @@ export type widgetSchemaSetting_Base = {
     };
     conditional?: widgetSchemaConditional;
 };
-
 export namespace widgetSchemaSetting_Base {
-
     /**
      * The type of setting component to display. You can view the list of elements below to discover which are available to use.
      *
-     * For examples of each type of setting, see [Page Builder > Schema Settings](/stencil-docs/page-builder/schema-settings/alignment) in Theme Docs.
+     * For examples of each type of setting, see [Page Builder > Schema Settings](/docs/storefront/widgets/input-reference/settings#alignment) in Theme Docs.
      */
     export enum type {
         ALIGNMENT = 'alignment',
@@ -62,7 +59,5 @@ export namespace widgetSchemaSetting_Base {
         TEXT = 'text',
         TOGGLE = 'toggle',
     }
-
-
 }
 

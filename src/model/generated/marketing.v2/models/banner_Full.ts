@@ -1,9 +1,8 @@
+/* generated using openapi-typescript-codegen -- do not edit */
 /* istanbul ignore file */
 /* tslint:disable */
 /* eslint-disable */
-
 import type { banner_Base } from './banner_Base';
-
 export type banner_Full = ({
     /**
      * Id of the banner.
@@ -15,9 +14,5 @@ export type banner_Full = ({
      * Date the banner is created.
      */
     date_created?: Date;
-    /**
-     * If the banner is on a specific category or brand page then the `item_id` will correspond the category or brand id.
-     */
-    item_id?: string;
 } & banner_Base);
 

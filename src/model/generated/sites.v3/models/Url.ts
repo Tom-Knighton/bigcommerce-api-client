@@ -1,7 +1,7 @@
+/* generated using openapi-typescript-codegen -- do not edit */
 /* istanbul ignore file */
 /* tslint:disable */
 /* eslint-disable */
-
 export type Url = {
     /**
      * URL of site.
@@ -20,9 +20,7 @@ export type Url = {
      */
     updated_at?: string;
 };
-
 export namespace Url {
-
     /**
      * Specifies the URL type.
      */
@@ -31,7 +29,5 @@ export namespace Url {
         CANONICAL = 'canonical',
         CHECKOUT = 'checkout',
     }
-
-
 }
 

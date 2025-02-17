@@ -1,7 +1,7 @@
+/* generated using openapi-typescript-codegen -- do not edit */
 /* istanbul ignore file */
 /* tslint:disable */
 /* eslint-disable */
-
 /**
  * Represents all settings related to the abandoned cart functionality of a store
  */
@@ -15,7 +15,7 @@ export type AbandonedCartSettings = {
      */
     email_customer_until_cart_is_recovered?: boolean;
     /**
-     * Indicates whether or not a customer should receive abandoned cart emails based on their consent. By default customers will not receive emails.
+     * Indicates whether or not a customer should receive abandoned cart emails based on their consent. By default customers will not receive emails
      */
     marketing_emails_require_customer_consent?: boolean;
     /**
@@ -39,9 +39,7 @@ export type AbandonedCartSettings = {
      */
     merchant_abandoned_cart_digest_email_frequency?: number;
 };
-
 export namespace AbandonedCartSettings {
-
     /**
      * Indicates whether to send an email for every abandoned cart, or to send a digest email after X number of abandoned carts
      */
@@ -49,7 +47,5 @@ export namespace AbandonedCartSettings {
         DIGEST = 'digest',
         INDIVIDUAL = 'individual',
     }
-
-
 }
 

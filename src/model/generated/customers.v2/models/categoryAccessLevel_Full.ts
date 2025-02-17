@@ -1,7 +1,7 @@
+/* generated using openapi-typescript-codegen -- do not edit */
 /* istanbul ignore file */
 /* tslint:disable */
 /* eslint-disable */
-
 export type categoryAccessLevel_Full = {
     /**
      * + `all` - Customers can access all categories
@@ -14,9 +14,7 @@ export type categoryAccessLevel_Full = {
      */
     categories?: Array<number>;
 };
-
 export namespace categoryAccessLevel_Full {
-
     /**
      * + `all` - Customers can access all categories
      * + `specific`  - Customers can access a specific list of categories
@@ -27,7 +25,5 @@ export namespace categoryAccessLevel_Full {
         SPECIFIC = 'specific',
         NONE = 'none',
     }
-
-
 }
 

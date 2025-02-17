@@ -1,10 +1,10 @@
+/* generated using openapi-typescript-codegen -- do not edit */
 /* istanbul ignore file */
 /* tslint:disable */
 /* eslint-disable */
-
 export type coupon_Base = {
     /**
-     * The name of the coupon.
+     * The name of the coupon. The value must be unique.
      */
     name: string;
     type: coupon_Base.type;
@@ -51,16 +51,13 @@ export type coupon_Base = {
     max_uses_per_customer?: number;
     restricted_to?: {
         countries?: string;
-        null?: string;
     };
     /**
-     * This is a list of shipping-method names. A shipping method must be enabled on the store to use it with a coupon. To check which shipping methods are enabled, please use the [List Shipping Methods](/api/v2#list-shipping-methods) endpoint.
+     * This is a list of shipping-method names. A shipping method must be enabled on the store to use it with a coupon. To check which shipping methods are enabled, please use the [List Shipping Methods](/archive/store-operations/v2-catalog-products/v2-products#list-shipping-methods) endpoint.
      */
     shipping_methods?: Array<string>;
 };
-
 export namespace coupon_Base {
-
     export enum type {
         PER_ITEM_DISCOUNT = 'per_item_discount',
         PER_TOTAL_DISCOUNT = 'per_total_discount',
@@ -69,7 +66,5 @@ export namespace coupon_Base {
         PERCENTAGE_DISCOUNT = 'percentage_discount',
         PROMOTION = 'promotion',
     }
-
-
 }
 

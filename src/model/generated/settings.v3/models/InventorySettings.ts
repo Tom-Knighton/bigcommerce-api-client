@@ -1,7 +1,7 @@
+/* generated using openapi-typescript-codegen -- do not edit */
 /* istanbul ignore file */
 /* tslint:disable */
 /* eslint-disable */
-
 export type InventorySettings = {
     /**
      * Describes storefront behavior when product is out of stock.
@@ -13,14 +13,20 @@ export type InventorySettings = {
     option_out_of_stock_behavior?: InventorySettings.option_out_of_stock_behavior;
     /**
      * Describes when stock levels are updated.
+     *
+     * Global settings apply when inventory changes through a [manual order](https://support.bigcommerce.com/s/article/Creating-a-Manual-Order?language=en_US). Settings for a channel apply when inventory changes through an order in a channel. These settings affect webhooks that trigger from order-related events, including [product](/docs/integrations/webhooks/events#products), [SKU](/docs/integrations/webhooks/events#skus), and [inventory](/docs/integrations/webhooks/events/inventory-location#inventory) webhooks.
      */
     update_stock_behavior?: InventorySettings.update_stock_behavior;
     /**
      * Describes whether stock levels automatically adjust when you edit an order.
+     *
+     * Global settings apply when inventory changes through a [manual order](https://support.bigcommerce.com/s/article/Creating-a-Manual-Order?language=en_US). Settings for a channel apply when inventory changes through an order in a channel. These settings affect webhooks that trigger from order-related events, including [product](/docs/integrations/webhooks/events#products), [SKU](/docs/integrations/webhooks/events#skus), and [inventory](/docs/integrations/webhooks/events/inventory-location#inventory) webhooks.
      */
     edit_order_stock_adjustment?: boolean;
     /**
      * Describes whether stock levels automatically adjust when you refund or cancel an order.
+     *
+     * Global settings apply when inventory changes through a [manual order](https://support.bigcommerce.com/s/article/Creating-a-Manual-Order?language=en_US). Settings for a channel apply when inventory changes through an order in a channel. These settings affect webhooks that trigger from order-related events, including [product](/docs/integrations/webhooks/events#products), [SKU](/docs/integrations/webhooks/events#skus), and [inventory](/docs/integrations/webhooks/events/inventory-location#inventory) webhooks.
      */
     refund_order_stock_adjustment?: boolean;
     /**
@@ -44,9 +50,7 @@ export type InventorySettings = {
      */
     show_out_of_stock_message?: boolean;
 };
-
 export namespace InventorySettings {
-
     /**
      * Describes storefront behavior when product is out of stock.
      */
@@ -56,7 +60,6 @@ export namespace InventorySettings {
         HIDE_PRODUCT_AND_ACCESSIBLE = 'hide_product_and_accessible',
         HIDE_PRODUCT_AND_REDIRECT = 'hide_product_and_redirect',
     }
-
     /**
      * Describes storefront behavior when variant is out of stock.
      */
@@ -65,15 +68,15 @@ export namespace InventorySettings {
         HIDE_OPTION = 'hide_option',
         LABEL_OPTION = 'label_option',
     }
-
     /**
      * Describes when stock levels are updated.
+     *
+     * Global settings apply when inventory changes through a [manual order](https://support.bigcommerce.com/s/article/Creating-a-Manual-Order?language=en_US). Settings for a channel apply when inventory changes through an order in a channel. These settings affect webhooks that trigger from order-related events, including [product](/docs/integrations/webhooks/events#products), [SKU](/docs/integrations/webhooks/events#skus), and [inventory](/docs/integrations/webhooks/events/inventory-location#inventory) webhooks.
      */
     export enum update_stock_behavior {
         ORDER_PLACED = 'order_placed',
         ORDER_COMPLETED_OR_SHIPPED = 'order_completed_or_shipped',
     }
-
     /**
      * Describes whether a storefront displays stock levels.
      */
@@ -82,7 +85,5 @@ export namespace InventorySettings {
         SHOW = 'show',
         SHOW_WHEN_LOW = 'show_when_low',
     }
-
-
 }
 

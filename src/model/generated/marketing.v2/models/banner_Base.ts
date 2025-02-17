@@ -1,7 +1,7 @@
+/* generated using openapi-typescript-codegen -- do not edit */
 /* istanbul ignore file */
 /* tslint:disable */
 /* eslint-disable */
-
 export type banner_Base = {
     /**
      * Name of the banner.
@@ -35,10 +35,12 @@ export type banner_Base = {
      * Integer value denoting whether or not the banner is visible on the storefront: 1 = visible; 0 = not visible
      */
     visible?: string;
+    /**
+     * If the banner is on a specific category or brand page, then the item_id will correspond the category or brand ID.
+     */
+    item_id?: string;
 };
-
 export namespace banner_Base {
-
     /**
      * Page the Banner is located on.
      */
@@ -48,7 +50,6 @@ export namespace banner_Base {
         BRAND_PAGE = 'brand_page',
         SEARCH_PAGE = 'search_page',
     }
-
     /**
      * Location on the page.
      */
@@ -56,7 +57,6 @@ export namespace banner_Base {
         TOP = 'top',
         BOTTOM = 'bottom',
     }
-
     /**
      * This specifies whether the banner should be visible during a specific date range.
      */
@@ -64,7 +64,5 @@ export namespace banner_Base {
         ALWAYS = 'always',
         CUSTOM = 'custom',
     }
-
-
 }
 

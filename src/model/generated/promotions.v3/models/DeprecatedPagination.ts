@@ -1,0 +1,49 @@
+/* generated using openapi-typescript-codegen -- do not edit */
+/* istanbul ignore file */
+/* tslint:disable */
+/* eslint-disable */
+/**
+ * Data about the response, including pagination and collection totals. This property has been deprecated and cursor_pagination should be used instead.
+ *
+ * @deprecated
+ */
+export type DeprecatedPagination = {
+    /**
+     * Total number of items in the result set.
+     */
+    total?: number;
+    /**
+     * Total number of items in the collection response.
+     */
+    count?: number;
+    /**
+     * The amount of items returned in the collection per page, controlled by the limit of items per page parameter.
+     */
+    per_page?: number;
+    /**
+     * The page you are currently on within the collection.
+     */
+    current_page?: number;
+    /**
+     * The total number of pages in the collection.
+     */
+    total_pages?: number;
+    /**
+     * Pagination links for the previous and next parts of the whole collection.
+     */
+    links?: {
+        /**
+         * Link to the previous page returned in the response.
+         */
+        previous?: string;
+        /**
+         * Link to the current page returned in the response.
+         */
+        current?: string;
+        /**
+         * Link to the next page returned in the response.
+         */
+        next?: string;
+    };
+};
+

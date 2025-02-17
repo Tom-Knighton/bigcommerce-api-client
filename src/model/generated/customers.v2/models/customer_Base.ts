@@ -1,7 +1,7 @@
+/* generated using openapi-typescript-codegen -- do not edit */
 /* istanbul ignore file */
 /* tslint:disable */
 /* eslint-disable */
-
 export type customer_Base = {
     /**
      * Not returned in any responses, but accepts up to two fields allowing you to set the customer’s password. If a password is not supplied, it is generated automatically. For further information about using this object, please see the Customers resource documentation.
@@ -52,7 +52,7 @@ export type customer_Base = {
      */
     tax_exempt_category?: string;
     /**
-     * If the customer accepts product review emails or abandon cart emails. Read-Only.
+     * Describes whether the customer accepts product review emails or abandon cart emails. Read-Only.
      */
     readonly accepts_marketing?: boolean;
     addresses?: {
@@ -66,15 +66,15 @@ export type customer_Base = {
         resource?: string;
     };
     /**
-     * Array of custom fields. This is a READ-ONLY field; do not set or modify its value in a POST or PUT request.
+     * Array of custom fields. This is a Read-Only field; do not set or modify its value in a POST or PUT request.
      */
-    form_fields?: Array<{
+    readonly form_fields?: Array<{
         /**
-         * Name of the form field
+         * Name of the form field.
          */
         name?: string;
         /**
-         * Value of the form field
+         * Value of the form field.
          */
         value?: string | null;
     }> | null;

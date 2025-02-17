@@ -1,14 +1,14 @@
+/* generated using openapi-typescript-codegen -- do not edit */
 /* istanbul ignore file */
 /* tslint:disable */
 /* eslint-disable */
-
 /**
  * The basic locale settings for a store, used to give shopper information about languages, countries, etc.
  */
 export type Locale = {
     default_shopper_language: string;
     /**
-     * Determines whether to display the storefront content in the shopper's browser language or the shopper's selected default language.
+     * Determines whether to display the storefront content in the shopperʼs browser language or the shopperʼs selected default language.
      *
      * Available values:
      * * `browser` - language updates automatically based on the shopper browser language. Multiple languages are supported.
@@ -17,11 +17,9 @@ export type Locale = {
     shopper_language_selection_method?: Locale.shopper_language_selection_method;
     store_country?: string;
 };
-
 export namespace Locale {
-
     /**
-     * Determines whether to display the storefront content in the shopper's browser language or the shopper's selected default language.
+     * Determines whether to display the storefront content in the shopperʼs browser language or the shopperʼs selected default language.
      *
      * Available values:
      * * `browser` - language updates automatically based on the shopper browser language. Multiple languages are supported.
@@ -31,7 +29,5 @@ export namespace Locale {
         BROWSER = 'browser',
         DEFAULT_SHOPPER_LANGUAGE = 'default_shopper_language',
     }
-
-
 }
 

@@ -1,17 +1,17 @@
+/* generated using openapi-typescript-codegen -- do not edit */
 /* istanbul ignore file */
 /* tslint:disable */
 /* eslint-disable */
-
 /**
  * Details/configuration for the product to request a price for.
  */
 export type Item = {
     /**
-     * The (required) product ID of the item
+     * The (required) product ID of the item.
      */
     product_id?: number;
     /**
-     * The (optional) variant ID of the item
+     * The (optional) variant ID of the item.
      */
     variant_id?: number;
     /**
@@ -19,11 +19,13 @@ export type Item = {
      */
     options?: Array<{
         /**
-         * The ID of the variant option or modifier option being configured for this product
+         * The ID of the variant option or modifier option being configured for this product.
          */
         option_id?: number;
         /**
-         * The ID of the value matching the option being configured. Note: must be ID, not the value.
+         * The ID of the value matching the option being configured.
+         *
+         * **Note:** must be ID, not the value.
          */
         value_id?: number;
     }>;

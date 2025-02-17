@@ -1,9 +1,8 @@
+/* generated using openapi-typescript-codegen -- do not edit */
 /* istanbul ignore file */
 /* tslint:disable */
 /* eslint-disable */
-
 import type { metaEmpty_Full } from './metaEmpty_Full';
-
 export type RefundID_Get = {
     data?: {
         /**
@@ -83,9 +82,9 @@ export type RefundID_Get = {
              * Type of item that was refunded.
              *
              */
-            item_type?: 'PRODUCT' | 'GIFT_WRAPPING' | 'SHIPPING' | 'HANDLING' | 'ORDER';
+            item_type?: 'PRODUCT' | 'GIFT_WRAPPING' | 'SHIPPING' | 'HANDLING' | 'ORDER' | 'FEE';
             /**
-             * `order_product.id` corresponding to the item_types of PRODUCT, GIFT_WRAPPING. `order_address.id` corresponding to the item_types of SHIPPING, HANDLING. `order.id` corresponding to the item_type of ORDER.
+             * `order_product.id` corresponding to the item_types of PRODUCT, GIFT_WRAPPING. `order_address.id` corresponding to the item_types of SHIPPING, HANDLING. `order.id` corresponding to the item_type of ORDER, FEE.
              *
              */
             item_id?: number;

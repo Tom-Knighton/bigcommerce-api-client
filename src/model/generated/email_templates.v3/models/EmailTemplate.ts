@@ -1,9 +1,8 @@
+/* generated using openapi-typescript-codegen -- do not edit */
 /* istanbul ignore file */
 /* tslint:disable */
 /* eslint-disable */
-
 import type { LocaleCollection } from './LocaleCollection';
-
 /**
  * Data for a particular email template
  */
@@ -13,9 +12,7 @@ export type EmailTemplate = {
     translations?: LocaleCollection;
     subject?: string;
 };
-
 export namespace EmailTemplate {
-
     export enum type_id {
         ABANDONED_CART_EMAIL = 'abandoned_cart_email',
         ACCOUNT_DETAILS_CHANGED_EMAIL = 'account_details_changed_email',
@@ -30,7 +27,5 @@ export namespace EmailTemplate {
         PRODUCT_REVIEW_EMAIL = 'product_review_email',
         ACCOUNT_RESET_PASSWORD_EMAIL = 'account_reset_password_email',
     }
-
-
 }
 

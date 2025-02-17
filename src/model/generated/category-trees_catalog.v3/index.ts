@@ -1,0 +1,65 @@
+/* generated using openapi-typescript-codegen -- do not edit */
+/* istanbul ignore file */
+/* tslint:disable */
+/* eslint-disable */
+
+export type { Accept } from './models/Accept';
+export type { BaseError } from './models/BaseError';
+export type { beta4DetailedErrors } from './models/beta4DetailedErrors';
+export type { beta4ErrorResponse } from './models/beta4ErrorResponse';
+export type { category_id } from './models/category_id';
+export type { category_uuid } from './models/category_uuid';
+export { CategoryBase } from './models/CategoryBase';
+export type { CategoryIdInParam } from './models/CategoryIdInParam';
+export type { CategoryIdNotInParam } from './models/CategoryIdNotInParam';
+export type { CategoryList } from './models/CategoryList';
+export type { CategoryNode } from './models/CategoryNode';
+export type { CategoryNodeTree } from './models/CategoryNodeTree';
+export type { CategoryTree } from './models/CategoryTree';
+export type { CategoryTreeList } from './models/CategoryTreeList';
+export type { CategoryTreeListRequest } from './models/CategoryTreeListRequest';
+export type { CategoryUuidInParam } from './models/CategoryUuidInParam';
+export type { CategoryUuidNotInParam } from './models/CategoryUuidNotInParam';
+export type { ChannelIdInParam } from './models/ChannelIdInParam';
+export type { ContentType } from './models/ContentType';
+export type { CreateCategories } from './models/CreateCategories';
+export type { DetailedErrors } from './models/DetailedErrors';
+export type { ErrorAdditional } from './models/ErrorAdditional';
+export type { ErrorBasic } from './models/ErrorBasic';
+export type { ErrorRequest } from './models/ErrorRequest';
+export type { ErrorResponse } from './models/ErrorResponse';
+export type { ExcludeFieldsParam } from './models/ExcludeFieldsParam';
+export type { GeneralError } from './models/GeneralError';
+export type { GeneralErrorWithErrors } from './models/GeneralErrorWithErrors';
+export type { GetCategories } from './models/GetCategories';
+export type { IdInParam } from './models/IdInParam';
+export type { IncludeFieldsParam } from './models/IncludeFieldsParam';
+export type { IsVisibleParam } from './models/IsVisibleParam';
+export type { KeywordParam } from './models/KeywordParam';
+export type { LimitParam } from './models/LimitParam';
+export type { MetaData } from './models/MetaData';
+export type { metaEmpty_Full } from './models/metaEmpty_Full';
+export type { MetaError } from './models/MetaError';
+export type { MetaPagination } from './models/MetaPagination';
+export type { MetaPaginationObject } from './models/MetaPaginationObject';
+export type { name } from './models/name';
+export type { NameLikeParam } from './models/NameLikeParam';
+export type { NameParam } from './models/NameParam';
+export type { NotFoundError } from './models/NotFoundError';
+export type { PageParam } from './models/PageParam';
+export type { PageTitleLikeParam } from './models/PageTitleLikeParam';
+export type { PageTitleParam } from './models/PageTitleParam';
+export type { parent_id } from './models/parent_id';
+export type { ParentIdInParam } from './models/ParentIdInParam';
+export type { ParentIdNotInParam } from './models/ParentIdNotInParam';
+export type { PartialSuccessNoContentResponse } from './models/PartialSuccessNoContentResponse';
+export type { PartialSuccessResponse } from './models/PartialSuccessResponse';
+export type { SuccessNoContentResponse } from './models/SuccessNoContentResponse';
+export type { SuccessResponse } from './models/SuccessResponse';
+export type { Tree } from './models/Tree';
+export type { tree_id } from './models/tree_id';
+export type { TreeIdInParam } from './models/TreeIdInParam';
+export type { TreeIdNotInParam } from './models/TreeIdNotInParam';
+export type { TreeIdParam } from './models/TreeIdParam';
+export type { UpdateCategories } from './models/UpdateCategories';
+export type { url } from './models/url';

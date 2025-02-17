@@ -1,9 +1,8 @@
+/* generated using openapi-typescript-codegen -- do not edit */
 /* istanbul ignore file */
 /* tslint:disable */
 /* eslint-disable */
-
 import type { formFieldValue } from './formFieldValue';
-
 export type address_Put = {
     /**
      * The first name of the customer address.
@@ -59,9 +58,7 @@ export type address_Put = {
      */
     form_fields?: Array<formFieldValue>;
 };
-
 export namespace address_Put {
-
     /**
      * The address type. Residential or Commercial.
      */
@@ -69,7 +66,5 @@ export namespace address_Put {
         RESIDENTIAL = 'residential',
         COMMERCIAL = 'commercial',
     }
-
-
 }
 

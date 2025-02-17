@@ -1,9 +1,8 @@
+/* generated using openapi-typescript-codegen -- do not edit */
 /* istanbul ignore file */
 /* tslint:disable */
 /* eslint-disable */
-
 import type { publishedDate } from './publishedDate';
-
 export type blogPost_Base = {
     /**
      * Title of this blog post.
@@ -14,9 +13,9 @@ export type blogPost_Base = {
      */
     url?: string;
     /**
-     * URL to preview the blog post. (READ-ONLY)
+     * URL to preview the blog post. READ-ONLY.
      */
-    preview_url?: string;
+    readonly preview_url?: string;
     /**
      * Text body of the blog post.
      */
@@ -26,11 +25,11 @@ export type blogPost_Base = {
      */
     tags?: Array<string>;
     /**
-     * Summary of the blog post. (READ-ONLY)
+     * Summary of the blog post. READ-ONLY.
      */
-    summary?: string;
+    readonly summary?: string;
     /**
-     * Whether the blog post is published.
+     * Whether the blog post is published. If you want the post to be or remain published following the request, you must set the field explicitly to true, even if the blog post was already published prior to the request.
      */
     is_published?: boolean;
     published_date?: publishedDate;
@@ -51,7 +50,7 @@ export type blogPost_Base = {
      */
     author?: string;
     /**
-     * Local path to a thumbnail uploaded to `/product_images/` via [WebDav](https://support.bigcommerce.com/s/article/File-Access-WebDAV).
+     * Local path to a thumbnail uploaded to `/product_images/` using [WebDAV](https://support.bigcommerce.com/s/article/File-Access-WebDAV).
      */
     thumbnail_path?: string;
 };

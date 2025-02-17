@@ -1,11 +1,10 @@
+/* generated using openapi-typescript-codegen -- do not edit */
 /* istanbul ignore file */
 /* tslint:disable */
 /* eslint-disable */
-
 import type { webhook_callback_base } from './webhook_callback_base';
-
 /**
- * This webhook fires when product details are edited.
+ * Fires when product details are edited.
  *
  * Changes to the following fields trigger this event:
  * * Product Type
@@ -49,7 +48,7 @@ import type { webhook_callback_base } from './webhook_callback_base';
  * * Product URL
  * * Set as a Featured Product on my Storefront
  *
- * However, changes to the following fields don't trigger this event:
+ * However, changes to the following fields donʼt trigger this event:
  *
  * * Manufacturer Part Number (MPN)
  * * Global Trade Number (GTN)
@@ -59,7 +58,7 @@ import type { webhook_callback_base } from './webhook_callback_base';
  * * Product Files
  * * Customs Information
  *
- * ```json title="Example callback object" lineNumbers
+ * ```json filename="Example callback object" showLineNumbers
  * {
      * "created_at": 1561482670,
      * "store_id": "1025646",
@@ -73,5 +72,19 @@ import type { webhook_callback_base } from './webhook_callback_base';
          * }
          * ```
          */
-        export type store_product_updated = webhook_callback_base;
+        export type store_product_updated = (webhook_callback_base & {
+            /**
+             * A lightweight description of the event that triggered the webhook. Will vary depending on the event registered.
+             */
+            data?: {
+                /**
+                 * The type ill always be `product`.
+                 */
+                type?: string;
+                /**
+                 * ID of the product.
+                 */
+                id?: number;
+            };
+        });
 

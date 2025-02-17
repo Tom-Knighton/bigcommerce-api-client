@@ -1,14 +1,14 @@
+/* generated using openapi-typescript-codegen -- do not edit */
 /* istanbul ignore file */
 /* tslint:disable */
 /* eslint-disable */
-
 export type CustomAppSections = Array<{
     /**
-     * Text displayed to the merchant
+     * Text displayed to the merchant.
      */
     title?: string;
     /**
-     * Value used in the `section` query param
+     * Value used in the `section` query param.
      */
     query_path?: string;
 }>;

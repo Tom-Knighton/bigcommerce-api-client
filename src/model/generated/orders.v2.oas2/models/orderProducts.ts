@@ -1,10 +1,9 @@
+/* generated using openapi-typescript-codegen -- do not edit */
 /* istanbul ignore file */
 /* tslint:disable */
 /* eslint-disable */
-
 import type { orderProductAppliedDiscounts } from './orderProductAppliedDiscounts';
 import type { orderProductOptions } from './orderProductOptions';
-
 export type orderProducts = {
     /**
      * Numeric ID of this product within this order.
@@ -43,11 +42,11 @@ export type orderProducts = {
      */
     base_price?: string;
     /**
-     * The product’s price excluding tax. (Float, Float-As-String, Integer)
+     * The product’s price excluding tax. The value can't be negative. (Float, Float-As-String, Integer)
      */
     price_ex_tax?: string;
     /**
-     * The product’s price including tax. (Float, Float-As-String, Integer)
+     * The product’s price including tax. The value can't be negative. (Float, Float-As-String, Integer)
      */
     price_inc_tax?: string;
     /**
@@ -61,14 +60,16 @@ export type orderProducts = {
     price_tax?: string;
     /**
      * Total base price. (Float, Float-As-String, Integer)
+     *
+     * **Note**: The `base_total` is affected by the tax options set up in the control panel and is altered on tax-free orders. See more details on how `base_total` is affected by visiting the [Responsive Tax Display Settings](https://support.bigcommerce.com/s/article/Manual-Tax-Setup) overview. If the `base_total` is `$0`, it's due to the store's tax settings. To learn more about tax settings in the control panel, check out this [Tax Settings](https://support.bigcommerce.com/s/article/Tax-Overview?language=en_US#tax-settings) support article.
      */
     base_total?: string;
     /**
-     * Total base price excluding tax. (Float, Float-As-String, Integer)
+     * Total base price excluding tax. The value can't be negative. (Float, Float-As-String, Integer)
      */
     total_ex_tax?: string;
     /**
-     * Total base price including tax. (Float, Float-As-String, Integer)
+     * Total base price including tax. The value can't be negative. (Float, Float-As-String, Integer)
      */
     total_inc_tax?: string;
     /**
@@ -85,23 +86,35 @@ export type orderProducts = {
      */
     quantity?: number;
     /**
-     * The product’s cost price.  This can be set using the Catalog API. (Float, Float-As-String, Integer) Read Only
+     * The product’s cost price.  This can be set using the Catalog API. (Float, Float-As-String, Integer)
      */
     base_cost_price?: string;
     /**
      * The product’s cost price including tax. (Float, Float-As-String, Integer)
-     * The cost of your products to you; this is never shown to customers, but can be used for accounting purposes. Read Only
+     * The cost of your products to you; this is never shown to customers, but can be used for accounting purposes. The value can't be negative.
      */
     cost_price_inc_tax?: string;
     /**
-     * The products cost price excluding tax. (Float, Float-As-String, Integer)
-     * The cost of your products to you; this is never shown to customers, but can be used for accounting purposes. Read Only
+     * The product cost price excluding tax. (Float, Float-As-String, Integer)
+     * The cost of your products to you; this is never shown to customers, but can be used for accounting purposes. The value can't be negative.
      */
     cost_price_ex_tax?: string;
     /**
-     * Weight of the product. (Float, Float-As-String, Integer)
+     * Weight of the product. The value can't be negative. (Float, Float-As-String, Integer)
      */
     weight?: (number | string);
+    /**
+     * Product width. The value can't be negative.
+     */
+    width?: string;
+    /**
+     * Product height. The value can't be negative.
+     */
+    height?: string;
+    /**
+     * Product depth. The value can't be negative.
+     */
+    depth?: string;
     /**
      * Tax applied to the product’s cost price. (Float, Float-As-String, Integer)
      * The cost of your products to you; this is never shown to customers, but can be used for accounting purposes. Read Only
@@ -119,25 +132,29 @@ export type orderProducts = {
      * The amount refunded from this transaction; always returns `0`. (Float, Float-As-String, Integer)
      * @deprecated
      */
-    refunded_amount?: string;
+    refund_amount?: string;
     /**
      * Numeric ID for the refund.
      */
     return_id?: number;
     /**
+     * ID of the gift wrapping option.
+     */
+    wrapping_id?: number;
+    /**
      * Name of gift-wrapping option.
      */
-    wrapping_name?: string;
+    wrapping_name?: string | null;
     /**
-     * The value of the base wrapping cost. (Float, Float-As-String, Integer)
+     * The value of the base wrapping cost. The value can't be negative. (Float, Float-As-String, Integer)
      */
     base_wrapping_cost?: (string | number);
     /**
-     * The value of the wrapping cost, excluding tax. (Float, Float-As-String, Integer)
+     * The value of the wrapping cost, excluding tax. The value can't be negative. (Float, Float-As-String, Integer)
      */
     wrapping_cost_ex_tax?: string;
     /**
-     * The value of the wrapping cost, including tax. (Float, Float-As-String, Integer)
+     * The value of the wrapping cost, including tax. The value can't be negative. (Float, Float-As-String, Integer)
      */
     wrapping_cost_inc_tax?: string;
     /**
@@ -189,6 +206,14 @@ export type orderProducts = {
      */
     bin_picking_number?: string;
     /**
+     * (Read-only) ID of the order in another system. For example, the Amazon order ID if this is an Amazon order.
+     */
+    readonly external_id?: string | null;
+    /**
+     * The productʼs brand.
+     */
+    brand?: string;
+    /**
      * Array of objects containing discounts applied to the product.
      */
     applied_discounts?: Array<orderProductAppliedDiscounts>;
@@ -197,9 +222,12 @@ export type orderProducts = {
      */
     product_options?: Array<orderProductOptions>;
     /**
-     * ID of the order in another system. For example, the Amazon Order ID if this is an Amazon order.This field can be updated in a /POST, but using a /PUT to update the order will return a 400 error. The field 'external_id' cannot be written to. Please remove it from your request before trying again. It cannot be overwritten once set.
+     * Available for only [Catalog V2 stores](/docs/store-operations/catalog/migration).
      */
-    external_id?: string | null;
+    configurable_fields?: Array<{
+        name?: string;
+        value?: string;
+    }>;
     /**
      * Universal Product Code. Can be written to for custom products and catalog products.
      */
@@ -220,18 +248,23 @@ export type orderProducts = {
      * ID of the associated gift certificate.
      */
     gift_certificate_id?: number | null;
+    /**
+     * Represent the correct total amount of the line item after deducting all the discounts and including the tax. This number can be used for accounting purpose.
+     *
+     * This makes it easier to have the "shopper paid" value for a line item and api user doesn't have to do any calculation to deduct discount on the client side.
+     *
+     * This field includes all types of discounts (automatic, coupon, manual) and therefore if you use this value, you don't need to deduct any more discounts at line item level or order level.
+     */
+    discounted_total_inc_tax?: string;
 };
-
 export namespace orderProducts {
-
     /**
      * Type of product.
      */
     export enum type {
         PHYSICAL = 'physical',
         DIGITAL = 'digital',
+        GIFTCERTIFICATE = 'giftcertificate',
     }
-
-
 }
 

@@ -1,7 +1,7 @@
+/* generated using openapi-typescript-codegen -- do not edit */
 /* istanbul ignore file */
 /* tslint:disable */
 /* eslint-disable */
-
 /**
  * A cart item along with its shipping-specific attributes.
  */
@@ -86,14 +86,10 @@ export type RateRequestItem = {
         attribute_type?: 'metafield';
     }>;
 };
-
 export namespace RateRequestItem {
-
     export enum units {
         CM = 'cm',
         IN = 'in',
     }
-
-
 }
 

@@ -1,7 +1,7 @@
+/* generated using openapi-typescript-codegen -- do not edit */
 /* istanbul ignore file */
 /* tslint:disable */
 /* eslint-disable */
-
 export type orderConsignments_Resource = {
     /**
      * URL where you can use a GET request to get the order consignments.

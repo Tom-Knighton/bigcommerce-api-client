@@ -1,9 +1,8 @@
+/* generated using openapi-typescript-codegen -- do not edit */
 /* istanbul ignore file */
 /* tslint:disable */
 /* eslint-disable */
-
 import type { ShippingMethodType } from './ShippingMethodType';
-
 export type shippingMethod_Base = {
     /**
      * Display name for shipping method.
@@ -11,7 +10,7 @@ export type shippingMethod_Base = {
     name?: string;
     type?: ShippingMethodType;
     /**
-     * Depends on the shipping method type. See the [supported settings object](#supported-settings).
+     * Depends on the shipping method type. See the [supported settings object](#settings-objects).
      */
     settings?: {
         /**
@@ -35,8 +34,12 @@ export type shippingMethod_Base = {
         percentage_surcharge?: number;
     });
     /**
-     * Whether or not this shipping zone is the fallback if all others are not valid for the order.
+     * Whether or not this shipping method is a fallback method used when advanced shipping rules are unavailable.
      */
     is_fallback?: boolean;
+    /**
+     * List of channels associated to a method. When creating a new method, all available channels are associated by default. (Optional)
+     */
+    channel_ids?: Array<number>;
 };
 

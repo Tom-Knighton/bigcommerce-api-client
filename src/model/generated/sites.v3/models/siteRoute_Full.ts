@@ -1,9 +1,8 @@
+/* generated using openapi-typescript-codegen -- do not edit */
 /* istanbul ignore file */
 /* tslint:disable */
 /* eslint-disable */
-
 import type { siteRoute_Base } from './siteRoute_Base';
-
 /**
  * Route object used in responses.
  */

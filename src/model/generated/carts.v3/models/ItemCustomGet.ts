@@ -1,7 +1,7 @@
+/* generated using openapi-typescript-codegen -- do not edit */
 /* istanbul ignore file */
 /* tslint:disable */
 /* eslint-disable */
-
 /**
  * Add a custom item to the shopperʼs cart.
  *
@@ -26,5 +26,13 @@ export type ItemCustomGet = {
      * Specifies the price of the item. This value can include or exclude tax, depending on the store setup.
      */
     list_price?: string;
+    /**
+     * List price of the item multiplied by the quantity.
+     */
+    extended_list_price?: number;
+    /**
+     * Image of the product or variant.
+     */
+    image_url?: string;
 };
 

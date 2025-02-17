@@ -1,7 +1,7 @@
+/* generated using openapi-typescript-codegen -- do not edit */
 /* istanbul ignore file */
 /* tslint:disable */
 /* eslint-disable */
-
 /**
  * Requests may have partial Address data. For example, the BigCommerce Cart page has the "Estimate Shipping & Tax" feature which is only expected to supply Country, Region and Postal Code.
  */
@@ -45,14 +45,10 @@ export type Address = {
     company_name?: string;
     type?: Address.type;
 };
-
 export namespace Address {
-
     export enum type {
         RESIDENTIAL = 'RESIDENTIAL',
         COMMERCIAL = 'COMMERCIAL',
     }
-
-
 }
 

@@ -1,11 +1,10 @@
+/* generated using openapi-typescript-codegen -- do not edit */
 /* istanbul ignore file */
 /* tslint:disable */
 /* eslint-disable */
-
 import type { BaseOptions } from './BaseOptions';
 import type { ConnectionOptionsInstance } from './ConnectionOptionsInstance';
 import type { ZoneOptionsInstance } from './ZoneOptionsInstance';
-
 /**
  * Payload sent to a Shipping Provider to get quotes.
  */

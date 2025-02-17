@@ -1,7 +1,7 @@
+/* generated using openapi-typescript-codegen -- do not edit */
 /* istanbul ignore file */
 /* tslint:disable */
 /* eslint-disable */
-
 /**
  * A storefront filter for product brand
  */
@@ -9,30 +9,27 @@ export type EnabledBrandFilter = {
     collapsed_by_default?: boolean;
     display_name?: string;
     display_product_count?: boolean;
+    /**
+     * The ID of the filter.
+     */
     id?: string;
     is_enabled?: boolean;
     items_to_show?: EnabledBrandFilter.items_to_show;
     sort_by?: EnabledBrandFilter.sort_by;
     type?: EnabledBrandFilter.type;
 };
-
 export namespace EnabledBrandFilter {
-
     export enum items_to_show {
         '_5' = 5,
         '_10' = 10,
         '_15' = 15,
     }
-
     export enum sort_by {
         ALPHA = 'alpha',
         ITEM_COUNT = 'item_count',
     }
-
     export enum type {
         BRAND = 'brand',
     }
-
-
 }
 

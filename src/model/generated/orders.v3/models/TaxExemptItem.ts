@@ -1,9 +1,8 @@
+/* generated using openapi-typescript-codegen -- do not edit */
 /* istanbul ignore file */
 /* tslint:disable */
 /* eslint-disable */
-
 import type { Amount } from './Amount';
-
 /**
  * Use this to refund a custom value at the order level. When `item_type` is set to `ORDER`, tax is not re-calculated.
  */
@@ -22,16 +21,12 @@ export type TaxExemptItem = {
      */
     reason?: string;
 };
-
 export namespace TaxExemptItem {
-
     /**
      * The type of refund. When `item_type` is set to `ORDER`, tax is not re-calculated.
      */
     export enum item_type {
         ORDER = 'ORDER',
     }
-
-
 }
 

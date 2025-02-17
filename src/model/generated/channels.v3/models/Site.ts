@@ -1,10 +1,12 @@
+/* generated using openapi-typescript-codegen -- do not edit */
 /* istanbul ignore file */
 /* tslint:disable */
 /* eslint-disable */
-
 import type { Url } from './Url';
-
 export type Site = {
+    /**
+     * The ID of the site.
+     */
     id?: number;
     /**
      * The fully qualified URL (including host and scheme) where this site is hosted. All URLs generated for this site will be appended to this.
@@ -35,9 +37,7 @@ export type Site = {
      */
     is_checkout_url_customized?: boolean;
 };
-
 export namespace Site {
-
     /**
      * Indicates if a private/dedicated SSL is installed on this site, or if itʼs using shared SSL.
      */
@@ -45,7 +45,5 @@ export namespace Site {
         DEDICATED = 'dedicated',
         SHARED = 'shared',
     }
-
-
 }
 

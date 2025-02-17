@@ -1,9 +1,8 @@
+/* generated using openapi-typescript-codegen -- do not edit */
 /* istanbul ignore file */
 /* tslint:disable */
 /* eslint-disable */
-
 import type { links_Full } from './links_Full';
-
 export type pagination_Full = {
     /**
      * Total number of items in the result set.

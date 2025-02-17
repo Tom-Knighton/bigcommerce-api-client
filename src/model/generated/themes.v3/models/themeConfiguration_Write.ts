@@ -1,7 +1,7 @@
+/* generated using openapi-typescript-codegen -- do not edit */
 /* istanbul ignore file */
 /* tslint:disable */
 /* eslint-disable */
-
 /**
  * A theme.
  */
@@ -13,6 +13,6 @@ export type themeConfiguration_Write = {
     /**
      * The content of the configuration, which is a JSON object which will vary in structure from theme to theme.
      */
-    settings?: any;
+    settings?: Record<string, any>;
 };
 

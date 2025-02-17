@@ -1,7 +1,7 @@
+/* generated using openapi-typescript-codegen -- do not edit */
 /* istanbul ignore file */
 /* tslint:disable */
 /* eslint-disable */
-
 /**
  * The job for theme upload or download
  */
@@ -30,7 +30,7 @@ export type Job = {
     /**
      * The result.
      */
-    result?: any;
+    result?: Record<string, any>;
     /**
      * The status.
      */
@@ -53,9 +53,7 @@ export type Job = {
         warning?: string;
     }>;
 };
-
 export namespace Job {
-
     /**
      * The status.
      */
@@ -65,7 +63,5 @@ export namespace Job {
         WORKING = 'WORKING',
         FAILED = 'FAILED',
     }
-
-
 }
 

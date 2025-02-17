@@ -1,12 +1,11 @@
+/* generated using openapi-typescript-codegen -- do not edit */
 /* istanbul ignore file */
 /* tslint:disable */
 /* eslint-disable */
-
 import type { ItemCustomGet } from './ItemCustomGet';
 import type { ItemDigitalGet } from './ItemDigitalGet';
 import type { ItemGiftCertificateGet } from './ItemGiftCertificateGet';
 import type { ItemPhysicalGet } from './ItemPhysicalGet';
-
 /**
  * `GET`
  */

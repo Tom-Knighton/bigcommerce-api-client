@@ -1,9 +1,9 @@
+/* generated using openapi-typescript-codegen -- do not edit */
 /* istanbul ignore file */
 /* tslint:disable */
 /* eslint-disable */
-
 /**
- * The `address` object for the `customer` object's `addresses` array.
+ * The `address` object for the `customer` objectʼs `addresses` array.
  */
 export type customerAddresses_Base = {
     /**
@@ -51,9 +51,7 @@ export type customerAddresses_Base = {
      */
     address_type?: customerAddresses_Base.address_type;
 };
-
 export namespace customerAddresses_Base {
-
     /**
      * The address type. Residential or Commercial.
      */
@@ -61,7 +59,5 @@ export namespace customerAddresses_Base {
         RESIDENTIAL = 'residential',
         COMMERCIAL = 'commercial',
     }
-
-
 }
 

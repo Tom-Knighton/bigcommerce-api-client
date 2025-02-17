@@ -1,7 +1,7 @@
+/* generated using openapi-typescript-codegen -- do not edit */
 /* istanbul ignore file */
 /* tslint:disable */
 /* eslint-disable */
-
 /**
  * Represents all settings overrides related to the abandoned cart functionality of a store for a channel
  */
@@ -39,9 +39,7 @@ export type ChannelAbandonedCartSettings = {
      */
     merchant_abandoned_cart_digest_email_frequency?: number | null;
 };
-
 export namespace ChannelAbandonedCartSettings {
-
     /**
      * Indicates whether to send an email for every abandoned cart or to send a digest email after X number of abandoned carts. If it is null, it means there is no override for the specified channel.
      */
@@ -49,7 +47,5 @@ export namespace ChannelAbandonedCartSettings {
         DIGEST = 'digest',
         INDIVIDUAL = 'individual',
     }
-
-
 }
 

@@ -1,7 +1,7 @@
+/* generated using openapi-typescript-codegen -- do not edit */
 /* istanbul ignore file */
 /* tslint:disable */
 /* eslint-disable */
-
 export type siteRoutes_Route_Base = {
     /**
      * The type of resource being routed to; [supported types](/docs/rest-management/sites#route-types).
@@ -23,9 +23,7 @@ export type siteRoutes_Route_Base = {
      */
     route: string;
 };
-
 export namespace siteRoutes_Route_Base {
-
     /**
      * The type of resource being routed to; [supported types](/docs/rest-management/sites#route-types).
      */
@@ -44,7 +42,5 @@ export namespace siteRoutes_Route_Base {
         RETURNS = 'returns',
         STATIC = 'static',
     }
-
-
 }
 

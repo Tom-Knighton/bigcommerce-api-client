@@ -1,9 +1,8 @@
+/* generated using openapi-typescript-codegen -- do not edit */
 /* istanbul ignore file */
 /* tslint:disable */
 /* eslint-disable */
-
 import type { orderCatalogProduct_Post } from './orderCatalogProduct_Post';
-
 /**
  * **Usage notes**
  *

@@ -1,7 +1,7 @@
+/* generated using openapi-typescript-codegen -- do not edit */
 /* istanbul ignore file */
 /* tslint:disable */
 /* eslint-disable */
-
 export type CartCoupon = {
     /**
      * The coupon ID.
@@ -12,7 +12,7 @@ export type CartCoupon = {
      */
     code: string;
     /**
-     * The coupon title based on different types provided in control panel section.
+     * The coupon name displayed on the storefront.
      */
     displayName?: string;
     /**
@@ -24,9 +24,7 @@ export type CartCoupon = {
      */
     discountedAmount?: number;
 };
-
 export namespace CartCoupon {
-
     /**
      * Key name to identify the type of coupon.
      */
@@ -38,7 +36,5 @@ export namespace CartCoupon {
         FREE_SHIPPING = 'free_shipping',
         PROMOTION = 'promotion',
     }
-
-
 }
 

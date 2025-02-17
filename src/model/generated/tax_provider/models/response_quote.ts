@@ -1,12 +1,11 @@
+/* generated using openapi-typescript-codegen -- do not edit */
 /* istanbul ignore file */
 /* tslint:disable */
 /* eslint-disable */
-
 import type { response_document } from './response_document';
-
 export type response_quote = {
     /**
-     * The unique identifier of the tax quote that was requested. This must match the ID of the requested quote.
+     * The unique identifier of the tax quote that was requested. This value must either match the ID of the requested quote or be an external ID on the tax provider’s system. This value will be used for future adjust and void operations.
      */
     id: string;
     /**

@@ -1,10 +1,9 @@
+/* generated using openapi-typescript-codegen -- do not edit */
 /* istanbul ignore file */
 /* tslint:disable */
 /* eslint-disable */
-
 import type { widget_Base } from './widget_Base';
 import type { widgetTemplate_Full } from './widgetTemplate_Full';
-
 export type widget_Full = (widget_Base & {
     /**
      * The primary identifier.

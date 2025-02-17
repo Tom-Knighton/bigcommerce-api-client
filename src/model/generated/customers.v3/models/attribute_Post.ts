@@ -1,7 +1,7 @@
+/* generated using openapi-typescript-codegen -- do not edit */
 /* istanbul ignore file */
 /* tslint:disable */
 /* eslint-disable */
-
 export type attribute_Post = {
     /**
      * Attribute name.
@@ -12,9 +12,7 @@ export type attribute_Post = {
      */
     type: attribute_Post.type;
 };
-
 export namespace attribute_Post {
-
     /**
      * Attribute type should match one of: string, number, date.
      */
@@ -23,7 +21,5 @@ export namespace attribute_Post {
         NUMBER = 'number',
         DATE = 'date',
     }
-
-
 }
 

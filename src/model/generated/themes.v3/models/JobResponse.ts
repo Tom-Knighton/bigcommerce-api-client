@@ -1,9 +1,8 @@
+/* generated using openapi-typescript-codegen -- do not edit */
 /* istanbul ignore file */
 /* tslint:disable */
 /* eslint-disable */
-
 import type { OpenMeta } from './OpenMeta';
-
 /**
  * Response for /GET Jobs by Id.
  */
@@ -36,7 +35,7 @@ export type JobResponse = {
         /**
          * The result.
          */
-        result?: any;
+        result?: Record<string, any>;
         /**
          * The status.
          */
@@ -61,9 +60,7 @@ export type JobResponse = {
     };
     meta?: OpenMeta;
 };
-
 export namespace JobResponse {
-
     /**
      * The status.
      */
@@ -73,7 +70,5 @@ export namespace JobResponse {
         WORKING = 'WORKING',
         FAILED = 'FAILED',
     }
-
-
 }
 

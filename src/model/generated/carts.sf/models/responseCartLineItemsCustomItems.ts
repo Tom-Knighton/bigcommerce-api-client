@@ -1,16 +1,16 @@
+/* generated using openapi-typescript-codegen -- do not edit */
 /* istanbul ignore file */
 /* tslint:disable */
 /* eslint-disable */
-
 /**
  * **Read Only**
  *
- * This will return in the Cart Response if the Cart was created using the [Store Management Carts API](/docs/rest-management/carts). A custom item can only be added to a cart using the Server to Server API.
+ * This will return in the Cart Response if the Cart was created using the [REST Management API](/docs/rest-management/carts). A custom item can only be added to a cart using the REST Management API.
  */
 export type responseCartLineItemsCustomItems = {
     readonly extendedListPrice?: number;
     /**
-     * Id of the custom item
+     * ID of the custom item
      */
     readonly id?: string;
     /**
@@ -18,12 +18,12 @@ export type responseCartLineItemsCustomItems = {
      */
     readonly listPrice?: number;
     /**
-     * Item name
+     * Name of the custom item.
      */
     readonly name?: string;
     readonly quantity?: number;
     /**
-     * Custom item sku
+     * SKU of the custom item.
      */
     readonly sku?: string;
 };

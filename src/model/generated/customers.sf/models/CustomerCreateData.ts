@@ -1,9 +1,8 @@
+/* generated using openapi-typescript-codegen -- do not edit */
 /* istanbul ignore file */
 /* tslint:disable */
 /* eslint-disable */
-
 import type { CustomFields } from './CustomFields';
-
 export type CustomerCreateData = {
     /**
      * First name of customer.
@@ -25,6 +24,10 @@ export type CustomerCreateData = {
      * Indicates whether customer provided consent to receive marketing emails.
      */
     acceptsMarketingEmails?: boolean;
+    /**
+     * A valid [reCAPTCHA](/docs/storefront/graphql/customers#recaptcha) token from a successful verification response.
+     */
+    token?: string;
     customFields?: Array<CustomFields>;
 };
 

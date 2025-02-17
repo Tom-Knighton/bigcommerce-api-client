@@ -1,11 +1,10 @@
+/* generated using openapi-typescript-codegen -- do not edit */
 /* istanbul ignore file */
 /* tslint:disable */
 /* eslint-disable */
-
 import type { AdjustmentAmount } from './AdjustmentAmount';
 import type { Amount } from './Amount';
 import type { RefundMethod } from './RefundMethod';
-
 export type RefundQuote_Full = {
     /**
      * ID of the order to be refunded.
@@ -13,6 +12,7 @@ export type RefundQuote_Full = {
     order_id?: number;
     total_refund_amount?: Amount;
     total_refund_tax_amount?: number;
+    order_level_refund_amount?: number;
     /**
      * Indicates rounding value to bring `refund_total` to an amount refundable with payment providers (in this case to 2 decimal places).
      */
@@ -28,6 +28,7 @@ export type RefundQuote_Full = {
      * Note that `refund_methods` is an array of refund methods, with each refund method being an array of payment options.
      *
      * For example, if the order was placed by a combination of store credit and bank deposit the refund methods would be:
+     *
      * ```json
      * {
          * "refund_methods": [

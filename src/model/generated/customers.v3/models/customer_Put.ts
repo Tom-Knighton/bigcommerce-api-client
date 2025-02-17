@@ -1,11 +1,10 @@
+/* generated using openapi-typescript-codegen -- do not edit */
 /* istanbul ignore file */
 /* tslint:disable */
 /* eslint-disable */
-
 import type { customerAuthentication_PostPut } from './customerAuthentication_PostPut';
 import type { CustomerStoredCreditAmounts } from './CustomerStoredCreditAmounts';
 import type { formFieldValue } from './formFieldValue';
-
 export type customer_Put = {
     /**
      * The email of the customer. Must be unique.

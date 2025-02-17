@@ -1,7 +1,7 @@
+/* generated using openapi-typescript-codegen -- do not edit */
 /* istanbul ignore file */
 /* tslint:disable */
 /* eslint-disable */
-
 /**
  * Value object for an attribute. This represents a product or product variant meta field.
  */
@@ -31,9 +31,7 @@ export type AttributeValue = {
      */
     attribute_type?: AttributeValue.attribute_type;
 };
-
 export namespace AttributeValue {
-
     /**
      * Resource type associated with the product or product variant meta field. Currently, the only values available are 'product' or 'variant'.
      */
@@ -41,14 +39,11 @@ export namespace AttributeValue {
         PRODUCT = 'product',
         VARIANT = 'variant',
     }
-
     /**
      * Attribute type associated with the product or product variant meta field. Currently, the only value for this is 'metafield'.
      */
     export enum attribute_type {
         METAFIELD = 'metafield',
     }
-
-
 }
 

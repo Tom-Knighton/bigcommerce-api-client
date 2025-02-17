@@ -1,9 +1,8 @@
+/* generated using openapi-typescript-codegen -- do not edit */
 /* istanbul ignore file */
 /* tslint:disable */
 /* eslint-disable */
-
 import type { request_quote } from './request_quote';
-
 /**
  * An **AdjustRequest** contains the same data as a standard **QuoteRequest** with added detail of the adjustment operation.
  */

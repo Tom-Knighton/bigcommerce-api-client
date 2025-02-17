@@ -1,15 +1,14 @@
+/* generated using openapi-typescript-codegen -- do not edit */
 /* istanbul ignore file */
 /* tslint:disable */
 /* eslint-disable */
-
 import type { addresses } from './addresses';
 import type { formField } from './formField';
-
 export type customer_Full = {
     /**
      * Unique numeric ID of this customer. This is a READ-ONLY field; do not set or modify its value in a POST or PUT request.
      */
-    id?: number;
+    readonly id?: number;
     /**
      * Not returned in any responses, but accepts up to two fields allowing you to set the customer’s password. If a password is not supplied, it is generated automatically. For further information about using this object, please see the Customers resource documentation.
      */
@@ -41,12 +40,12 @@ export type customer_Full = {
     /**
      * Date on which the customer registered from the storefront or was created in the control panel. This is a READ-ONLY field; do not set or modify its value in a POST or PUT request.
      */
-    date_created?: Date;
+    readonly date_created?: Date;
     /**
      * Date on which the customer updated their details in the storefront or was updated in the control panel. This is a READ-ONLY field; do not set or modify its value in a POST or PUT request.
      *
      */
-    date_modified?: Date;
+    readonly date_modified?: Date;
     /**
      * The amount of credit the customer has. (Float, Float as String, Integer)
      */
@@ -71,12 +70,12 @@ export type customer_Full = {
      * Records whether the customer would like to receive marketing content from this store. READ-ONLY.This is a READ-ONLY field; do not set or modify its value in a POST or PUT request.
      *
      */
-    accepts_marketing?: boolean;
+    readonly accepts_marketing?: boolean;
     addresses?: addresses;
     /**
      * Array of custom fields. This is a READ-ONLY field; do not set or modify its value in a POST or PUT request.
      */
-    form_fields?: Array<formField>;
+    readonly form_fields?: Array<formField>;
     /**
      * Force a password change on next login.
      */

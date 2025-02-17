@@ -1,9 +1,8 @@
+/* generated using openapi-typescript-codegen -- do not edit */
 /* istanbul ignore file */
 /* tslint:disable */
 /* eslint-disable */
-
 import type { coupon_Base } from './coupon_Base';
-
 export type coupon_Full = ({
     /**
      * The coupon's ID. This is a read-only field; do not set or modify its value in a POST or PUT request.

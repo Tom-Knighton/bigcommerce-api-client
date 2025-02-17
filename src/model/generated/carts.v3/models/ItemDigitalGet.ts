@@ -1,12 +1,16 @@
+/* generated using openapi-typescript-codegen -- do not edit */
 /* istanbul ignore file */
 /* tslint:disable */
 /* eslint-disable */
-
-export type ItemDigitalGet = ({
+export type ItemDigitalGet = {
     /**
      * The line-item ID.
      */
     id?: string;
+    /**
+     * Bundled items will have the ID of their parent item.
+     */
+    parent_id?: string;
     /**
      * The ID of the variant. Required in the /PUT or /POST request if the product has variants.
      */
@@ -34,7 +38,7 @@ export type ItemDigitalGet = ({
     /**
      * Boolean value that specifies whether the item is taxable.
      */
-    is_taxable?: boolean;
+    taxable?: boolean;
     /**
      * Image of the product or variant.
      */
@@ -76,27 +80,17 @@ export type ItemDigitalGet = ({
      */
     extended_sale_price?: number;
     /**
-     * The list of selected options for this product.
+     * Whether or not a physical product requires shipping.
      */
-    options?: Array<{
-        /**
-         * The product option name; for example, Color or Size.
-         */
-        name?: string;
-        /**
-         * The product option identifier.
-         */
-        nameId?: number;
-        /**
-         * The product option value; for example, Red or Medium.
-         */
-        value?: string;
-        /**
-         * The product option value identifier in number format.
-         */
-        valueId?: number;
-    }>;
-} & {
+    is_require_shipping?: boolean;
+    /**
+     * Whether or not you can change or remove the item from the cart. Items that are immutable include those added automatically by promotions.
+     */
+    is_mutable?: boolean;
+    /**
+     * Whether or not a promotion added an additional item.
+     */
+    added_by_promotion?: boolean;
     /**
      * URLs to download all product files.
      */
@@ -109,5 +103,5 @@ export type ItemDigitalGet = ({
      * Specifies the combined download size of all files in human-readable style; for example, `30MB`.
      */
     download_size?: string;
-});
+};
 

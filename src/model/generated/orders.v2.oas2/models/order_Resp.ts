@@ -1,10 +1,9 @@
+/* generated using openapi-typescript-codegen -- do not edit */
 /* istanbul ignore file */
 /* tslint:disable */
 /* eslint-disable */
-
 import type { order_RespOnly } from './order_RespOnly';
 import type { order_Shared } from './order_Shared';
-
 /**
  * Order object returned in responses.
  */

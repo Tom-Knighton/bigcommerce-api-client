@@ -1,9 +1,8 @@
+/* generated using openapi-typescript-codegen -- do not edit */
 /* istanbul ignore file */
 /* tslint:disable */
 /* eslint-disable */
-
 import type { wishlistItem_Full } from './wishlistItem_Full';
-
 export type wishlist_Full = {
     /**
      * Wishlist ID, provided after creating a wishlist with a POST.

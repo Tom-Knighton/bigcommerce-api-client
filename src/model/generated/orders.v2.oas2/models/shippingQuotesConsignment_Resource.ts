@@ -1,7 +1,7 @@
+/* generated using openapi-typescript-codegen -- do not edit */
 /* istanbul ignore file */
 /* tslint:disable */
 /* eslint-disable */
-
 export type shippingQuotesConsignment_Resource = {
     /**
      * URL where you can use a GET request to get the shipping quotes for the order consignment.

@@ -1,14 +1,14 @@
+/* generated using openapi-typescript-codegen -- do not edit */
 /* istanbul ignore file */
 /* tslint:disable */
 /* eslint-disable */
-
 export type Tax_Zone = {
     /**
      * Tax Zone ID. Internal identifier used to get, update, or delete a specific tax zone.
      */
     id?: number;
     /**
-     * The human-readable name for this tax zone. The name displays on the merchant's control panel.
+     * The human-readable name for this tax zone. The name appears in the store control panel.
      */
     name?: string;
     /**

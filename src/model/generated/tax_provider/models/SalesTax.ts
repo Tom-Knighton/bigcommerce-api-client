@@ -1,9 +1,8 @@
+/* generated using openapi-typescript-codegen -- do not edit */
 /* istanbul ignore file */
 /* tslint:disable */
 /* eslint-disable */
-
 import type { TaxClass } from './TaxClass';
-
 export type SalesTax = {
     /**
      * The human-readable name of this tax. Used for reporting. Depending on store configuration, may also be visible in the itemization of taxes at checkout, on invoices, and in control panel views. May not be empty.
@@ -19,11 +18,11 @@ export type SalesTax = {
     amount: number;
     tax_class?: TaxClass;
     /**
-     * Optional unique identifier for this sales tax, describing the relevant tax classification rule on the Tax Provider platform.
+     * Optional unique identifier for this sales tax, describing the relevant tax classification rule on the tax provider platform.
      *
      * Supplying an identifier allows BigCommerce to group related taxes together from all items in the order.
      *
-     * This identifier is persisted by BigCommerce and may be desirable for auditing purposes between BigCommerce and the Tax Provider. Currently supports persisting integer values only (the string type indicates we may support UUID values in the future).
+     * This identifier is persisted by BigCommerce and may be desirable for auditing purposes between BigCommerce and the tax provider. Currently supports persisting integer values only (the string type indicates we may support UUID values in the future).
      */
     id?: string;
 };

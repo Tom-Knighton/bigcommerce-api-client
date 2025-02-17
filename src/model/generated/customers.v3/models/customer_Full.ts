@@ -1,13 +1,12 @@
+/* generated using openapi-typescript-codegen -- do not edit */
 /* istanbul ignore file */
 /* tslint:disable */
 /* eslint-disable */
-
 import type { address_Full } from './address_Full';
 import type { attribute_Full } from './attribute_Full';
 import type { customerChannelIds } from './customerChannelIds';
 import type { CustomerStoredCreditAmounts } from './CustomerStoredCreditAmounts';
 import type { formFieldValue_Customer } from './formFieldValue_Customer';
-
 export type customer_Full = {
     /**
      * The email of the customer. Must be unique.

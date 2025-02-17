@@ -1,7 +1,7 @@
+/* generated using openapi-typescript-codegen -- do not edit */
 /* istanbul ignore file */
 /* tslint:disable */
 /* eslint-disable */
-
 export enum HSTSMaxAgeEnumValues {
     ZERO_SECONDS = 'zero_seconds',
     FIVE_MINUTES = 'five_minutes',

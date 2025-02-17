@@ -1,7 +1,7 @@
+/* generated using openapi-typescript-codegen -- do not edit */
 /* istanbul ignore file */
 /* tslint:disable */
 /* eslint-disable */
-
 /**
  * Note:
  * - `xxx` and `xxx_customer` always hold the same value, updating either `xxx` or `xxx_customer` will change value for both of those fields.
@@ -75,7 +75,7 @@ export type orderCatalogProduct_Post = {
     price_ex_tax?: number;
     upc?: string;
     /**
-     * ""
+     * Products `variant_id`. PUT or POST. This field is not available for custom products.
      */
     variant_id?: number;
     /**
@@ -88,11 +88,11 @@ export type orderCatalogProduct_Post = {
     wrapping_name?: string;
     wrapping_message?: string;
     /**
-     * When provided, this value should be equal to `wrapping_cost_ex_tax` times quantity to accurately reflect wrapping cost per unit.
+     * When provided, this value should be equal to `wrapping_cost_ex_tax` times quantity to accurately reflect wrapping cost per unit. The value can't be negative.
      */
     wrapping_cost_ex_tax?: number;
     /**
-     * When provided, this value should be equal to `wrapping_cost_inc_tax` times quantity to accurately reflect wrapping cost per unit.
+     * When provided, this value should be equal to `wrapping_cost_inc_tax` times quantity to accurately reflect wrapping cost per unit. The value can't be negative.
      */
     wrapping_cost_inc_tax?: number;
 };

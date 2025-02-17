@@ -1,10 +1,10 @@
+/* generated using openapi-typescript-codegen -- do not edit */
 /* istanbul ignore file */
 /* tslint:disable */
 /* eslint-disable */
-
 export type webhook_callback_base = {
     /**
-     * Hook creation date, in Unix timestamp format.
+     * The time the webhook was created, represented in UNIX epoch time.
      */
     readonly created_at?: number;
     /**

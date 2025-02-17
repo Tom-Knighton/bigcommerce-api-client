@@ -1,7 +1,7 @@
+/* generated using openapi-typescript-codegen -- do not edit */
 /* istanbul ignore file */
 /* tslint:disable */
 /* eslint-disable */
-
 export type customerAddress_Base = {
     /**
      * ID of the associated customer.
@@ -32,7 +32,7 @@ export type customerAddress_Base = {
      */
     city: string;
     /**
-     * The customer’s state/province. Do not abbreviate the state; spell out the entire word, e.g.: California. (Cannot be null. As a workaround for addresses that include no state/province string, pass a space as the “state” value.)
+     * The customer’s state/province. Do not abbreviate the state; spell out the entire word. For example, California. (Cannot be null. As a workaround for addresses that include no state/province string, pass a space as the “state” value.)
      */
     state: string;
     /**
@@ -49,14 +49,10 @@ export type customerAddress_Base = {
     phone: string;
     address_type?: customerAddress_Base.address_type;
 };
-
 export namespace customerAddress_Base {
-
     export enum address_type {
         RESIDENTIAL = 'residential',
         COMMERCIAL = 'commercial',
     }
-
-
 }
 

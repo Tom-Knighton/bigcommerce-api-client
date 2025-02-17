@@ -1,10 +1,9 @@
+/* generated using openapi-typescript-codegen -- do not edit */
 /* istanbul ignore file */
 /* tslint:disable */
 /* eslint-disable */
-
 import type { responseCartDiscounts } from './responseCartDiscounts';
 import type { responseCartLineItemsItemsPhysicalItemsItemsAllOf0OptionsItems } from './responseCartLineItemsItemsPhysicalItemsItemsAllOf0OptionsItems';
-
 export type responseCartBaseItem = {
     /**
      * The list of selected options for this product.
@@ -39,6 +38,10 @@ export type responseCartBaseItem = {
      * URL of an image of this item, accessible on the internet.
      */
     imageUrl?: string;
+    /**
+     * Whether or not you can change or remove the item from the cart. Items that are immutable include those added automatically by promotions.
+     */
+    isMutable?: boolean;
     /**
      * Whether the item is taxable.
      */
@@ -76,6 +79,10 @@ export type responseCartBaseItem = {
      */
     sku?: string;
     /**
+     * The type of line item.
+     */
+    type?: responseCartBaseItem.type;
+    /**
      * The product URL.
      */
     url?: string;
@@ -84,4 +91,12 @@ export type responseCartBaseItem = {
      */
     variantId?: number;
 };
+export namespace responseCartBaseItem {
+    /**
+     * The type of line item.
+     */
+    export enum type {
+        PHYSICAL = 'physical',
+    }
+}
 

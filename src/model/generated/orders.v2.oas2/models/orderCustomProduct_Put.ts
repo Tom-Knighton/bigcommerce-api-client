@@ -1,7 +1,7 @@
+/* generated using openapi-typescript-codegen -- do not edit */
 /* istanbul ignore file */
 /* tslint:disable */
 /* eslint-disable */
-
 /**
  * **Usage notes:**
  *
@@ -16,7 +16,6 @@
  * - When updating an existing order product, if you omit `name_merchant` from the request, it will not be updated.
  * - When adding a product, if you omit `name_merchant`, it will be set to the value of `name` (or `name_customer`).
  * - When adding a new product to an existing order, if you omit both fields `name` and `name_customer`, they will be set to the value of `name_merchant`.
- *
  */
 export type orderCustomProduct_Put = {
     /**
